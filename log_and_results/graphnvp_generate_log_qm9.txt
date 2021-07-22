@@ -1,0 +1,1379 @@
+(base) [qifan@localhost graph-nvp]$ conda activate moflow
+(moflow) [qifan@localhost graph-nvp]$ python generate.py -snapshot graph-nvp-final.npz \
+> --gpu -1 \
+> --data_name qm9 \
+> --data_dir data \
+> --hyperparams-path graphnvp-params.json \
+> --batch-size 1000 \
+> --model_dir models/qm9 \
+> --temperature 0.8 \
+> --delta 0.05 \
+> --n_experiments 1
+loading hyperparamaters from models/qm9/graphnvp-params.json
+loading snapshot: models/qm9/graph-nvp-final.npz
+Hyper-parameters:
+------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------
+gnn_channels              {'gcn': [8, 64], 'hidden': [128, 64]}
+mlp_channels              [256, 256]
+num_nodes                 9
+num_relations             4
+num_features              5
+masks                     {'channel': [array([[False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False]])], 'node': [array([[False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True]]), array([[ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True]]), array([[ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True]]), array([[ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True]]), array([[ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True]]), array([[ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True]]), array([[ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False]])]}
+num_masks                 {'channel': 9, 'node': 9}
+mask_size
+num_coupling              {'channel': 27, 'node': 36}
+path                      output/graphnvp-params.json
+apply_batch_norm          True
+additive_transformations  False
+learn_dist                1
+squeeze_adj               False
+prior_adj_var             0.0004
+prior_x_var               0.0004
+seed                      1
+concat_atom_embeddings    0
+------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------
+loading train/valid split information from: data/valid_idx_qm9.json
+[00:48:12] Explicit valence for atom # 8 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 0 O, 3, is greater than permitted
+[00:48:12] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 7 C, 6, is greater than permitted
+[00:48:12] Explicit valence for atom # 6 F, 2, is greater than permitted
+[00:48:12] Explicit valence for atom # 6 O, 3, is greater than permitted
+[00:48:12] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:48:12] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 7 O, 4, is greater than permitted
+[00:48:12] Explicit valence for atom # 0 F, 3, is greater than permitted
+[00:48:12] Explicit valence for atom # 7 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:12] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 7 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 6, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 O, 3, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 8 F, 2, is greater than permitted
+[00:48:13] Explicit valence for atom # 7 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 F, 3, is greater than permitted
+[00:48:13] Explicit valence for atom # 8 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:13] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 O, 4, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 N, 4, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 6 N, 4, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:13] Explicit valence for atom # 1 C, 5, is greater than permitted
+valid molecules: 889/1000
+[0] C1=CC2=C(C1)C1OC1C2
+[1] CCC1COCC1CO
+[2] OCOC1C2C3CC3N12
+[3] O=CCCCC1CCC1
+[4] C#CC1C=CC(C)=C1O
+[5] O=COCC(=O)CCO
+[6] CNC1CC(=O)CC1=O
+[7] CC1CCCC1C=CO
+[8] CC1(C)C2CC21CO
+[9] CC#CC1COCC1O
+[10] C#CC1C2CC3C1CC23
+[11] O=C1CC=CC1C1=NO1
+[12] CC1CCCC1C=CO
+[13] CC1CCC2=C1COC2
+[14] CCOC1CCCC1O
+[15] CC(C=O)C(O)O
+[16] O=CCCCCC1CC1
+[17] CC(=O)CCC1CC1N
+[18] CC1CCC(CC=O)C1
+[19] C#CC1C=C(C)C12CC2
+[20] N=C1OC2CC2(CO)O1
+[21] CCCCCCCCC
+[22] N#CC1CC2CCC1O2
+[23] CCCC12CC13N1CC123
+[24] C#CCC1CCC2CC12
+[25] CCCCC(O)CC
+[26] CCC1(CO)OCC1O
+[27] CCCOC(=O)OCC
+[28] COC1CCC12CC2O
+[29] OC1CC2=CCC13OC23
+[30] CN=CCN(C)COC
+[31] O=C1CCCCNCC1
+[32] OC1CC1(O)CC1CC1
+[33] CC(C)CCCCCO
+[34] O=CC12NC1CCC2=O
+[35] C#CCC12C=C(CC1)N2
+[36] CCCC1C(O)C2OC12
+[37] CCC(C)CC1CC1
+[38] C#CCCCC(C)CO
+[39] CCC=C1CCC1OC
+[40] CNC1CC2CC2=C1O
+[41] O=C1CCCCCOC1
+[42] CCCC1CCOCC1
+[43] CC1CC(O)C1C1CC1
+[44] C#CCCC=CCC=O
+[45] C#CC(C)(O)CCO
+[46] C#CCC(C)OCCC
+[47] CC1N=CC=COC=N1
+[48] CC(=O)C(C)OCCO
+[49] CCC(=O)C1(OC)CC1
+[50] CCOCCOC=NO
+[51] O=CCCCCOC=O
+[52] C#CCC(=O)CNCO
+[53] CCC(C)CC1(C)CC1
+[54] CCCCC1CC(=O)C1
+[55] OCC1CC2C3OC3C12
+[56] CCC1(C)C(=O)C12CC2
+[57] C#CCC1C2CC1C2C
+[58] C#CCC1CC=CCO1
+[59] CN1CC=COC(=O)C1
+[60] C1CC2CC3CCC23O1
+[61] CNC1NC12CCC2C
+[62] OC1CCCC2CC2O1
+[63] CN1CC2=C3CC21C=N3
+[64] CCCCCCOCO
+[65] O=CC#CC(O)C1CC1
+[66] O=C1NC2CC3CC2C13
+[67] C#CC1CC2(O)C(O)C12
+[68] COC1CC2OCC2O1
+[69] OC1CCC2CCC1C2
+[70] CCC1=C(N)NC(=O)C1
+[71] CC1C(=O)CCC2OC21
+[72] C#CCCC1CCC1O
+[73] OCOCN=C1CC=N1
+[74] C#CC1CC2CCC1O2
+[75] C1=C2C3NC4C(C1)C2C34
+[76] OC12CCC13CC2CO3
+[77] CCOCCCN=O
+[78] CCC12CC=CC1CC2
+[79] CC12CC3OCNC1=C32
+[80] N#CC(=O)CCCCN
+[81] CC1=C2NCCC12O
+[82] CC1CC2(CCC2O)C1
+[83] CCC(C)CCC1CO1
+[84] CCCOC1CC1CO
+[85] CCCCC1=C2CCC12
+[86] N#CC1OC2CC3C1C23
+[87] C#CC1C=CC2CC12
+[88] Cc1cn[nH]c1C1CC1
+[89] COC(C)CCCCO
+[90] CC1C=CC=CC2CC12
+[91] CC1=CC2C(C)OC2C1
+[92] CCC=C1CCOC=N1
+[93] CCCCC(C)COC
+[94] CC1=CC(=O)CCOC1
+[95] OC1C2CC1N1CC1N2
+[96] CC1C2CC3CC2(C)C31
+[97] CC1(C)CC(C2CC2)O1
+[98] CC1C(C=NO)C2CC12
+[99] CC(C)C1CCC2CN21
+[100] CC1CCC2CC3C1C23
+[101] O=COCOCCO
+[102] CC1CCC1OCCO
+[103] CC1C=CC2CC2CO1
+[104] CCN=C1CC2CC12
+[105] CCOCC=CC(C)O
+[106] CCC1C2COC1C2O
+[107] O=COCCC1CC1O
+[108] C1#CC2C(CC1)C1OC21
+[109] NC1=CN=CC(=O)C1
+[110] O=CC1CCCOCC1
+[111] CC(C)C1CC1CCO
+[112] CCC=C1C2=CC1CC2
+[113] OCC1OCCCC1O
+[114] CCCC(O)C1CCC1
+[115] N#CCC12CCC1C2
+[116] CCC1C23CCCC12O3
+[117] C#CCC(C)(O)C1CC1
+[118] C(=CC1CO1)C1CCC1
+[119] O=C1CCCCCC1O
+[120] OC(O)CC1C=NCC1
+[121] CC1CC2=CCC1CC2
+[122] CCC(=O)CCCO
+[123] N#CC1CCC12CC2
+[124] CCC(O)CC1CC1C
+[125] O=CC12C=C1OCCC2
+[126] CC1CC(=O)C(C)C1O
+[127] CCOCC(O)C1CO1
+[128] CCCCOCCO
+[129] C#CC1C2C3C(CN)C123
+[130] CCC1CC12CCN2
+[131] C1#CC2=CC=COC2C1
+[132] CC12CC3=C(C1)C(C2)O3
+[133] CCCC1CCCC1O
+[134] CC1C=C(O)CCCC1
+[135] CCCC1CCCC1O
+[136] CC1CCC2CC12C
+[137] COC1C2C=CCC21O
+[138] CCCC1=C(C)C=CC1
+[139] COC1CC2CCC21C
+[140] OC1CC1(O)CC1CC1
+[141] CCCC1C=CCCC1
+[142] CN=CC12NC1=CC2=O
+[143] C#CC1NC(C)C12CC2
+[144] CC12CC3C4CC1(C2)C34
+[145] CC1C2CC1C(O)C2=N
+[146] CNC1CCCCO1
+[147] CC=C1CC2CC2C1C
+[148] CC1=COCOCC1=N
+[149] CC1=CN=CC1C1CC1
+[150] OC1CN2CCC12O
+[151] C#CCCCCCO
+[152] CC1C2C3CC14C3OC24
+[153] C#CCCC(CC)NC
+[154] O=CCC1CCOCC1
+[155] C#CCC1CC(C)C1C
+[156] CC1C=CC(O)C=CC1
+[157] COC1CC(C)(O)C1C
+[158] C#CC1(C)CCN1C
+[159] CC(CO)CCCCO
+[160] CCC=C1CCC2CC12
+[161] CC(C)C12CC1CC2O
+[162] CC1CCOC(C)CO1
+[163] OCCCC1CC2OC12
+[164] CCC1CCCCCC1
+[165] CC1C2C3CCC3(O)C12
+[166] CC1CC(C)C(C#N)C1
+[167] O=CC1C(O)C1C1CC1
+[168] CCCC(C)OC
+[169] COC1CCC1C
+[170] CC12OC1C1CCC2O1
+[171] CC1=NCC(C=O)NC1
+[172] CCOCCC1OC1C
+[173] CC1C#CCOC12CC2
+[174] CC1C(O)C1COC=O
+[175] CC1CCC(O)C12CC2
+[176] CCCC1CC2CC1O2
+[177] CCOCCC1CC1=O
+[178] CCC1CC=C1C=NN
+[179] CCCCCCOC
+[180] OCOCCC1C=CC1
+[181] N#CC1C2=NC3=CN3N21
+[182] CCCC(CO)COC
+[183] CC1CC(CO)C(=O)N1
+[184] CCC#CCC1CC1C
+[185] CC1(O)C2CC2C2CC21
+[186] CCC1CC1CC1CO1
+[187] CC1CC2CCCCC12
+[188] CC1OC2CCC13CC23
+[189] CCCC1CCCOC1
+[190] C#CC=COCCO
+[191] COCCC1C=COC1
+[192] CCCOCC(C)O
+[193] COC(C)C(C)=NO
+[194] CCOC1=CCCCC1
+[195] CCC(O)C(C)=O
+[196] C#CC#CCC=CNC
+[197] OC1CC23C(O)C24C1C34
+[198] CC1=NC2CC3OC13C2
+[199] CC1COC(O)C2OC12
+[200] CCCCC(C)C#N
+[201] CC1C2=CC3CC31C#C2
+[202] CNC(=CN=O)COC
+[203] C1CC1C1CC2COC21
+[204] CC1CC2CCC2CO1
+[205] CC1C2OC3(C)CC2C13
+[206] CC12CCC1=CC1OC12
+[207] CCCCCCCO
+[208] NCCNC(=O)OC=O
+[209] O=C1OCOC2CCC12
+[210] CCCNOC(C)=N
+[211] CC12OC3C(N)CC1N32
+[212] CC1CCC(N)C1C=O
+[213] CCC1CCC(C)C1O
+[214] COC1=CC(C)CCC1
+[215] C1CC2CC1C1COC21
+[216] CCC12NC13OC3C2O
+[217] CC=CCCCC(C)O
+[218] CCC1(O)CCCC1O
+[219] CC(=O)CC1CCCN1
+[220] OCCCC12CCC1C2
+[221] C#CCC(C=O)C(C)O
+[222] OCCC1CCC(O)C1
+[223] CC1COCC(CO)O1
+[224] CC1CCC=C1CCO
+[225] CN1C2CCC23CCC13
+[226] CCCCC1(C)CCO1
+[227] OC12CCOCCC1C2
+[228] CC(=O)CCCCCO
+[229] O=COCCOC1CC1
+[230] CCCCCCC(C)O
+[231] CCCCC(=O)N1CC1
+[232] C#CCC(C)C1CCO1
+[233] CC1CCC(=O)C(=O)C1
+[234] CCCCC(O)CCC
+[235] O=C1OCCC2OCC12
+[236] C#CCCC1CC(O)C1
+[237] CCC12C=C(O)C1CC2
+[238] CC1C=C(F)C1C(N)=O
+[239] C#CCC1CC(C=O)C1
+[240] CC=C(C)C(C)CCO
+[241] CC1OC2(C1=O)C1NC12
+[242] CC(C)CC1=CCCO1
+[243] CC=CCC1CC1CO
+[244] COC12OCC3OC1C32
+[245] CCC12CC3CCC1C32
+[246] CC12CNC3(C)C(O1)C23
+[247] CCCCCC(O)O
+[248] O=CC1CCCC1C=O
+[249] CC1CCCC(C=O)C1
+[250] OC1CC1CC1C2OC12
+[251] CCCCCCCCO
+[252] CC1CCC1CCC=O
+[253] CCCCc1cnco1
+[254] OC12C=C1OCC=CC2
+[255] O=CC(O)C=CCCO
+[256] CCC1OC2CC1C2O
+[257] CC1CCC2OC2OC1
+[258] CCCCC1CC1CC
+[259] CCC1C(C)C1OC
+[260] CCC1=CCC(O)CC1
+[261] N=C(CCO)OC1CO1
+[262] Cn1ccn(C=N)c1=O
+[263] CC1CCC2COC2C1
+[264] CC1CC=CCC1CO
+[265] CC1COCC1(O)CO
+[266] C#CCCCCC=O
+[267] N=COc1ncco1
+[268] N#CC1CCC(O)CN1
+[269] CC(O)CCCCO
+[270] NC(=O)CCC#CC=O
+[271] N#CC1CCCC2OC12
+[272] OC1CC2(C1)C1CC12O
+[273] C#CCCC(C)O
+[274] CCCCCC(O)C=O
+[275] OCC1CCCCC1O
+[276] CC1CCCC1COO
+[277] COC12CCC1C(C)O2
+[278] C#CC(=O)N1C(=O)C1C
+[279] CC#CC(=O)C1CC1
+[280] CC(N)NCC(O)=NO
+[281] CC(C)C=CC(C)O
+[282] CN(C)C12C3C4CC41C32
+[283] C#CCCC1OCC1C
+[284] C#CC#CC1CC1CO
+[285] CC1CC2C=C1N2C=O
+[286] CC(=O)CC1C2CCC21
+[287] CCC1C2CC(CO)C12
+[288] CCOC1=NCC(C)O1
+[289] C#CC1CCC2OC2C1
+[290] CCNOC(=O)CC=O
+[291] O=C1COCC23CC2C13
+[292] CCCC(O)CCCO
+[293] CC1C2=CC(C#N)C1C2
+[294] CNC(C#N)CC(C)O
+[295] CC1NC=C(C2C=C2)O1
+[296] O=CCN=C1NC1O
+[297] CNCCCCC=CO
+[298] COC=C1C=CC(N)C1
+[299] CCCCCCCO
+[300] C#CCC1CC2C(O)C12
+[301] N=CNC1C=C(O)CC1
+[302] C#CCC1CCCOC1
+[303] CCOCCC(O)CO
+[304] COCC1OCCC1C
+[305] CCOCC1=C=CNC1
+[306] C#CC(C)C1CN1C=O
+[307] N#CC1CCC2CCC12
+[308] C#CC12CCOC1CC2
+[309] CC(C)C1CCN2CC12
+[310] CCC(O)COC1CC1
+[311] CC=C1CC2NC12O
+[312] CC1=C(CO)CCC1
+[313] CN1C=CC(C(=O)O)C1
+[314] CCC1C=CCC(C)O1
+[315] C#CC1=CC=NCN1
+[316] CC1CC2C(O)C2(C)C1
+[317] CC12CC3OCCC31O2
+[318] CCCCCC(=O)CO
+[319] C#CC1CCCC(C)O1
+[320] CC(=O)N=CCC1CC1
+[321] C#CC1C(C)C2CCC12
+[322] CC#CCC1CCC1O
+[323] CCC1CC=CC(O)C1
+[324] CC1=CCC(C)CCC1
+[325] COCCC1(O)C2OC21
+[326] C#CC(C)C(O)CCO
+[327] CC1CCOCCC1O
+[328] CC1=CCCC(C)=C1
+[329] CC1NCCCC1CO
+[330] CCCC1CC1COC
+[331] O=C1C=CCC(CO)O1
+[332] CC(C)CCOOC=O
+[333] N#CCC1OCC2CC21
+[334] CCCCCCOC=O
+[335] CCC(C)C1CCOC1
+[336] O=C1CC=CCC(O)C1
+[337] OCCC1=CCCCC1
+[338] O=CCCCC1CCO1
+[339] COC=CC=CCC=O
+[340] C#CC1CCCN2OC12
+[341] CCCCC(O)C=O
+[342] N#CCC#CCC=O
+[343] CCCCOCC(C)C
+[344] COCCC(C)C#N
+[345] CCOCC=CC=O
+[346] N#CCC1=C(N)COC1
+[347] CC1C=CC(=N)CCO1
+[348] CN=CCC(O)CO
+[349] CC=C(O)C(C)C1CC1
+[350] CC#CCC(O)C(O)O
+[351] COCCC1CC(C)C1
+[352] CC1C=CC2OC2CC1
+[353] CC1CC2=COC(=O)C21
+[354] C1=C(C23CCCC2C3)O1
+[355] N#CCC1C2COCC12
+[356] CC1CC2CCC#CC12
+[357] CCC1OC2CC2C1C
+[358] CC1OCCCCC1O
+[359] CCCC12CCC=C1O2
+[360] O=COCC1CCOC1
+[361] O=C1COCOCOC1
+[362] C#CCCCC1(C)CC1
+[363] CCCC#COCC
+[364] CCC1CC2OC(C)C12
+[365] CCC(C)COCCO
+[366] O=C1CC2CCCC2O1
+[367] N#CC1CCC2C(=O)C12
+[368] CCCCC(=O)OC
+[369] O=CCCc1ccno1
+[370] OCC1C2CCCOC12
+[371] CN=C1CCOC=C1O
+[372] CC1C2CCC(CO)C12
+[373] CCCC(C=O)CC=O
+[374] COCCCCC(C)C
+[375] CC(O)C1CC1(C)C
+[376] CC1CC2(O)CN1CO2
+[377] CC1Cc2nc(N)cn21
+[378] CN1C=CC2CC21C=O
+[379] CCC1CCCC1C
+[380] CCC1CC1(O)CCO
+[381] CC1NC2C1=C1CCC12
+[382] CC1CC(CO)C(C)O1
+[383] CC1OOCOCC1O
+[384] CC1CCOCC2CC12
+[385] CC1CC(C)C(O)C1C
+[386] CCCNC1(C)CC1O
+[387] CC(=NO)C1CC1(C)C
+[388] CCCc1cc(O)n[nH]1
+[389] C#CCCNC=CO
+[390] COC1CC2CCC1O2
+[391] CCCCCCO
+[392] CC1CCCOC1O
+[393] OCCC1CCCCC1
+[394] CCC1CC2C3CNC132
+[395] CC1(C=O)CC#CCC1
+[396] O=C1C2C3CC4C3N1C42
+[397] CC1=C2OC=CC(C1)O2
+[398] CN=C1CCC(=O)O1
+[399] CCOC12CC1OC2=O
+[400] CCCC(C)CCO
+[401] CC(=O)Nc1cnc[nH]1
+[402] CC(CCC=O)C1CC1
+[403] CCC1CC1CCOC
+[404] COC1=CCCOC1C
+[405] N#CC1CC(O)C1=O
+[406] C1OC2C3=C1CC1C3C21
+[407] CC1CC1CCC=O
+[408] C#CC1CC1CCO
+[409] CCCCCCC1CO1
+[410] CCC(C)C1C2CC1N2
+[411] O=CCCCC1CCC1
+[412] CC1C(O)=CN2CC=C12
+[413] CC1=CC(C)COCC1
+[414] CCOCCOCCO
+[415] OC1CC2CCN2C1O
+[416] CCCOCCC=O
+[417] C#CCCCOCCO
+[418] CC1=C(C(C)C)OCO1
+[419] O=COCC12CN3C1C32
+[420] CCC1CC2C(O)CC12
+[421] C#CC1CC1CCCO
+[422] CC=COCC1CCO1
+[423] CCCC1CC2C3NC123
+[424] CC(O)C1CCC12CC2
+[425] OCC1CCC1C1CC1
+[426] CCCCCCCCO
+[427] CCC1(C)C2CCC21C
+[428] O=C1OC2OC3C#CC132
+[429] O=C1NC=CCC12CC2
+[430] CCC1OCCOC1C
+[431] CC(O)C1CCCC1O
+[432] CC(C)C1C(=O)C2CC21
+[433] CC1C=CC2=C1ONC2
+[434] CC1CC2(C)CNCN12
+[435] CC1C2C3=CCCC12N3
+[436] CC1(C#N)CCCC1O
+[437] C#CC1(C)C(=O)CC1C
+[438] O=CCOC12CN3C1C32
+[439] O=C(O)CC1CCC1O
+[440] CC1=CCCC=CC1F
+[441] C#CC1OC=CCC1O
+[442] CCCC1CCCCC1
+[443] CC1OC2C3CC12CO3
+[444] C#CCC=CCCCO
+[445] N#CC1C(O)C2CCC12
+[446] CC1=C2CCCC=CC12
+[447] O=CNC(CO)C1CC1
+[448] O=CC1CCC2COC12
+[449] CC1(O)CC2CC23CC13
+[450] O=CC1C2C3CCC12N3
+[451] CCOCC(C)CC#N
+[452] N=C(O)C1CCC2OC21
+[453] CCC1COC2CCC12
+[454] C1CC23CC(C4CC42)C13
+[455] CCCC12CCCC1C2
+[456] C#CC1CCCC12CC2
+[457] CCCC1CC2OC2C1
+[458] CC1CCC2CCC2C1
+[459] C#CC1C=CCCCC1
+[460] O=C1OCC2CC3OC123
+[461] CC1CC2(C1O)C1NC12
+[462] C#CCCCCCCC
+[463] C1=CCCCCCCC1
+[464] COOC1C(C)C1CO
+[465] COC(C=O)C=CCO
+[466] CCCc1ccoc1
+[467] CCCC1CC1C1CC1
+[468] CCCCC1=C(O)CO1
+[469] C#CCC(O)C1CC1
+[470] C1CC2CC2C2CC2C1
+[471] COC=CC1C#CO1
+[472] CCCC1COC(C)C1
+[473] CC=COCCCO
+[474] CC(CCO)COC=N
+[475] OC12CC3CCC14CC324
+[476] O=C1CCCCC2CC12
+[477] CC1C2CNCC(=O)C12
+[478] CC=CCCN=CO
+[479] CCCC(N)OCC=O
+[480] O=C1CCOC=CCO1
+[481] C1=C2CCC1C1OC1C2
+[482] CCCC(=O)C(O)CO
+[483] CCCCCC(C)C=O
+[484] CC1=C2CC(O1)C2CO
+[485] N#CC#CC1CC1
+[486] CCCC(C)C1COO1
+[487] Cc1cc[nH]c1C=O
+[488] CNCCC1=NCCO1
+[489] N#CC1(C=O)CC2CN21
+[490] C#CC1C=C1C1CCO1
+[491] CCC(C)(OC)C1CC1
+[492] O=CN=NC=COCO
+[493] O=C1C(O)C2C(=O)N12
+[494] CN=COC=COC=O
+[495] OC1COC2CC=CC12
+[496] OCCC12CCC1CO2
+[497] CCC1CCCC2CC12
+[498] CCCCCCO
+[499] CCCCCCCCC
+[500] OCOC(CO)C1CO1
+[501] CC1CCC2CCCC12
+[502] O=CC1OC2C(O)CC12
+[503] CCC1OCC(C)C1O
+[504] CC1C2CC3C2COC13
+[505] CC1=C2OCCC2N=C1
+[506] OC1OC2C3CCC2C13
+[507] CN=CCC(O)CCO
+[508] CC1N=C(O)C1CCO
+[509] CCCC1CCC12CO2
+[510] O=CCC1=CCC2CC12
+[511] CCC1CCC1C#CO
+[512] CC(C#N)CCOCO
+[513] CCC1OC(C)CC1C
+[514] C#CC12CC3CC1N32
+[515] OC1CC2CC=CN2C1
+[516] CC1C(C)C2(C)C(O)C12
+[517] CC1COC1C(O)C#N
+[518] CCC=CCC(C)CC
+[519] OCC1CC2C3CC2C13
+[520] CC1CC2CN2CC1O
+[521] CC(C)CCC(C)C=O
+[522] C1=CC2CCC(C1)O2
+[523] O=CCC=CCCCO
+[524] CC1(C)CCC1N1CC1
+[525] CC1=CCC(O)CCO1
+[526] CCCC1(O)CC12CC2
+[527] C#CC1CCOCC1=O
+[528] C#CC1(O)CC1C1CC1
+[529] C#CC1CC2CC1CO2
+[530] CN=C1C2=CN1C2CO
+[531] C#COCC1CC2OC12
+[532] OC1CC2C=CCCC12
+[533] CC1C=C2C3CC23N1C
+[534] CC=C1CC2CC2(O)C1
+[535] O=CC=CCOC1CO1
+[536] C#CNCCCCO
+[537] O=CCCCCC1CC1
+[538] C1CC2=C(C1)C1CC1C2
+[539] CCCC1NCC1=O
+[540] CC1(C)C=C2CC2CO1
+[541] CCNc1nnoc1O
+[542] C#CCC1C2COC12O
+[543] C#CCCC1OC1OC
+[544] CCCC1C=COC1=O
+[545] CCCC12CCC1CC2
+[546] CC1(C)CC(CCO)C1
+[547] CCC(C)C1CC1(C)O
+[548] CC(=O)CCC(C)=O
+[549] CCC(CC)CC(C)C
+[550] CCNC1C23CCC12C3
+[551] OCC1C=Nc2c3n1n2-3
+[552] OC1CC2CC=C1O2
+[553] CCCCCCCCO
+[554] COC(=O)CCNC=O
+[555] CC1=C2C3C(=C1)C1CC213
+[556] O=CC1C2CC1N1CC21
+[557] CCCC1=CCC(C)C1
+[558] CC1C=CC2N=CCC12
+[559] C#CCCCCCCO
+[560] C#CCC(O)CC1CC1
+[561] CCCC1CC2C#CC21
+[562] CC1(C)CCCC(O)C1
+[563] CC(=O)CCCC(C)O
+[564] C#CCCCCCOC
+[565] CCC(C)C(C)C(C)O
+[566] COC1CCCCCC1
+[567] CC1CC2(C)CN1C2C
+[568] C#CC1CC2C=NCC12
+[569] C#CC1(C)CCCC1O
+[570] CC(=O)C1C=CC2CC21
+[571] N=COC1=CC(=N)CO1
+[572] CCOC1(C2CC2)CC1
+[573] CCCCC1CCCC1
+[574] CC1CCC1CC1CC1
+[575] C#CCCC1CCC1C
+[576] OC1CC2C3CC4C1C234
+[577] CCN1C=CC2CCC21
+[578] C#CCc1ccoc1
+[579] CC1CCCC2CCC12
+[580] CC1=C(CC=O)OCC1
+[581] C#CCCC1CCC1C
+[582] O=CCCCOCO
+[583] CCCCC(=O)C1CC1
+[584] COCCCOC1CC1
+[585] CC1CC2(O1)C1C3CC312
+[586] CC1(O)C(CO)N2CC21
+[587] OCCC1CC12CCO2
+[588] C#CC12C(=O)CC1C2O
+[589] CC(C)C1=NCC(O)=N1
+[590] CC(C)OC1CCOO1
+[591] C#CCOCCC1CC1
+[592] C#CCCC(C)(C)CO
+[593] C1CCCOOCC1
+[594] CCC1CC1C1CC1
+[595] CCCCC(=O)C1CC1
+[596] CCOC(N)=COC=O
+[597] CCCCC1CCOC1
+[598] CC(O)C=CC1C=C1
+[599] C1Oc2nc3oc2C13
+[600] CC12CC1C1CC3OC312
+[601] CC#CCc1c#c[nH]c1
+[602] CCC12CC1CCC2C
+[603] O=C1CCC2CCCC12
+[604] N=COCC1=CC1NO
+[605] CCC1C=C(O)C2CC12
+[606] C#CCC(C)CC
+[607] CCC1C2CCCC12O
+[608] CCC12CCC13C1C2N13
+[609] CCC1OC1(C)C1CO1
+[610] COCCCC(C)C#N
+[611] OC=CCCCC1CC1
+[612] CC1COCC1C1CO1
+[613] O=C1CCC2CC2CO1
+[614] CC1OC2C=C1CCO2
+[615] COCN1c2cn[nH]c21
+[616] CC1=NOCCC=C1
+[617] N=C1CNC2=CC2CO1
+[618] CC1CCC2OCCC12
+[619] CC1NC2(O)CC12C=O
+[620] COCCOCCC=O
+[621] CC1CCCC2OCC12
+[622] CCCCCC(C)CC
+[623] CC1CCCC2(C)OC12
+[624] CCC1CCOCC1=O
+[625] CC1COC2CC2C1
+[626] O=CC1OCCCC1O
+[627] C#CC1CC2C3NC3C12
+[628] CC(CO)C1OC1C
+[629] CCCC1C(C)C1C
+[630] CN=CCCC=CCO
+[631] CC1CC(C=O)CC1O
+[632] C#CCCC1OC1C=O
+[633] C#Cc1coc(CN)c1
+[634] O=C1CCC2CCC2C1
+[635] O=CCC(=O)OC1CC1
+[636] CC1CCCC(O)CC1
+[637] N#CC(N)C1CN=C1O
+[638] CC1CC2=CCC23CC13
+[639] CCCN1CCOC1
+[640] CCC(O)C1COC1C
+[641] CCC1(C)C=CCCC1
+[642] CCCCC(=O)OC=O
+[643] O=C1OCC2CCC1C2
+[644] C#CC1CCCC(O)C1
+[645] OC1C2CC3CC14C3C24
+[646] N#CC1NCCN2CC12
+[647] CC1CCC(C)C1CO
+[648] COCCC(C)OC
+[649] CC1COC2CC3C1C23
+[650] C1=CC2CCCC2CC1
+[651] O=CC1=C2C3C=CC2N13
+[652] CCC12CCC13CC3N2
+[653] CC#CC(O)CCC=O
+[654] CCCCC1(C)C2OC21
+[655] C1=CNCCCOC=C1
+[656] C#CCc1[nH]cnc1O
+[657] COCC1C=CCCO1
+[658] CCCCCCC(C)C
+[659] CC1CCCCCO1
+[660] N#CC12CCC3C1NC32
+[661] C#CC1C2C3CCN2C13
+[662] CCCC1C2OC1C2O
+[663] CCCC1=NCCNC1
+[664] CC1=CC2CC1C1OC21
+[665] C1NCC2C1OC1CC12
+[666] CCCCC1CC1C
+[667] C#CC#CC(C)C
+[668] C#CCCCCC1CC1
+[669] CCCC(O)CCC
+[670] CCCC(C)CCOC
+[671] CCC(C)COCCO
+[672] CCCC(O)CCOC
+[673] CCCC1COC2CC12
+[674] O=COCC1NCCO1
+[675] CC(O)CC(C=O)CN
+[676] CC(O)CCCCCO
+[677] CCOCCC(C)CO
+[678] CCC(CC)C1CC1C
+[679] C#CCCC1CCC1
+[680] CCCC1CCC(=O)C1
+[681] CC1CCCC(O)C1C
+[682] COCC(C)(O)C(C)O
+[683] CCN1C(C)NC1C#N
+[684] C1=NCCOCCCC1
+[685] CC1(CO)OC2COC21
+[686] OCC(O)c1cc[nH]c1
+[687] COC12CC(=O)CC1C2
+[688] CC(=O)C(=O)C(C)CO
+[689] C#CC1OC2CC(O)C12
+[690] O=C1CCC(C(O)O)C1
+[691] CCCC(=O)C1C=CN1
+[692] CC12CC3C4C1C3C42
+[693] COCCCCOC=O
+[694] CCNC1CCCCC1
+[695] O=CCCOCC1CC1
+[696] CCCCCCCOC
+[697] CCCCC(O)CC
+[698] CCOCC1CCC1=O
+[699] CC1C2C#CCC1CC2
+[700] N=COC1=NCC=C1
+[701] CC1C=CCCOCC1
+[702] CC#CCOC(=O)C=O
+[703] C#CCCC(=O)CCO
+[704] COC1=CCC(O)=C1O
+[705] CN=C1COCC=CO1
+[706] CCC12CC1CCC2C
+[707] CC1C2CC13C(=O)CC23
+[708] CC1(O)OC=C1C1CN1
+[709] CCNC=NC=NC=O
+[710] CC1CC2CCOCC12
+[711] CCC1CCC2CC2C1
+[712] O=CCCC1C(O)C1O
+[713] CCCCC1CC(C)C1
+[714] CC=CC=C(C=N)C=O
+[715] CC(C)C1CCCCO1
+[716] C#CCCC(CO)CO
+[717] C#CC1=CC2=COC12
+[718] CCCC(O)CCC=O
+[719] CCOC1N=CC(C)=N1
+[720] CCC(C)C(O)N=NC
+[721] C#CC1CCC(C=O)C1
+[722] O=C1C2CC3(O)C1OC23
+[723] CCCN=c1cnc1=O
+[724] C#CC1CC1CCCO
+[725] CCC1OCOCC1C
+[726] OCCC1C=COCC1
+[727] O=CCC(=O)OCCO
+[728] CC(C)COCC1CO1
+[729] CC1CCCOOC1C
+[730] CC(C)C1C(O)C2OC21
+[731] CCC1OC2CCOC12
+[732] O=CCCC1CC2CC12
+[733] CCC1CCCN=CO1
+[734] CCCC1CCCCC1
+[735] CCCCC(=O)CCO
+[736] CCC1=C(O)C(C)=CC1
+[737] CC1CCC(C2CO2)C1
+[738] C1=CC2CC(C1)C1OC21
+[739] NC(C=O)CC(=O)CO
+[740] OC1OC2C3C4CC42C13
+[741] CC(C)CCCCC=O
+[742] CCNCC=CC1CC1
+[743] CC1(O)CCCC1O
+[744] CC1CCC(O)CCO1
+[745] CCCCCC(C)O
+[746] OCC1CCC1CO
+[747] C#CCC1CCCC1O
+[748] COC1CC(=O)OC1C
+[749] CN=CC1CNC2CN12
+[750] COC1C2CC(=O)N1C2
+[751] C1C2OOC3C2C2C1C32
+[752] COCCC1CCN1C
+[753] C#CCCCCCCO
+[754] C#CCCCC(C)O
+[755] CCCc1ccoc1C
+[756] CCC1CCC2(O)CC12
+[757] C#CC1OC(=O)CC1O
+[758] CCOCCCO
+[759] O=COC12CCC13NC32
+[760] OC12CCC1CC1=C2N1
+[761] CCC1CC2CCN1C2
+[762] CC1CCC2CCC1C2
+[763] CC(O)CCC1=CN1
+[764] N#CCC12CC1C1OC12
+[765] O=CC#CC(O)CCO
+[766] CC1CCC(C2CC2)C1
+[767] CC1C(C)C2(CO)CC12
+[768] CC1OCCCCC1O
+[769] C1=CC2C3CC1CN2C3
+[770] C#CC1C2CC(C)C12C
+[771] CC1COCCOC1C
+[772] O=CN=CCCC1CC1
+[773] CCCCCNCCO
+[774] CC1C2C3OC4(CC34)C12
+[775] CC#CCC(C)C
+[776] CCCC=C(C)C1CO1
+[777] CC12CC1C1CCC12O
+[778] CCC=C1CCCCO1
+[779] OCCC1=CCC=CC1
+[780] CCC1=CCOCC=C1
+[781] CCCCCCCC=O
+[782] CCC1C=CCC1C
+[783] CCCCC1CC(C)C1
+[784] CC1C2CCC23C(C)C13
+[785] CC1OC=C1N=CO
+[786] N=C1C#CC(O)CO1
+[787] C#Cc1c(N)noc1N
+[788] COCCCCCCO
+[789] O=C1CCCC2CC2O1
+[790] CCOC=CCCC=O
+[791] CCC1(C)CCC(C)O1
+[792] O=CCC1CCCCO1
+[793] CC1CC1(C)C#N
+[794] CC1CCC2=CC1OC2
+[795] CC1C=CC2CC3CC123
+[796] CC1CC2CC1C2CO
+[797] CN(C)CC1=CCCC1
+[798] CCCCC(O)C=O
+[799] CC1OCC2C3C(O)C123
+[800] CC1(O)C2CCOCC21
+[801] OCC1(O)C2C3CC321
+[802] O=CC1C2CC3CC3C12
+[803] CCNC1C=CC(C)=C1
+[804] OC1C2=CCN3OC1C23
+[805] CCC1OCC2CC21O
+[806] C#CC(C)C1CCN1C
+[807] C#CC(=NC=O)NC=O
+[808] OCCC1CCCOC1
+[809] CC12CCC3=CCC31C2
+[810] O=C1C=C2CCC13CC23
+[811] CCC12CCC13C1NC123
+[812] CC(O)C1CC#CC1O
+[813] CCCCOCC=O
+[814] C#CC1CNC=C(N)C1
+[815] CC#CC(N)CC1CO1
+[816] CCC12CC1(C)C1OC12
+[817] C#CC(C)(CC)C1CO1
+[818] CC1CCC(C)C(C)O1
+[819] CCC1(O)NC(=O)CO1
+[820] O=CC1CCC2CC2O1
+[821] CC1CCCC1N1CN1
+[822] CCCCC1CCCC1
+[823] OCC1COC2CC2O1
+[824] O=CC(O)CC1CC1
+[825] CC1CC2=CCCCC21
+[826] C#CC1(C)C2=C3N2C31C
+[827] C#CC1CC2CC2C1C
+[828] C#CC(C)CCC1CO1
+[829] C#CCOC(O)CCO
+[830] CN=CC1CCC=C1C
+[831] C=C1OC(C=O)CC1C
+[832] C1=C2CCCCCCC12
+[833] CC1C2CC2OC12CC2
+[834] O=C1CCC2CCC12
+[835] CC1CCOC=NC1=O
+[836] CC1CCCC1CO
+[837] COCC1CC(N)C1C
+[838] CCC=CCCOC=O
+[839] CC1CCCCCOC1
+[840] C#CC(CCO)C(C)O
+[841] C#CCC1(C)CC2CN21
+[842] CCC1CCN=CC1C
+[843] CC1(C)C(O)C2CC21C
+[844] CCCc1c[nH]nc1N
+[845] N#CC1C=CCCOC1
+[846] CCC1(CC)CCC1C
+[847] CC1=CC12OC=CC2O
+[848] CNC1C2C3(C)C14NC234
+[849] CCC1=CC=C(O)C1C
+[850] CCN(C)CCCC=O
+[851] C#CC1CC=CC1
+[852] CC#CCCC(C)O
+[853] C1CCC(C2CC2)CC1
+[854] OCCC1CCC2OC12
+[855] N#CC1NCCC1C=O
+[856] CC1CCNC2CCC12
+[857] O=C1OCC2C(=O)C12
+[858] CCC1CC(=O)CC1C
+[859] CC(CO)CC1CCC1
+[860] CC1=NCOCC=CC1
+[861] N#CCCCC1COC1
+[862] CNC1C=CCCCC1
+[863] C#CCCC1C2CC1O2
+[864] O=CC1C=CC2C3CC123
+[865] C#CCCCCCCO
+[866] C#CC(C)C12CC1CN2
+[867] OC1CC2CC3CC13C2
+[868] CC1CC1C(O)C(N)=O
+[869] CC=CC=CCC=O
+[870] CCNC#CCCC=O
+[871] CC(O)C1CC(=O)CO1
+[872] ON=CC1COC2CC12
+[873] CCOC(CO)C1CC1
+[874] C#CC1(C)C(O)C2CC21
+[875] OC1CCCOC2C=C12
+[876] CC(=O)CC1C2CCC21
+[877] OC1=CCCC2CC2C1
+[878] O=C1C2CCOC13CC23
+[879] CC1C2CC3C4C(O2)C134
+[880] C1=CC2C3CCC1CC23
+[881] C#CC(=O)C1CC(O)C1
+[882] O=CCCC(O)CCO
+[883] CC1CC2OC3OC1C23
+[884] CC1C2C=CCC1CC2
+[885] CC1CCCCCC1O
+[886] CC(=O)C(O)C1C2OC21
+[887] COCCCC1CC1O
+[888] COC1CC(C)C2CC12
+valid: 88.900%, unique: 97.300%
+novelty: 51.79190751445087%
+validity: mean=88.90%, sd=0.00%, vals=[88.9]
+novelty: mean=51.79%, sd=0.00%, vals=[51.79190751445087]
+uniqueness: mean=97.30%, sd=0.00%, vals=[97.30033745781778]
+saving models/qm9/generated/generated_interpolation_molecules_seed0.png
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 F, 5, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 F, 4, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 F, 4, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 F, 4, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 F, 4, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:26] Explicit valence for atom # 1 C, 5, is greater than permitted
+interpolation_mols valid 136 / 169
+saving models/qm9/generated/generated_interpolation_molecules_seed1.png
+[00:48:30] Explicit valence for atom # 3 O, 3, is greater than permitted
+[00:48:30] Explicit valence for atom # 3 O, 3, is greater than permitted
+interpolation_mols valid 167 / 169
+saving models/qm9/generated/generated_interpolation_molecules_seed2.png
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+[00:48:34] Explicit valence for atom # 7 F, 2, is greater than permitted
+interpolation_mols valid 163 / 169
+saving models/qm9/generated/generated_interpolation_molecules_seed3.png
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 5 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+[00:48:38] Explicit valence for atom # 4 O, 3, is greater than permitted
+interpolation_mols valid 73 / 169
+saving models/qm9/generated/generated_interpolation_molecules_seed4.png
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 F, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 F, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+[00:48:42] Explicit valence for atom # 8 O, 3, is greater than permitted
+interpolation_mols valid 113 / 169
+(moflow) [qifan@localhost graph-nvp]$ 

@@ -1,0 +1,367 @@
+(rdkit_env_test) [qifan@localhost GraphAF_ICLR2020_Anonymous]$ . generate.sh 
+set seed for random numpy and torch
+Namespace(all_save_prefix='./', batch_size=32, cuda=True, dataset='zinc250k', deq_coeff=0.9, deq_type='random', divide_loss=True, dropout=0.0, edge_unroll=12, epochs=100, gcn_layer=3, gen=True, gen_num=100, gen_out_path='./mols/test_100mol.txt', init_checkpoint='./good_ckpt/checkpoint277', is_bn=True, is_bn_before=False, learn_prior=False, lr=0.001, max_atoms=48, min_atoms=10, name='l12_h128_o128_exp_sbatch', nhid=128, no_cuda=False, nout=128, num_flow_layer=12, num_workers=10, path='./data_preprocessed/zinc250k_clean_sorted', save=True, save_path='./save_pretrain/exp_zinc250k_l12_h128_o128_exp_sbatch', scale_weight_norm=False, seed=66666666, show_loss_step=100, shuffle=True, sigmoid_shift=2.0, st_type='exp', temperature=0.7, train=False, weight_decay=0.0)
+latent edge length: 1512
+using 1 GPUs
+initialize from ./good_ckpt/checkpoint277 Done!
+start generating...
+[16:12:53] Explicit valence for atom # 0 C, 5, is greater than permitted
+smiles0: CC(C)C | #atoms: 4 | #bonds: 3 | #resample: 1.00000 | time: 0.36586 |
+#atoms of generated molecule less than 10, discarded!
+smiles1: COCCC1CCC(C2=CN(C)N=C2)CCCN1C | #atoms: 19 | #bonds: 20 | #resample: 0.00000 | time: 0.70883 |
+smiles2: CNC1CCN(CCC(CBr)CCO)CC1 | #atoms: 16 | #bonds: 16 | #resample: 0.00000 | time: 0.55006 |
+[16:12:55] Explicit valence for atom # 3 C, 6, is greater than permitted
+smiles3: C#CCCN(C1CCN(CC2=CC=C(OCC)C=CC(I)=C2)CC1)[PH](=NBr)C1=C(Cl)C=CC=C1 | #atoms: 34 | #bonds: 36 | #resample: 1.00000 | time: 1.47064 |
+smiles4: CC1=CC=C(C(OCC2=CC=C(O)C=C2)C(C)Br)C=C1 | #atoms: 20 | #bonds: 21 | #resample: 0.00000 | time: 0.70587 |
+[16:12:58] Explicit valence for atom # 17 C, 5, is greater than permitted
+smiles5: COC1=CC=C(C2=CC(Cl)=CC=C2NC(=O)CC(C)OC(C)=O)C=C1 | #atoms: 25 | #bonds: 26 | #resample: 1.00000 | time: 0.98054 |
+[16:12:59] Explicit valence for atom # 4 C, 6, is greater than permitted
+[16:12:59] Explicit valence for atom # 4 C, 6, is greater than permitted
+smiles6: C=P(N)(Br)OC1=CC=C(Cl)C=CC(Br)=C1 | #atoms: 15 | #bonds: 15 | #resample: 2.00000 | time: 0.51295 |
+smiles7: IC1=CC=CC=C1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.13619 |
+#atoms of generated molecule less than 10, discarded!
+smiles8: CC=[PH]1C=CC=CC=CC=CC=C1F | #atoms: 14 | #bonds: 14 | #resample: 0.00000 | time: 0.44501 |
+[16:13:00] Explicit valence for atom # 7 C, 5, is greater than permitted
+smiles9: COC1=CC=CC(C(=NC2=CC=C(F)C=C2)C2=NC(Br)=NO2)=C1 | #atoms: 23 | #bonds: 25 | #resample: 1.00000 | time: 0.86642 |
+[16:13:01] Explicit valence for atom # 5 C, 5, is greater than permitted
+[16:13:01] Explicit valence for atom # 5 C, 5, is greater than permitted
+[16:13:01] Explicit valence for atom # 5 C, 5, is greater than permitted
+smiles10: C1=C=CC=CC=1 | #atoms: 6 | #bonds: 6 | #resample: 3.00000 | time: 0.12016 |
+#atoms of generated molecule less than 10, discarded!
+smiles11: C#CC(C1CCCC(C(C)S(=O)(=O)NC(C)CN)=C1I)C(F)(Br)Br | #atoms: 24 | #bonds: 24 | #resample: 0.00000 | time: 0.92479 |
+[16:13:02] Explicit valence for atom # 3 C, 5, is greater than permitted
+[16:13:02] Explicit valence for atom # 8 C, 5, is greater than permitted
+smiles12: O=C(NCCCC1CCCCC1)C1=CC=CC=C1 | #atoms: 18 | #bonds: 19 | #resample: 2.00000 | time: 0.65691 |
+smiles13: C#CC(OC(C)=O)C(=O)NC | #atoms: 11 | #bonds: 10 | #resample: 0.00000 | time: 0.28182 |
+smiles14: O=C1CCN(CCOCC(O)C2=CC=C(C3=CC=CN=C3)N=N2)C(=O)N1 | #atoms: 26 | #bonds: 28 | #resample: 0.00000 | time: 1.01411 |
+smiles15: CNC(C)(C)C1CCN(C2CCCC(CCl)C2)CC1 | #atoms: 19 | #bonds: 20 | #resample: 0.00000 | time: 0.65702 |
+smiles16: C1=CC=NC=C1 | #atoms: 6 | #bonds: 6 | #resample: 0.00000 | time: 0.10784 |
+#atoms of generated molecule less than 10, discarded!
+smiles17: CCN(C)CC1=CC=C(N)C=C1 | #atoms: 12 | #bonds: 12 | #resample: 0.00000 | time: 0.35007 |
+[16:13:05] Explicit valence for atom # 20 C, 5, is greater than permitted
+smiles18: C#CC1=CC=C(C(Cl)=CC=C2C(I)=CC=CC2C)C=C(Cl)CSC(C)CC(=O)N1 | #atoms: 29 | #bonds: 30 | #resample: 1.00000 | time: 1.18052 |
+smiles19: CC1=CCN(CCCNC(=O)C(C)SC2=CC=CC=C2)CC1 | #atoms: 22 | #bonds: 23 | #resample: 0.00000 | time: 0.86095 |
+[16:13:07] Explicit valence for atom # 1 C, 5, is greater than permitted
+smiles20: COC1=CC=CC=C(N)C=C1 | #atoms: 11 | #bonds: 11 | #resample: 1.00000 | time: 0.30712 |
+[16:13:08] Explicit valence for atom # 12 C, 5, is greater than permitted
+smiles21: NCC(O)CN(CP(=O)(O)C1=CC=C(Cl)C=C1)C1=CC=C(Cl)C=C1 | #atoms: 24 | #bonds: 25 | #resample: 1.00000 | time: 0.95850 |
+smiles22: CNC(=O)C(C)N1CCCCC1 | #atoms: 12 | #bonds: 12 | #resample: 0.00000 | time: 0.35485 |
+smiles23: FC1=CC(F)=CC(CSCCNCC2CCC=[SH]S2)=C1 | #atoms: 20 | #bonds: 21 | #resample: 0.00000 | time: 0.75100 |
+[16:13:11] Explicit valence for atom # 36 N, 4, is greater than permitted
+smiles24: O=S(=O)(NC1=C(F)C=NC=N1)C1=CC=C2C(=CC=CC=C(C(F)(F)F)C2=NC#CC2=CNNCC=C2)C1 | #atoms: 37 | #bonds: 40 | #resample: 1.00000 | time: 1.62062 |
+smiles25: CCCC(C=C1CCCCC1)=NNC(=O)C1=CN(C)CC=C1 | #atoms: 22 | #bonds: 23 | #resample: 0.00000 | time: 0.82664 |
+smiles26: CCCC1(C)OCCC1C(=O)CCl | #atoms: 13 | #bonds: 13 | #resample: 0.00000 | time: 0.38121 |
+smiles27: CCC | #atoms: 3 | #bonds: 2 | #resample: 0.00000 | time: 0.03971 |
+#atoms of generated molecule less than 10, discarded!
+smiles28: C | #atoms: 1 | #bonds: 0 | #resample: 0.00000 | time: 0.01374 |
+#atoms of generated molecule less than 10, discarded!
+smiles29: CC(=O)N1CCCCC1 | #atoms: 9 | #bonds: 9 | #resample: 0.00000 | time: 0.20244 |
+#atoms of generated molecule less than 10, discarded!
+smiles30: CC(C)CCNC(=O)CN(CCO)CC1=CC=CC(N)=C1 | #atoms: 21 | #bonds: 21 | #resample: 0.00000 | time: 0.74774 |
+[16:13:13] Explicit valence for atom # 9 C, 5, is greater than permitted
+smiles31: CCCC1=CC=C2SC(=CC=CC=C1)NC2C | #atoms: 17 | #bonds: 18 | #resample: 1.00000 | time: 0.59404 |
+[16:13:14] Explicit valence for atom # 5 C, 5, is greater than permitted
+smiles32: C1=CC=C2CCCCC2=CC=C1 | #atoms: 12 | #bonds: 13 | #resample: 1.00000 | time: 0.35025 |
+smiles33: CC1CCN(C)CCO1 | #atoms: 9 | #bonds: 9 | #resample: 0.00000 | time: 0.21124 |
+#atoms of generated molecule less than 10, discarded!
+[16:13:14] Explicit valence for atom # 6 N, 4, is greater than permitted
+smiles34: CNC(=O)CNC1=CC=CC=C1 | #atoms: 12 | #bonds: 12 | #resample: 1.00000 | time: 0.33772 |
+[16:13:15] Explicit valence for atom # 4 C, 5, is greater than permitted
+smiles35: C#CCN(CC1=CC(C)=NO1)CC1=CC=CC=C1OP(=O)(O)Br | #atoms: 23 | #bonds: 24 | #resample: 1.00000 | time: 0.85278 |
+[16:13:15] Explicit valence for atom # 1 C, 5, is greater than permitted
+[16:13:16] Explicit valence for atom # 11 C, 5, is greater than permitted
+smiles36: CCC1CCNCC1NC(C)C1=CC(C(F)(F)F)=CC=C1Cl | #atoms: 22 | #bonds: 23 | #resample: 2.00000 | time: 0.81710 |
+smiles37: CC1=CN=CN=C1I | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.16283 |
+#atoms of generated molecule less than 10, discarded!
+smiles38: CCNC | #atoms: 4 | #bonds: 3 | #resample: 0.00000 | time: 0.05370 |
+#atoms of generated molecule less than 10, discarded!
+smiles39: C | #atoms: 1 | #bonds: 0 | #resample: 0.00000 | time: 0.01133 |
+#atoms of generated molecule less than 10, discarded!
+smiles40: CCCC1=CC=C(Cl)C=CC=C1 | #atoms: 12 | #bonds: 12 | #resample: 0.00000 | time: 0.35300 |
+smiles41: CCCCNCC(CC(C)C)C1=CC=C(Br)C=C1Cl | #atoms: 19 | #bonds: 19 | #resample: 0.00000 | time: 0.68086 |
+[16:13:18] Explicit valence for atom # 3 N, 4, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 6, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 7, is greater than permitted
+have tried all possible bond type, use virtual bond.
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 6 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 6 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 3 N, 4, is greater than permitted
+[16:13:18] Explicit valence for atom # 3 N, 4, is greater than permitted
+[16:13:18] Explicit valence for atom # 3 N, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 4 C, 5, is greater than permitted
+[16:13:18] Explicit valence for atom # 7 N, 4, is greater than permitted
+smiles42: C=C(F)C(F)CC=NC#CNF | #atoms: 12 | #bonds: 11 | #resample: 24.00000 | time: 0.42423 |
+smiles43: C#CCCC(=O)CCC1=CSC(C)=N1 | #atoms: 14 | #bonds: 14 | #resample: 0.00000 | time: 0.42852 |
+[16:13:18] Explicit valence for atom # 9 O, 3, is greater than permitted
+smiles44: CC1CCCC(C)CC1 | #atoms: 9 | #bonds: 9 | #resample: 1.00000 | time: 0.20845 |
+#atoms of generated molecule less than 10, discarded!
+smiles45: CC1=CC=CC(C(=O)N2CCC3=C(C2)NC2=CC=CC=C23)=CC=C1 | #atoms: 24 | #bonds: 27 | #resample: 0.00000 | time: 0.88624 |
+[16:13:19] Explicit valence for atom # 0 C, 5, is greater than permitted
+smiles46: C#CCCC(=O)O | #atoms: 7 | #bonds: 6 | #resample: 1.00000 | time: 0.14462 |
+#atoms of generated molecule less than 10, discarded!
+smiles47: C1=CC=CC=CC=C1 | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.18480 |
+#atoms of generated molecule less than 10, discarded!
+smiles48: O=C(CN1CCCCC(CCI)C1)NCC(F)(F)F | #atoms: 19 | #bonds: 19 | #resample: 0.00000 | time: 0.65755 |
+[16:13:22] Explicit valence for atom # 33 C, 5, is greater than permitted
+smiles49: CC(C)C1=CC=C(C(=S)SC2=CC=C(Br)S2)C2CCNC3=C(N=CN3C3=CC=CC=C3C(=O)N2)C(C(F)(F)F)=C1 | #atoms: 40 | #bonds: 44 | #resample: 1.00000 | time: 1.66158 |
+smiles50: CC(CC1CCSC1)N(CCNC(=O)CCl)CC1=CC=CC=C1 | #atoms: 23 | #bonds: 24 | #resample: 0.00000 | time: 0.89066 |
+[16:13:23] Explicit valence for atom # 2 N, 4, is greater than permitted
+[16:13:23] Explicit valence for atom # 15 O, 3, is greater than permitted
+[16:13:24] Explicit valence for atom # 15 O, 4, is greater than permitted
+smiles51: COCCC(CC(C)C)N1N=NN=C1CCCNC(=O)C(C)CCP(C)Br | #atoms: 27 | #bonds: 27 | #resample: 3.00000 | time: 1.05380 |
+[16:13:25] Explicit valence for atom # 18 C, 5, is greater than permitted
+smiles52: CC(NC(=O)C1=CC=NC=C1)C1=CC=C(N(CCO)C(=O)SS)C=C1 | #atoms: 25 | #bonds: 26 | #resample: 1.00000 | time: 0.95580 |
+smiles53: CC(C)CNC(=O)C1=CC=C(SCC2=CC=C(Cl)C=N2)C=CC=NC=C1 | #atoms: 26 | #bonds: 27 | #resample: 0.00000 | time: 1.04280 |
+smiles54: CCC=C(C)C=C1CCC2(CCO1)CCN(CC(C)CN(C)C)CC2 | #atoms: 25 | #bonds: 26 | #resample: 0.00000 | time: 1.03724 |
+smiles55: C1=CC=C(CSCCN2CCCCCC2)C=C1 | #atoms: 17 | #bonds: 18 | #resample: 0.00000 | time: 0.60655 |
+smiles56: CCN=C(NC(=O)CC(C)CC(NC1=CN=CC=N1)C1=CC=C(OC)C=C1)C(C)Cl | #atoms: 30 | #bonds: 31 | #resample: 0.00000 | time: 1.26794 |
+[16:13:29] Explicit valence for atom # 7 O, 4, is greater than permitted
+smiles57: CCN=C1NCC(OCC)CC(C2=CC=C(C)C=C2)S1 | #atoms: 20 | #bonds: 21 | #resample: 1.00000 | time: 0.76391 |
+smiles58: C | #atoms: 1 | #bonds: 0 | #resample: 0.00000 | time: 0.01291 |
+#atoms of generated molecule less than 10, discarded!
+smiles59: C#CCN1CC2=CC=CC=C(C1)N=CC=C2 | #atoms: 16 | #bonds: 17 | #resample: 0.00000 | time: 0.52588 |
+smiles60: C1=CC=1 | #atoms: 3 | #bonds: 3 | #resample: 0.00000 | time: 0.03797 |
+#atoms of generated molecule less than 10, discarded!
+[16:13:30] Explicit valence for atom # 2 C, 5, is greater than permitted
+smiles61: COC1=CC=CC2=CC=CC=CC3=CC(=C1)N(CCC(=O)NC(C)C(=O)C1=CC=CC=C1)C2NC#C3 | #atoms: 36 | #bonds: 39 | #resample: 1.00000 | time: 1.54171 |
+[16:13:32] Explicit valence for atom # 7 C, 5, is greater than permitted
+[16:13:32] Explicit valence for atom # 6 N, 4, is greater than permitted
+smiles62: CC=CC=C(SC(C)C(=O)NCCC)C1=N[BrH]CC1 | #atoms: 19 | #bonds: 19 | #resample: 2.00000 | time: 0.70817 |
+[16:13:33] Explicit valence for atom # 3 C, 6, is greater than permitted
+smiles63: C#CCN1CCN(C2=C(C(=O)CN(CC)CC)C=C(CC)C(C)=C2)CC1 | #atoms: 26 | #bonds: 27 | #resample: 1.00000 | time: 1.04409 |
+[16:13:34] Explicit valence for atom # 4 C, 5, is greater than permitted
+smiles64: OC1C2=CC=C(C=CC=C(F)C=C2)CCC1CCCCl | #atoms: 20 | #bonds: 21 | #resample: 1.00000 | time: 0.75544 |
+[16:13:35] Explicit valence for atom # 18 C, 5, is greater than permitted
+[16:13:35] Explicit valence for atom # 23 C, 5, is greater than permitted
+smiles65: CC(=O)C1=CC=C(CCN2CCCC(CC3=NC4=CC=CC=C4S3)C2)C=C1 | #atoms: 27 | #bonds: 30 | #resample: 2.00000 | time: 1.10590 |
+smiles66: CN(C)CC(CC1=C(C(=O)NC2=CC=C(I)C=C2)N=NN1C1=CC=CC=C1)CN1CCNC1 | #atoms: 33 | #bonds: 36 | #resample: 0.00000 | time: 1.36536 |
+smiles67: CCC(C)NC(=O)NCC1CCC(CC(C)C)CCCN1C | #atoms: 22 | #bonds: 22 | #resample: 0.00000 | time: 0.84565 |
+smiles68: COP1(=O)C(C=NF)=CSC=C(C)C=C(C)C=NN1C1CCCC1 | #atoms: 24 | #bonds: 25 | #resample: 0.00000 | time: 0.94396 |
+smiles69: C[PH](=O)C[PH](=O)C=CN=CO | #atoms: 11 | #bonds: 10 | #resample: 0.00000 | time: 0.30023 |
+[16:13:39] Explicit valence for atom # 3 C, 6, is greater than permitted
+smiles70: COC1=CC=C(I)C(CC(OP(=O)(F)P(O)I)C2=C(Br)C=C(F)C=C(Br)C(Br)=C2)=C1 | #atoms: 30 | #bonds: 31 | #resample: 1.00000 | time: 1.27417 |
+smiles71: C#C | #atoms: 2 | #bonds: 1 | #resample: 0.00000 | time: 0.02389 |
+#atoms of generated molecule less than 10, discarded!
+smiles72: O=C(C1=CC=C(C2=NC3=CC=C(F)C=C3S2)C=C1)N1CCC(CCCN(CC2=CC=CS2)CC(F)(F)F)CC1 | #atoms: 39 | #bonds: 43 | #resample: 0.00000 | time: 1.68209 |
+smiles73: CC1C#CCCCC1 | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.16482 |
+#atoms of generated molecule less than 10, discarded!
+smiles74: CC(C)C1=CC=CC=CC=C1 | #atoms: 11 | #bonds: 11 | #resample: 0.00000 | time: 0.29469 |
+smiles75: C#CCC(CNC1=C(CC)C=CC=C1F)NCCNC(=O)OCC | #atoms: 24 | #bonds: 24 | #resample: 0.00000 | time: 0.89889 |
+smiles76: C=PC(CC)NC(=O)CC1CCC(CCC2=CC=CC=C2)C1 | #atoms: 22 | #bonds: 23 | #resample: 0.00000 | time: 0.85207 |
+smiles77: CNCC(C)CNC(=O)C1CC(C)OC(C)C1 | #atoms: 17 | #bonds: 17 | #resample: 0.00000 | time: 0.57089 |
+smiles78: ClC1=CC=CC=C1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.13859 |
+#atoms of generated molecule less than 10, discarded!
+smiles79: CC1=CC=CC=C1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.13778 |
+#atoms of generated molecule less than 10, discarded!
+smiles80: CC1=NC=NC=C1C(F)(F)F | #atoms: 11 | #bonds: 11 | #resample: 0.00000 | time: 0.28445 |
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+[16:13:46] Explicit valence for atom # 13 N, 4, is greater than permitted
+have tried all possible bond type, use virtual bond.
+smiles81: CC(=CC=CCN(CCO)CCBr)NO | #atoms: 15 | #bonds: 14 | #resample: 51.00000 | time: 0.65819 |
+smiles82: O=C(I)N1CCC(NC2=CC(F)=CC(I)=C2)CC1 | #atoms: 18 | #bonds: 19 | #resample: 0.00000 | time: 0.64371 |
+smiles83: CCC(C)CCC(CN)N1CCCN(C2=NC(C(C)C)=CS2)CC1 | #atoms: 24 | #bonds: 25 | #resample: 0.00000 | time: 0.92342 |
+[16:13:48] Explicit valence for atom # 0 C, 5, is greater than permitted
+smiles84: CCCCC(C)NC1CCCCC1CC(Cl)CCCl | #atoms: 19 | #bonds: 19 | #resample: 1.00000 | time: 0.65667 |
+smiles85: C=CCSP(=O)(CCC(=O)NCC(O)CC)C1=CC=CC=C1 | #atoms: 22 | #bonds: 22 | #resample: 0.00000 | time: 0.81638 |
+smiles86: CCN[PH](S)(CCC(C)NC(=O)C(C)N1CC2=CC(OCC)=CC=CC(=CC=CC=C2)C1=O)P(C)(=O)S | #atoms: 37 | #bonds: 38 | #resample: 0.00000 | time: 1.55317 |
+smiles87: O=C(CN1CCCCC(C(F)(F)F)C1)N1CCCCC1 | #atoms: 20 | #bonds: 21 | #resample: 0.00000 | time: 0.72125 |
+smiles88: C#CC(Cl)Br | #atoms: 5 | #bonds: 4 | #resample: 0.00000 | time: 0.08070 |
+#atoms of generated molecule less than 10, discarded!
+smiles89: CCNCC(C)OC1=CC=CC=CC=C1C | #atoms: 16 | #bonds: 16 | #resample: 0.00000 | time: 0.52074 |
+smiles90: COCC1=CC=C(NCCCCCCC2=CC=C(I)O2)C=C1 | #atoms: 22 | #bonds: 23 | #resample: 0.00000 | time: 0.82766 |
+[16:13:53] Explicit valence for atom # 2 C, 6, is greater than permitted
+smiles91: CNC1=CC(C(=O)NC2=CC=C(N3CCC(C)CC3)C=C2)=CC=C1C | #atoms: 25 | #bonds: 27 | #resample: 1.00000 | time: 0.95069 |
+[16:13:54] Explicit valence for atom # 1 C, 6, is greater than permitted
+smiles92: FC(F)(F)C1=CC=CS1 | #atoms: 9 | #bonds: 9 | #resample: 1.00000 | time: 0.21551 |
+#atoms of generated molecule less than 10, discarded!
+smiles93: CCC(CC)=NN | #atoms: 7 | #bonds: 6 | #resample: 0.00000 | time: 0.13441 |
+#atoms of generated molecule less than 10, discarded!
+smiles94: C#CC=C(C=C(C)C=C1C=CC=CC=C(C)C=C(CC2=CC=NC=C2)N1)SC | #atoms: 28 | #bonds: 29 | #resample: 0.00000 | time: 1.07826 |
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+[16:13:56] Explicit valence for atom # 14 N, 4, is greater than permitted
+have tried all possible bond type, use virtual bond.
+smiles95: CCNC1=CC=C(C2=CC=C(N=O)C=C2)C(I)=C1 | #atoms: 18 | #bonds: 19 | #resample: 51.00000 | time: 0.84020 |
+smiles96: CC1CCCN(C2=NC=CC=C2C(=O)NC2=CC=C(C(C)C)C=C2)C1 | #atoms: 25 | #bonds: 27 | #resample: 0.00000 | time: 0.96517 |
+smiles97: CC1=CC=CC=N1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.13464 |
+#atoms of generated molecule less than 10, discarded!
+[16:13:57] Explicit valence for atom # 3 O, 3, is greater than permitted
+smiles98: CCOC1=CC=C(C)C=C1 | #atoms: 10 | #bonds: 10 | #resample: 1.00000 | time: 0.24711 |
+smiles99: CCCNCC | #atoms: 6 | #bonds: 5 | #resample: 0.00000 | time: 0.09989 |
+#atoms of generated molecule less than 10, discarded!
+smiles100: BrCC1CCCCC1 | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.17213 |
+#atoms of generated molecule less than 10, discarded!
+[16:13:58] Explicit valence for atom # 8 C, 6, is greater than permitted
+smiles101: CCOC(CSN)CN(CP(C)(=O)O)P1(=O)C(Br)CC2(CCCC2)CSC1C | #atoms: 28 | #bonds: 29 | #resample: 1.00000 | time: 1.09465 |
+smiles102: CCN=C(CC)NC(=O)CN1CCC2CCC(Cl)(Br)CC(CC1)C2 | #atoms: 24 | #bonds: 25 | #resample: 0.00000 | time: 0.92490 |
+smiles103: CC1=CN=NN1CC(CCSC1=CC=CN=C1)C(=O)NCCP(C)(=O)O | #atoms: 26 | #bonds: 27 | #resample: 0.00000 | time: 1.01430 |
+smiles104: CCC(C)C(=CC=CC1=CC=C(Br)O1)NC1CCOC(CN)C1 | #atoms: 23 | #bonds: 24 | #resample: 0.00000 | time: 0.89031 |
+smiles105: C#CCNC(=O)CN(CC#N)CC(C(N)=O)C(F)(F)F | #atoms: 20 | #bonds: 19 | #resample: 0.00000 | time: 0.74846 |
+smiles106: CCCN(CC)CC | #atoms: 8 | #bonds: 7 | #resample: 0.00000 | time: 0.17309 |
+#atoms of generated molecule less than 10, discarded!
+smiles107: C#CSCC(CN(C(C)=O)C(C)=O)C1=CC=CC=C1 | #atoms: 19 | #bonds: 19 | #resample: 0.00000 | time: 0.69505 |
+smiles108: CC(C)CNC(=O)C=CC=CN(C)C | #atoms: 14 | #bonds: 13 | #resample: 0.00000 | time: 0.44625 |
+smiles109: C#CC(CC(C)Cl)N(CCO)CC(C)C(N)=S | #atoms: 17 | #bonds: 16 | #resample: 0.00000 | time: 0.60158 |
+smiles110: CC1=CC=C(F)C=C1 | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.17293 |
+#atoms of generated molecule less than 10, discarded!
+smiles111: C1=C(C2CCCCC2)N=NC(N2CCNCC2)=C1 | #atoms: 18 | #bonds: 20 | #resample: 0.00000 | time: 0.65467 |
+[16:14:06] Explicit valence for atom # 16 C, 5, is greater than permitted
+[16:14:07] Explicit valence for atom # 30 C, 6, is greater than permitted
+smiles112: CSC1=CC=C(P(=S)(CC(CCCC2=CC=CC=C2)C2=CC=CC(F)=C2)N(C)C)C=C1 | #atoms: 31 | #bonds: 33 | #resample: 2.00000 | time: 1.31738 |
+smiles113: CC1=C(C2=CC=CC=C2)C(N(C)C(=O)C(F)(F)F)=CC=C1 | #atoms: 21 | #bonds: 22 | #resample: 0.00000 | time: 0.79760 |
+[16:14:07] Explicit valence for atom # 0 N, 4, is greater than permitted
+[16:14:07] Explicit valence for atom # 0 N, 4, is greater than permitted
+[16:14:07] Explicit valence for atom # 0 N, 4, is greater than permitted
+[16:14:07] Explicit valence for atom # 0 N, 4, is greater than permitted
+smiles114: CCN(C)Br | #atoms: 5 | #bonds: 4 | #resample: 4.00000 | time: 0.09789 |
+#atoms of generated molecule less than 10, discarded!
+[16:14:08] Explicit valence for atom # 2 C, 5, is greater than permitted
+smiles115: CC(SCC1=CC=C(F)C=C1)C(=O)C#N | #atoms: 15 | #bonds: 15 | #resample: 1.00000 | time: 0.50438 |
+smiles116: CC1=CC=CC=C1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.13858 |
+#atoms of generated molecule less than 10, discarded!
+[16:14:08] Explicit valence for atom # 5 C, 5, is greater than permitted
+[16:14:09] Explicit valence for atom # 14 C, 5, is greater than permitted
+smiles117: OCCN1CCCC(OC(Cl)=C(I)C(I)=CC(=CC(F)(F)F)C(F)F)C1 | #atoms: 26 | #bonds: 26 | #resample: 2.00000 | time: 1.06434 |
+smiles118: CC1=CC=C2N=C(CN(C)C)SC2=CC=C1CN1CCCCC1 | #atoms: 23 | #bonds: 25 | #resample: 0.00000 | time: 0.87451 |
+[16:14:11] Explicit valence for atom # 20 C, 5, is greater than permitted
+smiles119: C#CCN1CCC(CC(=O)NCCCC)C(NC(=O)N2CC=C(C3=CC=CC=C3OC)CC2)CC1 | #atoms: 35 | #bonds: 37 | #resample: 1.00000 | time: 1.49879 |
+smiles120: CSC1=CC=CC=C1 | #atoms: 8 | #bonds: 8 | #resample: 0.00000 | time: 0.17636 |
+#atoms of generated molecule less than 10, discarded!
+[16:14:12] Explicit valence for atom # 3 C, 6, is greater than permitted
+smiles121: COC(=O)CC(CCC1C(=O)N(C)OC1C1=CC=C(Br)C=C1)C1=CC=C(I)C(F)=C1 | #atoms: 30 | #bonds: 32 | #resample: 1.00000 | time: 1.26281 |
+smiles122: C | #atoms: 1 | #bonds: 0 | #resample: 0.00000 | time: 0.01488 |
+#atoms of generated molecule less than 10, discarded!
+smiles123: CC(C)CN1CCCCCC1=O | #atoms: 12 | #bonds: 12 | #resample: 0.00000 | time: 0.35214 |
+[16:14:14] Explicit valence for atom # 12 C, 5, is greater than permitted
+smiles124: CCNC1=CC(C(=O)N(CC2=CC=C(Cl)C=C2)CC(C)C)=CN=N1 | #atoms: 24 | #bonds: 25 | #resample: 1.00000 | time: 0.97803 |
+smiles125: CCC(=CC=C(OC)C(N)P(C)C)C(F)(F)Br | #atoms: 17 | #bonds: 16 | #resample: 0.00000 | time: 0.60465 |
+[16:14:15] Explicit valence for atom # 8 C, 6, is greater than permitted
+smiles126: CC(N)C1=CC=CC=C(F)C=C1CSC(CCCO)C1=CCCO1 | #atoms: 24 | #bonds: 25 | #resample: 1.00000 | time: 0.96801 |
+smiles127: CCNCC | #atoms: 5 | #bonds: 4 | #resample: 0.00000 | time: 0.08196 |
+#atoms of generated molecule less than 10, discarded!
+smiles128: CC(C=PCl)OC1=CC=CC=C1 | #atoms: 12 | #bonds: 12 | #resample: 0.00000 | time: 0.35227 |
+smiles129: CCOC | #atoms: 4 | #bonds: 3 | #resample: 0.00000 | time: 0.05603 |
+#atoms of generated molecule less than 10, discarded!
+smiles130: CNC(=O)NC(C)(C)C(O)C(CCCCCl)CN1CCCCC1 | #atoms: 23 | #bonds: 23 | #resample: 0.00000 | time: 0.90525 |
+smiles131: C=[PH](O)N(C)C(=O)CC1CCCN2C(=S)NC=C2CN(C2CCCC2)C1C1=CC=C(I)O1 | #atoms: 32 | #bonds: 35 | #resample: 0.00000 | time: 1.29715 |
+smiles132: COCC1CCCCC(C)N(C(C)=CC2=CC3=CC=C(F)C=C3O2)C1 | #atoms: 25 | #bonds: 27 | #resample: 0.00000 | time: 0.96595 |
+smiles133: CC1=CC=CC=C1 | #atoms: 7 | #bonds: 7 | #resample: 0.00000 | time: 0.12893 |
+#atoms of generated molecule less than 10, discarded!
+smiles134: CC(C)O | #atoms: 4 | #bonds: 3 | #resample: 0.00000 | time: 0.05385 |
+#atoms of generated molecule less than 10, discarded!
+smiles135: O=C(NC1=CC=CC(Cl)=C1)C(=O)NC(CCCN1CCCCC1)CC1=CC=C(Cl)C(F)=C1 | #atoms: 32 | #bonds: 34 | #resample: 0.00000 | time: 1.31911 |
+cur cnt mol: 100
+Time of generating (100/136) molecules(#atoms>=10): 88.30706 | unique rate: 1.00000 | valid rate: 0.62000 | novelty: 1.00000
+writing 100 smiles into ./mols/test_100mol.txt done!
+(rdkit_env_test) [qifan@localhost GraphAF_ICLR2020_Anonymous]$ 

@@ -1,0 +1,25 @@
+cuda available with GPU: GeForce RTX 2080 Ti
+[I] Loading dataset ZINC...
+train, test, val sizes : 10000 1000 1000
+[I] Finished loading.
+[I] Data load time: 6.4968s
+MODEL DETAILS:
+
+PNA Total parameters: 89341
+Training Graphs:  10000
+Validation Graphs:  1000
+Test Graphs:  1000
+Epoch    12: reducing learning rate of group 0 to 5.0000e-04.
+Epoch    24: reducing learning rate of group 0 to 2.5000e-04.
+Epoch    31: reducing learning rate of group 0 to 1.2500e-04.
+Epoch    45: reducing learning rate of group 0 to 6.2500e-05.
+Epoch    52: reducing learning rate of group 0 to 3.1250e-05.
+Epoch    75: reducing learning rate of group 0 to 1.5625e-05.
+Epoch    81: reducing learning rate of group 0 to 7.8125e-06.
+
+!! LR EQUAL TO MIN LR SET.
+Train MAE: 0.3972
+Val MAE: 0.4425
+Test MAE: 0.4873
+TOTAL TIME TAKEN: 918.7492s
+AVG TIME PER EPOCH: 11.1929s

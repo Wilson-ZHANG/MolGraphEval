@@ -1,0 +1,1942 @@
+Directory regression_results already exists.
+Processing dgl graphs from scratch...
+Processing molecule 1000/1128
+Start initializing RDKit molecule instances...
+Creating RDKit molecule instance 1000/1128
+Start computing Bemis-Murcko scaffolds.
+Computing Bemis-Murcko for compound 1000/1128
+For metric rmse, the lower the better
+epoch 1/1000, batch 1/4, loss 2.6326
+epoch 1/1000, training rmse 3.2710
+epoch 1/1000, validation rmse 1.8457, best validation rmse 1.8457
+epoch 2/1000, batch 1/4, loss 1.9236
+epoch 2/1000, training rmse 2.3634
+EarlyStopping counter: 1 out of 200
+epoch 2/1000, validation rmse 2.0589, best validation rmse 1.8457
+epoch 3/1000, batch 1/4, loss 0.7488
+epoch 3/1000, training rmse 1.1875
+EarlyStopping counter: 2 out of 200
+epoch 3/1000, validation rmse 8.5833, best validation rmse 1.8457
+epoch 4/1000, batch 1/4, loss 0.4823
+epoch 4/1000, training rmse 1.2856
+EarlyStopping counter: 3 out of 200
+epoch 4/1000, validation rmse 2.8043, best validation rmse 1.8457
+epoch 5/1000, batch 1/4, loss 0.4623
+epoch 5/1000, training rmse 0.9686
+EarlyStopping counter: 4 out of 200
+epoch 5/1000, validation rmse 1.8775, best validation rmse 1.8457
+epoch 6/1000, batch 1/4, loss 0.2929
+epoch 6/1000, training rmse 0.8856
+epoch 6/1000, validation rmse 1.4677, best validation rmse 1.4677
+epoch 7/1000, batch 1/4, loss 0.4143
+epoch 7/1000, training rmse 0.8577
+EarlyStopping counter: 1 out of 200
+epoch 7/1000, validation rmse 1.5051, best validation rmse 1.4677
+epoch 8/1000, batch 1/4, loss 0.2332
+epoch 8/1000, training rmse 0.7344
+EarlyStopping counter: 2 out of 200
+epoch 8/1000, validation rmse 1.7697, best validation rmse 1.4677
+epoch 9/1000, batch 1/4, loss 0.1604
+epoch 9/1000, training rmse 0.7406
+epoch 9/1000, validation rmse 1.0997, best validation rmse 1.0997
+epoch 10/1000, batch 1/4, loss 0.2274
+epoch 10/1000, training rmse 0.7048
+EarlyStopping counter: 1 out of 200
+epoch 10/1000, validation rmse 2.2669, best validation rmse 1.0997
+epoch 11/1000, batch 1/4, loss 0.2083
+epoch 11/1000, training rmse 0.7117
+EarlyStopping counter: 2 out of 200
+epoch 11/1000, validation rmse 1.3238, best validation rmse 1.0997
+epoch 12/1000, batch 1/4, loss 0.2146
+epoch 12/1000, training rmse 0.6988
+EarlyStopping counter: 3 out of 200
+epoch 12/1000, validation rmse 1.6075, best validation rmse 1.0997
+epoch 13/1000, batch 1/4, loss 0.1630
+epoch 13/1000, training rmse 0.6625
+EarlyStopping counter: 4 out of 200
+epoch 13/1000, validation rmse 1.1322, best validation rmse 1.0997
+epoch 14/1000, batch 1/4, loss 0.2075
+epoch 14/1000, training rmse 0.6520
+EarlyStopping counter: 5 out of 200
+epoch 14/1000, validation rmse 1.3731, best validation rmse 1.0997
+epoch 15/1000, batch 1/4, loss 0.1861
+epoch 15/1000, training rmse 0.6414
+EarlyStopping counter: 6 out of 200
+epoch 15/1000, validation rmse 1.7312, best validation rmse 1.0997
+epoch 16/1000, batch 1/4, loss 0.1766
+epoch 16/1000, training rmse 0.6119
+EarlyStopping counter: 7 out of 200
+epoch 16/1000, validation rmse 1.8750, best validation rmse 1.0997
+epoch 17/1000, batch 1/4, loss 0.1917
+epoch 17/1000, training rmse 0.6456
+EarlyStopping counter: 8 out of 200
+epoch 17/1000, validation rmse 1.6857, best validation rmse 1.0997
+epoch 18/1000, batch 1/4, loss 0.1640
+epoch 18/1000, training rmse 0.6306
+EarlyStopping counter: 9 out of 200
+epoch 18/1000, validation rmse 1.1652, best validation rmse 1.0997
+epoch 19/1000, batch 1/4, loss 0.1681
+epoch 19/1000, training rmse 0.6420
+EarlyStopping counter: 10 out of 200
+epoch 19/1000, validation rmse 1.1794, best validation rmse 1.0997
+epoch 20/1000, batch 1/4, loss 0.1449
+epoch 20/1000, training rmse 0.6440
+epoch 20/1000, validation rmse 1.0621, best validation rmse 1.0621
+epoch 21/1000, batch 1/4, loss 0.1794
+epoch 21/1000, training rmse 0.6175
+EarlyStopping counter: 1 out of 200
+epoch 21/1000, validation rmse 1.2113, best validation rmse 1.0621
+epoch 22/1000, batch 1/4, loss 0.1566
+epoch 22/1000, training rmse 0.6503
+EarlyStopping counter: 2 out of 200
+epoch 22/1000, validation rmse 1.2588, best validation rmse 1.0621
+epoch 23/1000, batch 1/4, loss 0.1949
+epoch 23/1000, training rmse 0.6283
+epoch 23/1000, validation rmse 1.0522, best validation rmse 1.0522
+epoch 24/1000, batch 1/4, loss 0.2053
+epoch 24/1000, training rmse 0.6139
+EarlyStopping counter: 1 out of 200
+epoch 24/1000, validation rmse 1.2001, best validation rmse 1.0522
+epoch 25/1000, batch 1/4, loss 0.1613
+epoch 25/1000, training rmse 0.6405
+epoch 25/1000, validation rmse 1.0493, best validation rmse 1.0493
+epoch 26/1000, batch 1/4, loss 0.1770
+epoch 26/1000, training rmse 0.5866
+EarlyStopping counter: 1 out of 200
+epoch 26/1000, validation rmse 1.0812, best validation rmse 1.0493
+epoch 27/1000, batch 1/4, loss 0.1531
+epoch 27/1000, training rmse 0.5867
+EarlyStopping counter: 2 out of 200
+epoch 27/1000, validation rmse 1.2528, best validation rmse 1.0493
+epoch 28/1000, batch 1/4, loss 0.1232
+epoch 28/1000, training rmse 0.6114
+EarlyStopping counter: 3 out of 200
+epoch 28/1000, validation rmse 1.0617, best validation rmse 1.0493
+epoch 29/1000, batch 1/4, loss 0.1457
+epoch 29/1000, training rmse 0.6027
+EarlyStopping counter: 4 out of 200
+epoch 29/1000, validation rmse 1.1185, best validation rmse 1.0493
+epoch 30/1000, batch 1/4, loss 0.1528
+epoch 30/1000, training rmse 0.6059
+epoch 30/1000, validation rmse 1.0109, best validation rmse 1.0109
+epoch 31/1000, batch 1/4, loss 0.1170
+epoch 31/1000, training rmse 0.5660
+EarlyStopping counter: 1 out of 200
+epoch 31/1000, validation rmse 1.2379, best validation rmse 1.0109
+epoch 32/1000, batch 1/4, loss 0.1593
+epoch 32/1000, training rmse 0.5905
+EarlyStopping counter: 2 out of 200
+epoch 32/1000, validation rmse 1.0714, best validation rmse 1.0109
+epoch 33/1000, batch 1/4, loss 0.1455
+epoch 33/1000, training rmse 0.5995
+EarlyStopping counter: 3 out of 200
+epoch 33/1000, validation rmse 1.5069, best validation rmse 1.0109
+epoch 34/1000, batch 1/4, loss 0.1853
+epoch 34/1000, training rmse 0.6583
+EarlyStopping counter: 4 out of 200
+epoch 34/1000, validation rmse 1.1548, best validation rmse 1.0109
+epoch 35/1000, batch 1/4, loss 0.1665
+epoch 35/1000, training rmse 0.6430
+epoch 35/1000, validation rmse 0.9951, best validation rmse 0.9951
+epoch 36/1000, batch 1/4, loss 0.1242
+epoch 36/1000, training rmse 0.5760
+EarlyStopping counter: 1 out of 200
+epoch 36/1000, validation rmse 1.3051, best validation rmse 0.9951
+epoch 37/1000, batch 1/4, loss 0.1181
+epoch 37/1000, training rmse 0.5695
+EarlyStopping counter: 2 out of 200
+epoch 37/1000, validation rmse 1.0056, best validation rmse 0.9951
+epoch 38/1000, batch 1/4, loss 0.1327
+epoch 38/1000, training rmse 0.5637
+EarlyStopping counter: 3 out of 200
+epoch 38/1000, validation rmse 1.1650, best validation rmse 0.9951
+epoch 39/1000, batch 1/4, loss 0.1375
+epoch 39/1000, training rmse 0.5383
+EarlyStopping counter: 4 out of 200
+epoch 39/1000, validation rmse 1.0782, best validation rmse 0.9951
+epoch 40/1000, batch 1/4, loss 0.1353
+epoch 40/1000, training rmse 0.5536
+EarlyStopping counter: 5 out of 200
+epoch 40/1000, validation rmse 1.2388, best validation rmse 0.9951
+epoch 41/1000, batch 1/4, loss 0.1143
+epoch 41/1000, training rmse 0.5294
+epoch 41/1000, validation rmse 0.9949, best validation rmse 0.9949
+epoch 42/1000, batch 1/4, loss 0.1087
+epoch 42/1000, training rmse 0.5181
+EarlyStopping counter: 1 out of 200
+epoch 42/1000, validation rmse 1.0753, best validation rmse 0.9949
+epoch 43/1000, batch 1/4, loss 0.0860
+epoch 43/1000, training rmse 0.4885
+EarlyStopping counter: 2 out of 200
+epoch 43/1000, validation rmse 1.0750, best validation rmse 0.9949
+epoch 44/1000, batch 1/4, loss 0.0971
+epoch 44/1000, training rmse 0.4919
+EarlyStopping counter: 3 out of 200
+epoch 44/1000, validation rmse 1.2799, best validation rmse 0.9949
+epoch 45/1000, batch 1/4, loss 0.0985
+epoch 45/1000, training rmse 0.5735
+EarlyStopping counter: 4 out of 200
+epoch 45/1000, validation rmse 1.0634, best validation rmse 0.9949
+epoch 46/1000, batch 1/4, loss 0.1256
+epoch 46/1000, training rmse 0.5543
+EarlyStopping counter: 5 out of 200
+epoch 46/1000, validation rmse 1.0749, best validation rmse 0.9949
+epoch 47/1000, batch 1/4, loss 0.1514
+epoch 47/1000, training rmse 0.5189
+EarlyStopping counter: 6 out of 200
+epoch 47/1000, validation rmse 1.4662, best validation rmse 0.9949
+epoch 48/1000, batch 1/4, loss 0.1314
+epoch 48/1000, training rmse 0.5902
+EarlyStopping counter: 7 out of 200
+epoch 48/1000, validation rmse 1.0950, best validation rmse 0.9949
+epoch 49/1000, batch 1/4, loss 0.1286
+epoch 49/1000, training rmse 0.5522
+EarlyStopping counter: 8 out of 200
+epoch 49/1000, validation rmse 1.2855, best validation rmse 0.9949
+epoch 50/1000, batch 1/4, loss 0.1498
+epoch 50/1000, training rmse 0.5114
+EarlyStopping counter: 9 out of 200
+epoch 50/1000, validation rmse 1.0361, best validation rmse 0.9949
+epoch 51/1000, batch 1/4, loss 0.0954
+epoch 51/1000, training rmse 0.5102
+epoch 51/1000, validation rmse 0.9497, best validation rmse 0.9497
+epoch 52/1000, batch 1/4, loss 0.1154
+epoch 52/1000, training rmse 0.5166
+EarlyStopping counter: 1 out of 200
+epoch 52/1000, validation rmse 1.2410, best validation rmse 0.9497
+epoch 53/1000, batch 1/4, loss 0.1043
+epoch 53/1000, training rmse 0.5218
+EarlyStopping counter: 2 out of 200
+epoch 53/1000, validation rmse 1.0384, best validation rmse 0.9497
+epoch 54/1000, batch 1/4, loss 0.1255
+epoch 54/1000, training rmse 0.5360
+EarlyStopping counter: 3 out of 200
+epoch 54/1000, validation rmse 1.0742, best validation rmse 0.9497
+epoch 55/1000, batch 1/4, loss 0.1345
+epoch 55/1000, training rmse 0.5364
+EarlyStopping counter: 4 out of 200
+epoch 55/1000, validation rmse 1.1688, best validation rmse 0.9497
+epoch 56/1000, batch 1/4, loss 0.1210
+epoch 56/1000, training rmse 0.5138
+EarlyStopping counter: 5 out of 200
+epoch 56/1000, validation rmse 1.0098, best validation rmse 0.9497
+epoch 57/1000, batch 1/4, loss 0.1511
+epoch 57/1000, training rmse 0.5230
+EarlyStopping counter: 6 out of 200
+epoch 57/1000, validation rmse 1.0239, best validation rmse 0.9497
+epoch 58/1000, batch 1/4, loss 0.1094
+epoch 58/1000, training rmse 0.5358
+EarlyStopping counter: 7 out of 200
+epoch 58/1000, validation rmse 1.1960, best validation rmse 0.9497
+epoch 59/1000, batch 1/4, loss 0.1388
+epoch 59/1000, training rmse 0.5395
+EarlyStopping counter: 8 out of 200
+epoch 59/1000, validation rmse 1.0640, best validation rmse 0.9497
+epoch 60/1000, batch 1/4, loss 0.0989
+epoch 60/1000, training rmse 0.5430
+EarlyStopping counter: 9 out of 200
+epoch 60/1000, validation rmse 1.2478, best validation rmse 0.9497
+epoch 61/1000, batch 1/4, loss 0.1068
+epoch 61/1000, training rmse 0.4960
+EarlyStopping counter: 10 out of 200
+epoch 61/1000, validation rmse 1.0688, best validation rmse 0.9497
+epoch 62/1000, batch 1/4, loss 0.1098
+epoch 62/1000, training rmse 0.5157
+EarlyStopping counter: 11 out of 200
+epoch 62/1000, validation rmse 1.0118, best validation rmse 0.9497
+epoch 63/1000, batch 1/4, loss 0.1172
+epoch 63/1000, training rmse 0.4845
+EarlyStopping counter: 12 out of 200
+epoch 63/1000, validation rmse 1.0240, best validation rmse 0.9497
+epoch 64/1000, batch 1/4, loss 0.0862
+epoch 64/1000, training rmse 0.4460
+EarlyStopping counter: 13 out of 200
+epoch 64/1000, validation rmse 1.0433, best validation rmse 0.9497
+epoch 65/1000, batch 1/4, loss 0.1058
+epoch 65/1000, training rmse 0.4793
+epoch 65/1000, validation rmse 0.9303, best validation rmse 0.9303
+epoch 66/1000, batch 1/4, loss 0.0904
+epoch 66/1000, training rmse 0.4775
+EarlyStopping counter: 1 out of 200
+epoch 66/1000, validation rmse 1.1997, best validation rmse 0.9303
+epoch 67/1000, batch 1/4, loss 0.1077
+epoch 67/1000, training rmse 0.5674
+EarlyStopping counter: 2 out of 200
+epoch 67/1000, validation rmse 1.1703, best validation rmse 0.9303
+epoch 68/1000, batch 1/4, loss 0.0943
+epoch 68/1000, training rmse 0.4985
+EarlyStopping counter: 3 out of 200
+epoch 68/1000, validation rmse 1.1299, best validation rmse 0.9303
+epoch 69/1000, batch 1/4, loss 0.0983
+epoch 69/1000, training rmse 0.5261
+EarlyStopping counter: 4 out of 200
+epoch 69/1000, validation rmse 1.4137, best validation rmse 0.9303
+epoch 70/1000, batch 1/4, loss 0.0915
+epoch 70/1000, training rmse 0.4918
+EarlyStopping counter: 5 out of 200
+epoch 70/1000, validation rmse 1.0141, best validation rmse 0.9303
+epoch 71/1000, batch 1/4, loss 0.1236
+epoch 71/1000, training rmse 0.5218
+EarlyStopping counter: 6 out of 200
+epoch 71/1000, validation rmse 1.2351, best validation rmse 0.9303
+epoch 72/1000, batch 1/4, loss 0.1108
+epoch 72/1000, training rmse 0.5448
+EarlyStopping counter: 7 out of 200
+epoch 72/1000, validation rmse 1.2966, best validation rmse 0.9303
+epoch 73/1000, batch 1/4, loss 0.1639
+epoch 73/1000, training rmse 0.5549
+EarlyStopping counter: 8 out of 200
+epoch 73/1000, validation rmse 1.5715, best validation rmse 0.9303
+epoch 74/1000, batch 1/4, loss 0.1060
+epoch 74/1000, training rmse 0.5100
+EarlyStopping counter: 9 out of 200
+epoch 74/1000, validation rmse 1.1966, best validation rmse 0.9303
+epoch 75/1000, batch 1/4, loss 0.1597
+epoch 75/1000, training rmse 0.5585
+EarlyStopping counter: 10 out of 200
+epoch 75/1000, validation rmse 1.1391, best validation rmse 0.9303
+epoch 76/1000, batch 1/4, loss 0.1671
+epoch 76/1000, training rmse 0.5843
+EarlyStopping counter: 11 out of 200
+epoch 76/1000, validation rmse 1.3530, best validation rmse 0.9303
+epoch 77/1000, batch 1/4, loss 0.1067
+epoch 77/1000, training rmse 0.5134
+EarlyStopping counter: 12 out of 200
+epoch 77/1000, validation rmse 1.0517, best validation rmse 0.9303
+epoch 78/1000, batch 1/4, loss 0.0837
+epoch 78/1000, training rmse 0.5056
+EarlyStopping counter: 13 out of 200
+epoch 78/1000, validation rmse 0.9865, best validation rmse 0.9303
+epoch 79/1000, batch 1/4, loss 0.1290
+epoch 79/1000, training rmse 0.4843
+EarlyStopping counter: 14 out of 200
+epoch 79/1000, validation rmse 1.1710, best validation rmse 0.9303
+epoch 80/1000, batch 1/4, loss 0.0965
+epoch 80/1000, training rmse 0.4503
+EarlyStopping counter: 15 out of 200
+epoch 80/1000, validation rmse 1.0275, best validation rmse 0.9303
+epoch 81/1000, batch 1/4, loss 0.0674
+epoch 81/1000, training rmse 0.4635
+EarlyStopping counter: 16 out of 200
+epoch 81/1000, validation rmse 1.1340, best validation rmse 0.9303
+epoch 82/1000, batch 1/4, loss 0.0796
+epoch 82/1000, training rmse 0.4846
+EarlyStopping counter: 17 out of 200
+epoch 82/1000, validation rmse 1.0644, best validation rmse 0.9303
+epoch 83/1000, batch 1/4, loss 0.1035
+epoch 83/1000, training rmse 0.4997
+EarlyStopping counter: 18 out of 200
+epoch 83/1000, validation rmse 1.4921, best validation rmse 0.9303
+epoch 84/1000, batch 1/4, loss 0.1439
+epoch 84/1000, training rmse 0.5311
+EarlyStopping counter: 19 out of 200
+epoch 84/1000, validation rmse 1.0986, best validation rmse 0.9303
+epoch 85/1000, batch 1/4, loss 0.1365
+epoch 85/1000, training rmse 0.4886
+EarlyStopping counter: 20 out of 200
+epoch 85/1000, validation rmse 1.2357, best validation rmse 0.9303
+epoch 86/1000, batch 1/4, loss 0.0794
+epoch 86/1000, training rmse 0.4571
+EarlyStopping counter: 21 out of 200
+epoch 86/1000, validation rmse 0.9677, best validation rmse 0.9303
+epoch 87/1000, batch 1/4, loss 0.0682
+epoch 87/1000, training rmse 0.4730
+EarlyStopping counter: 22 out of 200
+epoch 87/1000, validation rmse 1.0988, best validation rmse 0.9303
+epoch 88/1000, batch 1/4, loss 0.1245
+epoch 88/1000, training rmse 0.5137
+EarlyStopping counter: 23 out of 200
+epoch 88/1000, validation rmse 0.9773, best validation rmse 0.9303
+epoch 89/1000, batch 1/4, loss 0.0674
+epoch 89/1000, training rmse 0.4400
+EarlyStopping counter: 24 out of 200
+epoch 89/1000, validation rmse 1.1819, best validation rmse 0.9303
+epoch 90/1000, batch 1/4, loss 0.0970
+epoch 90/1000, training rmse 0.4511
+EarlyStopping counter: 25 out of 200
+epoch 90/1000, validation rmse 1.0744, best validation rmse 0.9303
+epoch 91/1000, batch 1/4, loss 0.1296
+epoch 91/1000, training rmse 0.5177
+EarlyStopping counter: 26 out of 200
+epoch 91/1000, validation rmse 1.1625, best validation rmse 0.9303
+epoch 92/1000, batch 1/4, loss 0.1265
+epoch 92/1000, training rmse 0.5221
+EarlyStopping counter: 27 out of 200
+epoch 92/1000, validation rmse 1.1376, best validation rmse 0.9303
+epoch 93/1000, batch 1/4, loss 0.0966
+epoch 93/1000, training rmse 0.5115
+EarlyStopping counter: 28 out of 200
+epoch 93/1000, validation rmse 1.1266, best validation rmse 0.9303
+epoch 94/1000, batch 1/4, loss 0.0786
+epoch 94/1000, training rmse 0.5025
+EarlyStopping counter: 29 out of 200
+epoch 94/1000, validation rmse 1.1012, best validation rmse 0.9303
+epoch 95/1000, batch 1/4, loss 0.1160
+epoch 95/1000, training rmse 0.4957
+EarlyStopping counter: 30 out of 200
+epoch 95/1000, validation rmse 1.1028, best validation rmse 0.9303
+epoch 96/1000, batch 1/4, loss 0.0783
+epoch 96/1000, training rmse 0.4621
+EarlyStopping counter: 31 out of 200
+epoch 96/1000, validation rmse 1.1587, best validation rmse 0.9303
+epoch 97/1000, batch 1/4, loss 0.1117
+epoch 97/1000, training rmse 0.4896
+EarlyStopping counter: 32 out of 200
+epoch 97/1000, validation rmse 1.0728, best validation rmse 0.9303
+epoch 98/1000, batch 1/4, loss 0.0868
+epoch 98/1000, training rmse 0.4266
+EarlyStopping counter: 33 out of 200
+epoch 98/1000, validation rmse 0.9643, best validation rmse 0.9303
+epoch 99/1000, batch 1/4, loss 0.0791
+epoch 99/1000, training rmse 0.4365
+EarlyStopping counter: 34 out of 200
+epoch 99/1000, validation rmse 1.3358, best validation rmse 0.9303
+epoch 100/1000, batch 1/4, loss 0.1024
+epoch 100/1000, training rmse 0.5019
+EarlyStopping counter: 35 out of 200
+epoch 100/1000, validation rmse 0.9876, best validation rmse 0.9303
+epoch 101/1000, batch 1/4, loss 0.0833
+epoch 101/1000, training rmse 0.4560
+EarlyStopping counter: 36 out of 200
+epoch 101/1000, validation rmse 0.9924, best validation rmse 0.9303
+epoch 102/1000, batch 1/4, loss 0.0761
+epoch 102/1000, training rmse 0.4718
+EarlyStopping counter: 37 out of 200
+epoch 102/1000, validation rmse 0.9872, best validation rmse 0.9303
+epoch 103/1000, batch 1/4, loss 0.0778
+epoch 103/1000, training rmse 0.4537
+EarlyStopping counter: 38 out of 200
+epoch 103/1000, validation rmse 1.2262, best validation rmse 0.9303
+epoch 104/1000, batch 1/4, loss 0.0902
+epoch 104/1000, training rmse 0.4543
+EarlyStopping counter: 39 out of 200
+epoch 104/1000, validation rmse 0.9792, best validation rmse 0.9303
+epoch 105/1000, batch 1/4, loss 0.0824
+epoch 105/1000, training rmse 0.4622
+EarlyStopping counter: 40 out of 200
+epoch 105/1000, validation rmse 0.9779, best validation rmse 0.9303
+epoch 106/1000, batch 1/4, loss 0.1152
+epoch 106/1000, training rmse 0.4885
+EarlyStopping counter: 41 out of 200
+epoch 106/1000, validation rmse 1.2369, best validation rmse 0.9303
+epoch 107/1000, batch 1/4, loss 0.0933
+epoch 107/1000, training rmse 0.4653
+EarlyStopping counter: 42 out of 200
+epoch 107/1000, validation rmse 1.0317, best validation rmse 0.9303
+epoch 108/1000, batch 1/4, loss 0.0825
+epoch 108/1000, training rmse 0.5388
+EarlyStopping counter: 43 out of 200
+epoch 108/1000, validation rmse 1.2090, best validation rmse 0.9303
+epoch 109/1000, batch 1/4, loss 0.1494
+epoch 109/1000, training rmse 0.4920
+epoch 109/1000, validation rmse 0.8958, best validation rmse 0.8958
+epoch 110/1000, batch 1/4, loss 0.0860
+epoch 110/1000, training rmse 0.4998
+EarlyStopping counter: 1 out of 200
+epoch 110/1000, validation rmse 0.9634, best validation rmse 0.8958
+epoch 111/1000, batch 1/4, loss 0.0678
+epoch 111/1000, training rmse 0.4897
+EarlyStopping counter: 2 out of 200
+epoch 111/1000, validation rmse 1.0776, best validation rmse 0.8958
+epoch 112/1000, batch 1/4, loss 0.0708
+epoch 112/1000, training rmse 0.4616
+EarlyStopping counter: 3 out of 200
+epoch 112/1000, validation rmse 0.9979, best validation rmse 0.8958
+epoch 113/1000, batch 1/4, loss 0.1032
+epoch 113/1000, training rmse 0.4636
+EarlyStopping counter: 4 out of 200
+epoch 113/1000, validation rmse 0.9295, best validation rmse 0.8958
+epoch 114/1000, batch 1/4, loss 0.0743
+epoch 114/1000, training rmse 0.4527
+EarlyStopping counter: 5 out of 200
+epoch 114/1000, validation rmse 0.9793, best validation rmse 0.8958
+epoch 115/1000, batch 1/4, loss 0.0673
+epoch 115/1000, training rmse 0.4418
+EarlyStopping counter: 6 out of 200
+epoch 115/1000, validation rmse 1.0794, best validation rmse 0.8958
+epoch 116/1000, batch 1/4, loss 0.0871
+epoch 116/1000, training rmse 0.4288
+EarlyStopping counter: 7 out of 200
+epoch 116/1000, validation rmse 1.0227, best validation rmse 0.8958
+epoch 117/1000, batch 1/4, loss 0.0814
+epoch 117/1000, training rmse 0.4378
+EarlyStopping counter: 8 out of 200
+epoch 117/1000, validation rmse 1.4809, best validation rmse 0.8958
+epoch 118/1000, batch 1/4, loss 0.0876
+epoch 118/1000, training rmse 0.4684
+EarlyStopping counter: 9 out of 200
+epoch 118/1000, validation rmse 1.0115, best validation rmse 0.8958
+epoch 119/1000, batch 1/4, loss 0.0746
+epoch 119/1000, training rmse 0.4523
+EarlyStopping counter: 10 out of 200
+epoch 119/1000, validation rmse 1.0183, best validation rmse 0.8958
+epoch 120/1000, batch 1/4, loss 0.1037
+epoch 120/1000, training rmse 0.4879
+EarlyStopping counter: 11 out of 200
+epoch 120/1000, validation rmse 0.9786, best validation rmse 0.8958
+epoch 121/1000, batch 1/4, loss 0.0845
+epoch 121/1000, training rmse 0.4388
+EarlyStopping counter: 12 out of 200
+epoch 121/1000, validation rmse 0.9493, best validation rmse 0.8958
+epoch 122/1000, batch 1/4, loss 0.0845
+epoch 122/1000, training rmse 0.4402
+EarlyStopping counter: 13 out of 200
+epoch 122/1000, validation rmse 1.3680, best validation rmse 0.8958
+epoch 123/1000, batch 1/4, loss 0.1274
+epoch 123/1000, training rmse 0.5162
+EarlyStopping counter: 14 out of 200
+epoch 123/1000, validation rmse 1.0039, best validation rmse 0.8958
+epoch 124/1000, batch 1/4, loss 0.0876
+epoch 124/1000, training rmse 0.4919
+EarlyStopping counter: 15 out of 200
+epoch 124/1000, validation rmse 1.1803, best validation rmse 0.8958
+epoch 125/1000, batch 1/4, loss 0.1031
+epoch 125/1000, training rmse 0.4898
+EarlyStopping counter: 16 out of 200
+epoch 125/1000, validation rmse 1.0859, best validation rmse 0.8958
+epoch 126/1000, batch 1/4, loss 0.0931
+epoch 126/1000, training rmse 0.4461
+EarlyStopping counter: 17 out of 200
+epoch 126/1000, validation rmse 1.0235, best validation rmse 0.8958
+epoch 127/1000, batch 1/4, loss 0.1033
+epoch 127/1000, training rmse 0.4460
+EarlyStopping counter: 18 out of 200
+epoch 127/1000, validation rmse 0.9740, best validation rmse 0.8958
+epoch 128/1000, batch 1/4, loss 0.0933
+epoch 128/1000, training rmse 0.4495
+EarlyStopping counter: 19 out of 200
+epoch 128/1000, validation rmse 1.0709, best validation rmse 0.8958
+epoch 129/1000, batch 1/4, loss 0.1069
+epoch 129/1000, training rmse 0.4470
+EarlyStopping counter: 20 out of 200
+epoch 129/1000, validation rmse 1.0055, best validation rmse 0.8958
+epoch 130/1000, batch 1/4, loss 0.0560
+epoch 130/1000, training rmse 0.5055
+EarlyStopping counter: 21 out of 200
+epoch 130/1000, validation rmse 1.1490, best validation rmse 0.8958
+epoch 131/1000, batch 1/4, loss 0.1319
+epoch 131/1000, training rmse 0.4661
+EarlyStopping counter: 22 out of 200
+epoch 131/1000, validation rmse 1.0309, best validation rmse 0.8958
+epoch 132/1000, batch 1/4, loss 0.0592
+epoch 132/1000, training rmse 0.4363
+EarlyStopping counter: 23 out of 200
+epoch 132/1000, validation rmse 0.9823, best validation rmse 0.8958
+epoch 133/1000, batch 1/4, loss 0.1139
+epoch 133/1000, training rmse 0.4685
+EarlyStopping counter: 24 out of 200
+epoch 133/1000, validation rmse 1.0060, best validation rmse 0.8958
+epoch 134/1000, batch 1/4, loss 0.0909
+epoch 134/1000, training rmse 0.4019
+EarlyStopping counter: 25 out of 200
+epoch 134/1000, validation rmse 0.9482, best validation rmse 0.8958
+epoch 135/1000, batch 1/4, loss 0.1050
+epoch 135/1000, training rmse 0.4684
+EarlyStopping counter: 26 out of 200
+epoch 135/1000, validation rmse 1.0313, best validation rmse 0.8958
+epoch 136/1000, batch 1/4, loss 0.0865
+epoch 136/1000, training rmse 0.3826
+EarlyStopping counter: 27 out of 200
+epoch 136/1000, validation rmse 0.9053, best validation rmse 0.8958
+epoch 137/1000, batch 1/4, loss 0.0672
+epoch 137/1000, training rmse 0.4117
+EarlyStopping counter: 28 out of 200
+epoch 137/1000, validation rmse 0.9457, best validation rmse 0.8958
+epoch 138/1000, batch 1/4, loss 0.0991
+epoch 138/1000, training rmse 0.4293
+EarlyStopping counter: 29 out of 200
+epoch 138/1000, validation rmse 1.0752, best validation rmse 0.8958
+epoch 139/1000, batch 1/4, loss 0.0708
+epoch 139/1000, training rmse 0.4121
+EarlyStopping counter: 30 out of 200
+epoch 139/1000, validation rmse 1.0133, best validation rmse 0.8958
+epoch 140/1000, batch 1/4, loss 0.0745
+epoch 140/1000, training rmse 0.4368
+EarlyStopping counter: 31 out of 200
+epoch 140/1000, validation rmse 0.9086, best validation rmse 0.8958
+epoch 141/1000, batch 1/4, loss 0.0763
+epoch 141/1000, training rmse 0.4704
+EarlyStopping counter: 32 out of 200
+epoch 141/1000, validation rmse 0.9661, best validation rmse 0.8958
+epoch 142/1000, batch 1/4, loss 0.0942
+epoch 142/1000, training rmse 0.4373
+EarlyStopping counter: 33 out of 200
+epoch 142/1000, validation rmse 1.1779, best validation rmse 0.8958
+epoch 143/1000, batch 1/4, loss 0.1158
+epoch 143/1000, training rmse 0.4596
+EarlyStopping counter: 34 out of 200
+epoch 143/1000, validation rmse 0.9405, best validation rmse 0.8958
+epoch 144/1000, batch 1/4, loss 0.0837
+epoch 144/1000, training rmse 0.4604
+EarlyStopping counter: 35 out of 200
+epoch 144/1000, validation rmse 0.9200, best validation rmse 0.8958
+epoch 145/1000, batch 1/4, loss 0.0733
+epoch 145/1000, training rmse 0.4538
+EarlyStopping counter: 36 out of 200
+epoch 145/1000, validation rmse 1.0295, best validation rmse 0.8958
+epoch 146/1000, batch 1/4, loss 0.0820
+epoch 146/1000, training rmse 0.4658
+EarlyStopping counter: 37 out of 200
+epoch 146/1000, validation rmse 1.1107, best validation rmse 0.8958
+epoch 147/1000, batch 1/4, loss 0.0941
+epoch 147/1000, training rmse 0.4659
+EarlyStopping counter: 38 out of 200
+epoch 147/1000, validation rmse 1.0444, best validation rmse 0.8958
+epoch 148/1000, batch 1/4, loss 0.0964
+epoch 148/1000, training rmse 0.4867
+epoch 148/1000, validation rmse 0.8795, best validation rmse 0.8795
+epoch 149/1000, batch 1/4, loss 0.0982
+epoch 149/1000, training rmse 0.4825
+EarlyStopping counter: 1 out of 200
+epoch 149/1000, validation rmse 1.0005, best validation rmse 0.8795
+epoch 150/1000, batch 1/4, loss 0.0775
+epoch 150/1000, training rmse 0.4573
+EarlyStopping counter: 2 out of 200
+epoch 150/1000, validation rmse 1.0544, best validation rmse 0.8795
+epoch 151/1000, batch 1/4, loss 0.1117
+epoch 151/1000, training rmse 0.4705
+EarlyStopping counter: 3 out of 200
+epoch 151/1000, validation rmse 0.9228, best validation rmse 0.8795
+epoch 152/1000, batch 1/4, loss 0.0934
+epoch 152/1000, training rmse 0.4301
+EarlyStopping counter: 4 out of 200
+epoch 152/1000, validation rmse 0.9710, best validation rmse 0.8795
+epoch 153/1000, batch 1/4, loss 0.0710
+epoch 153/1000, training rmse 0.4045
+EarlyStopping counter: 5 out of 200
+epoch 153/1000, validation rmse 1.0803, best validation rmse 0.8795
+epoch 154/1000, batch 1/4, loss 0.0670
+epoch 154/1000, training rmse 0.4248
+EarlyStopping counter: 6 out of 200
+epoch 154/1000, validation rmse 1.0104, best validation rmse 0.8795
+epoch 155/1000, batch 1/4, loss 0.0898
+epoch 155/1000, training rmse 0.4452
+EarlyStopping counter: 7 out of 200
+epoch 155/1000, validation rmse 0.9901, best validation rmse 0.8795
+epoch 156/1000, batch 1/4, loss 0.0657
+epoch 156/1000, training rmse 0.4128
+EarlyStopping counter: 8 out of 200
+epoch 156/1000, validation rmse 0.8796, best validation rmse 0.8795
+epoch 157/1000, batch 1/4, loss 0.0642
+epoch 157/1000, training rmse 0.4040
+EarlyStopping counter: 9 out of 200
+epoch 157/1000, validation rmse 0.8963, best validation rmse 0.8795
+epoch 158/1000, batch 1/4, loss 0.0674
+epoch 158/1000, training rmse 0.4185
+EarlyStopping counter: 10 out of 200
+epoch 158/1000, validation rmse 1.1907, best validation rmse 0.8795
+epoch 159/1000, batch 1/4, loss 0.1290
+epoch 159/1000, training rmse 0.4623
+EarlyStopping counter: 11 out of 200
+epoch 159/1000, validation rmse 0.9498, best validation rmse 0.8795
+epoch 160/1000, batch 1/4, loss 0.0752
+epoch 160/1000, training rmse 0.4525
+EarlyStopping counter: 12 out of 200
+epoch 160/1000, validation rmse 1.2100, best validation rmse 0.8795
+epoch 161/1000, batch 1/4, loss 0.1167
+epoch 161/1000, training rmse 0.4618
+EarlyStopping counter: 13 out of 200
+epoch 161/1000, validation rmse 1.5849, best validation rmse 0.8795
+epoch 162/1000, batch 1/4, loss 0.1168
+epoch 162/1000, training rmse 0.4608
+EarlyStopping counter: 14 out of 200
+epoch 162/1000, validation rmse 0.9161, best validation rmse 0.8795
+epoch 163/1000, batch 1/4, loss 0.0881
+epoch 163/1000, training rmse 0.4462
+EarlyStopping counter: 15 out of 200
+epoch 163/1000, validation rmse 0.9317, best validation rmse 0.8795
+epoch 164/1000, batch 1/4, loss 0.1039
+epoch 164/1000, training rmse 0.4707
+EarlyStopping counter: 16 out of 200
+epoch 164/1000, validation rmse 1.0660, best validation rmse 0.8795
+epoch 165/1000, batch 1/4, loss 0.0994
+epoch 165/1000, training rmse 0.4695
+EarlyStopping counter: 17 out of 200
+epoch 165/1000, validation rmse 0.9214, best validation rmse 0.8795
+epoch 166/1000, batch 1/4, loss 0.0671
+epoch 166/1000, training rmse 0.4213
+EarlyStopping counter: 18 out of 200
+epoch 166/1000, validation rmse 1.0485, best validation rmse 0.8795
+epoch 167/1000, batch 1/4, loss 0.0926
+epoch 167/1000, training rmse 0.4890
+EarlyStopping counter: 19 out of 200
+epoch 167/1000, validation rmse 0.9709, best validation rmse 0.8795
+epoch 168/1000, batch 1/4, loss 0.0729
+epoch 168/1000, training rmse 0.4216
+EarlyStopping counter: 20 out of 200
+epoch 168/1000, validation rmse 0.9459, best validation rmse 0.8795
+epoch 169/1000, batch 1/4, loss 0.0738
+epoch 169/1000, training rmse 0.3941
+EarlyStopping counter: 21 out of 200
+epoch 169/1000, validation rmse 1.0081, best validation rmse 0.8795
+epoch 170/1000, batch 1/4, loss 0.0839
+epoch 170/1000, training rmse 0.3834
+epoch 170/1000, validation rmse 0.8749, best validation rmse 0.8749
+epoch 171/1000, batch 1/4, loss 0.0757
+epoch 171/1000, training rmse 0.3922
+EarlyStopping counter: 1 out of 200
+epoch 171/1000, validation rmse 0.9334, best validation rmse 0.8749
+epoch 172/1000, batch 1/4, loss 0.0657
+epoch 172/1000, training rmse 0.3826
+epoch 172/1000, validation rmse 0.8676, best validation rmse 0.8676
+epoch 173/1000, batch 1/4, loss 0.0454
+epoch 173/1000, training rmse 0.3720
+EarlyStopping counter: 1 out of 200
+epoch 173/1000, validation rmse 0.9166, best validation rmse 0.8676
+epoch 174/1000, batch 1/4, loss 0.0557
+epoch 174/1000, training rmse 0.3559
+EarlyStopping counter: 2 out of 200
+epoch 174/1000, validation rmse 0.9253, best validation rmse 0.8676
+epoch 175/1000, batch 1/4, loss 0.0787
+epoch 175/1000, training rmse 0.3703
+EarlyStopping counter: 3 out of 200
+epoch 175/1000, validation rmse 0.9172, best validation rmse 0.8676
+epoch 176/1000, batch 1/4, loss 0.0533
+epoch 176/1000, training rmse 0.3858
+EarlyStopping counter: 4 out of 200
+epoch 176/1000, validation rmse 0.9308, best validation rmse 0.8676
+epoch 177/1000, batch 1/4, loss 0.0620
+epoch 177/1000, training rmse 0.3918
+EarlyStopping counter: 5 out of 200
+epoch 177/1000, validation rmse 0.8852, best validation rmse 0.8676
+epoch 178/1000, batch 1/4, loss 0.0620
+epoch 178/1000, training rmse 0.4051
+epoch 178/1000, validation rmse 0.8469, best validation rmse 0.8469
+epoch 179/1000, batch 1/4, loss 0.1131
+epoch 179/1000, training rmse 0.4661
+EarlyStopping counter: 1 out of 200
+epoch 179/1000, validation rmse 0.9418, best validation rmse 0.8469
+epoch 180/1000, batch 1/4, loss 0.0963
+epoch 180/1000, training rmse 0.4425
+epoch 180/1000, validation rmse 0.8466, best validation rmse 0.8466
+epoch 181/1000, batch 1/4, loss 0.0638
+epoch 181/1000, training rmse 0.4445
+EarlyStopping counter: 1 out of 200
+epoch 181/1000, validation rmse 0.9299, best validation rmse 0.8466
+epoch 182/1000, batch 1/4, loss 0.0705
+epoch 182/1000, training rmse 0.4253
+EarlyStopping counter: 2 out of 200
+epoch 182/1000, validation rmse 0.9092, best validation rmse 0.8466
+epoch 183/1000, batch 1/4, loss 0.0720
+epoch 183/1000, training rmse 0.4116
+EarlyStopping counter: 3 out of 200
+epoch 183/1000, validation rmse 1.0024, best validation rmse 0.8466
+epoch 184/1000, batch 1/4, loss 0.0875
+epoch 184/1000, training rmse 0.4121
+EarlyStopping counter: 4 out of 200
+epoch 184/1000, validation rmse 0.9922, best validation rmse 0.8466
+epoch 185/1000, batch 1/4, loss 0.0954
+epoch 185/1000, training rmse 0.4373
+EarlyStopping counter: 5 out of 200
+epoch 185/1000, validation rmse 1.0249, best validation rmse 0.8466
+epoch 186/1000, batch 1/4, loss 0.0788
+epoch 186/1000, training rmse 0.4124
+EarlyStopping counter: 6 out of 200
+epoch 186/1000, validation rmse 1.2866, best validation rmse 0.8466
+epoch 187/1000, batch 1/4, loss 0.0903
+epoch 187/1000, training rmse 0.5488
+EarlyStopping counter: 7 out of 200
+epoch 187/1000, validation rmse 0.9584, best validation rmse 0.8466
+epoch 188/1000, batch 1/4, loss 0.0837
+epoch 188/1000, training rmse 0.4240
+EarlyStopping counter: 8 out of 200
+epoch 188/1000, validation rmse 0.9569, best validation rmse 0.8466
+epoch 189/1000, batch 1/4, loss 0.1040
+epoch 189/1000, training rmse 0.4202
+EarlyStopping counter: 9 out of 200
+epoch 189/1000, validation rmse 0.9214, best validation rmse 0.8466
+epoch 190/1000, batch 1/4, loss 0.0593
+epoch 190/1000, training rmse 0.3946
+EarlyStopping counter: 10 out of 200
+epoch 190/1000, validation rmse 1.0515, best validation rmse 0.8466
+epoch 191/1000, batch 1/4, loss 0.0920
+epoch 191/1000, training rmse 0.3991
+EarlyStopping counter: 11 out of 200
+epoch 191/1000, validation rmse 0.8911, best validation rmse 0.8466
+epoch 192/1000, batch 1/4, loss 0.0750
+epoch 192/1000, training rmse 0.3907
+EarlyStopping counter: 12 out of 200
+epoch 192/1000, validation rmse 1.1270, best validation rmse 0.8466
+epoch 193/1000, batch 1/4, loss 0.0857
+epoch 193/1000, training rmse 0.4143
+EarlyStopping counter: 13 out of 200
+epoch 193/1000, validation rmse 0.8569, best validation rmse 0.8466
+epoch 194/1000, batch 1/4, loss 0.0707
+epoch 194/1000, training rmse 0.3815
+EarlyStopping counter: 14 out of 200
+epoch 194/1000, validation rmse 0.9427, best validation rmse 0.8466
+epoch 195/1000, batch 1/4, loss 0.0711
+epoch 195/1000, training rmse 0.4204
+EarlyStopping counter: 15 out of 200
+epoch 195/1000, validation rmse 0.9650, best validation rmse 0.8466
+epoch 196/1000, batch 1/4, loss 0.0723
+epoch 196/1000, training rmse 0.4090
+EarlyStopping counter: 16 out of 200
+epoch 196/1000, validation rmse 0.9909, best validation rmse 0.8466
+epoch 197/1000, batch 1/4, loss 0.0813
+epoch 197/1000, training rmse 0.4021
+EarlyStopping counter: 17 out of 200
+epoch 197/1000, validation rmse 1.2153, best validation rmse 0.8466
+epoch 198/1000, batch 1/4, loss 0.0716
+epoch 198/1000, training rmse 0.3765
+EarlyStopping counter: 18 out of 200
+epoch 198/1000, validation rmse 0.8545, best validation rmse 0.8466
+epoch 199/1000, batch 1/4, loss 0.0574
+epoch 199/1000, training rmse 0.4296
+EarlyStopping counter: 19 out of 200
+epoch 199/1000, validation rmse 1.1026, best validation rmse 0.8466
+epoch 200/1000, batch 1/4, loss 0.1111
+epoch 200/1000, training rmse 0.4419
+EarlyStopping counter: 20 out of 200
+epoch 200/1000, validation rmse 0.9016, best validation rmse 0.8466
+epoch 201/1000, batch 1/4, loss 0.0816
+epoch 201/1000, training rmse 0.4062
+EarlyStopping counter: 21 out of 200
+epoch 201/1000, validation rmse 1.0474, best validation rmse 0.8466
+epoch 202/1000, batch 1/4, loss 0.0808
+epoch 202/1000, training rmse 0.4052
+EarlyStopping counter: 22 out of 200
+epoch 202/1000, validation rmse 0.9533, best validation rmse 0.8466
+epoch 203/1000, batch 1/4, loss 0.0676
+epoch 203/1000, training rmse 0.4798
+EarlyStopping counter: 23 out of 200
+epoch 203/1000, validation rmse 1.1579, best validation rmse 0.8466
+epoch 204/1000, batch 1/4, loss 0.0622
+epoch 204/1000, training rmse 0.3952
+EarlyStopping counter: 24 out of 200
+epoch 204/1000, validation rmse 0.8983, best validation rmse 0.8466
+epoch 205/1000, batch 1/4, loss 0.0848
+epoch 205/1000, training rmse 0.3784
+EarlyStopping counter: 25 out of 200
+epoch 205/1000, validation rmse 0.9396, best validation rmse 0.8466
+epoch 206/1000, batch 1/4, loss 0.0712
+epoch 206/1000, training rmse 0.4293
+EarlyStopping counter: 26 out of 200
+epoch 206/1000, validation rmse 0.9284, best validation rmse 0.8466
+epoch 207/1000, batch 1/4, loss 0.0644
+epoch 207/1000, training rmse 0.3531
+EarlyStopping counter: 27 out of 200
+epoch 207/1000, validation rmse 0.9033, best validation rmse 0.8466
+epoch 208/1000, batch 1/4, loss 0.0517
+epoch 208/1000, training rmse 0.4233
+EarlyStopping counter: 28 out of 200
+epoch 208/1000, validation rmse 0.8899, best validation rmse 0.8466
+epoch 209/1000, batch 1/4, loss 0.0537
+epoch 209/1000, training rmse 0.3660
+EarlyStopping counter: 29 out of 200
+epoch 209/1000, validation rmse 0.8931, best validation rmse 0.8466
+epoch 210/1000, batch 1/4, loss 0.0763
+epoch 210/1000, training rmse 0.3738
+EarlyStopping counter: 30 out of 200
+epoch 210/1000, validation rmse 0.9575, best validation rmse 0.8466
+epoch 211/1000, batch 1/4, loss 0.0738
+epoch 211/1000, training rmse 0.4030
+EarlyStopping counter: 31 out of 200
+epoch 211/1000, validation rmse 0.9665, best validation rmse 0.8466
+epoch 212/1000, batch 1/4, loss 0.0966
+epoch 212/1000, training rmse 0.4436
+EarlyStopping counter: 32 out of 200
+epoch 212/1000, validation rmse 0.9632, best validation rmse 0.8466
+epoch 213/1000, batch 1/4, loss 0.0763
+epoch 213/1000, training rmse 0.4223
+EarlyStopping counter: 33 out of 200
+epoch 213/1000, validation rmse 0.9262, best validation rmse 0.8466
+epoch 214/1000, batch 1/4, loss 0.1031
+epoch 214/1000, training rmse 0.4278
+EarlyStopping counter: 34 out of 200
+epoch 214/1000, validation rmse 0.9340, best validation rmse 0.8466
+epoch 215/1000, batch 1/4, loss 0.0657
+epoch 215/1000, training rmse 0.4090
+EarlyStopping counter: 35 out of 200
+epoch 215/1000, validation rmse 0.8878, best validation rmse 0.8466
+epoch 216/1000, batch 1/4, loss 0.0620
+epoch 216/1000, training rmse 0.4173
+EarlyStopping counter: 36 out of 200
+epoch 216/1000, validation rmse 0.8770, best validation rmse 0.8466
+epoch 217/1000, batch 1/4, loss 0.0848
+epoch 217/1000, training rmse 0.4302
+EarlyStopping counter: 37 out of 200
+epoch 217/1000, validation rmse 1.0235, best validation rmse 0.8466
+epoch 218/1000, batch 1/4, loss 0.0887
+epoch 218/1000, training rmse 0.4251
+EarlyStopping counter: 38 out of 200
+epoch 218/1000, validation rmse 0.9660, best validation rmse 0.8466
+epoch 219/1000, batch 1/4, loss 0.0909
+epoch 219/1000, training rmse 0.4264
+EarlyStopping counter: 39 out of 200
+epoch 219/1000, validation rmse 1.1193, best validation rmse 0.8466
+epoch 220/1000, batch 1/4, loss 0.0895
+epoch 220/1000, training rmse 0.4046
+EarlyStopping counter: 40 out of 200
+epoch 220/1000, validation rmse 1.0268, best validation rmse 0.8466
+epoch 221/1000, batch 1/4, loss 0.0873
+epoch 221/1000, training rmse 0.4166
+EarlyStopping counter: 41 out of 200
+epoch 221/1000, validation rmse 1.2342, best validation rmse 0.8466
+epoch 222/1000, batch 1/4, loss 0.1288
+epoch 222/1000, training rmse 0.4588
+EarlyStopping counter: 42 out of 200
+epoch 222/1000, validation rmse 0.9895, best validation rmse 0.8466
+epoch 223/1000, batch 1/4, loss 0.0980
+epoch 223/1000, training rmse 0.4065
+EarlyStopping counter: 43 out of 200
+epoch 223/1000, validation rmse 1.0114, best validation rmse 0.8466
+epoch 224/1000, batch 1/4, loss 0.0655
+epoch 224/1000, training rmse 0.3875
+EarlyStopping counter: 44 out of 200
+epoch 224/1000, validation rmse 1.0288, best validation rmse 0.8466
+epoch 225/1000, batch 1/4, loss 0.0632
+epoch 225/1000, training rmse 0.3896
+EarlyStopping counter: 45 out of 200
+epoch 225/1000, validation rmse 0.9840, best validation rmse 0.8466
+epoch 226/1000, batch 1/4, loss 0.0590
+epoch 226/1000, training rmse 0.4080
+EarlyStopping counter: 46 out of 200
+epoch 226/1000, validation rmse 0.9276, best validation rmse 0.8466
+epoch 227/1000, batch 1/4, loss 0.0757
+epoch 227/1000, training rmse 0.4591
+EarlyStopping counter: 47 out of 200
+epoch 227/1000, validation rmse 0.9156, best validation rmse 0.8466
+epoch 228/1000, batch 1/4, loss 0.0646
+epoch 228/1000, training rmse 0.4127
+EarlyStopping counter: 48 out of 200
+epoch 228/1000, validation rmse 0.9136, best validation rmse 0.8466
+epoch 229/1000, batch 1/4, loss 0.0696
+epoch 229/1000, training rmse 0.4486
+EarlyStopping counter: 49 out of 200
+epoch 229/1000, validation rmse 0.9682, best validation rmse 0.8466
+epoch 230/1000, batch 1/4, loss 0.0581
+epoch 230/1000, training rmse 0.3813
+EarlyStopping counter: 50 out of 200
+epoch 230/1000, validation rmse 0.9711, best validation rmse 0.8466
+epoch 231/1000, batch 1/4, loss 0.0894
+epoch 231/1000, training rmse 0.3927
+EarlyStopping counter: 51 out of 200
+epoch 231/1000, validation rmse 0.9677, best validation rmse 0.8466
+epoch 232/1000, batch 1/4, loss 0.0635
+epoch 232/1000, training rmse 0.3929
+EarlyStopping counter: 52 out of 200
+epoch 232/1000, validation rmse 1.0605, best validation rmse 0.8466
+epoch 233/1000, batch 1/4, loss 0.0727
+epoch 233/1000, training rmse 0.4170
+EarlyStopping counter: 53 out of 200
+epoch 233/1000, validation rmse 1.2332, best validation rmse 0.8466
+epoch 234/1000, batch 1/4, loss 0.0932
+epoch 234/1000, training rmse 0.4194
+EarlyStopping counter: 54 out of 200
+epoch 234/1000, validation rmse 0.9829, best validation rmse 0.8466
+epoch 235/1000, batch 1/4, loss 0.0652
+epoch 235/1000, training rmse 0.4502
+EarlyStopping counter: 55 out of 200
+epoch 235/1000, validation rmse 0.9217, best validation rmse 0.8466
+epoch 236/1000, batch 1/4, loss 0.0985
+epoch 236/1000, training rmse 0.4943
+EarlyStopping counter: 56 out of 200
+epoch 236/1000, validation rmse 1.0237, best validation rmse 0.8466
+epoch 237/1000, batch 1/4, loss 0.0679
+epoch 237/1000, training rmse 0.4211
+EarlyStopping counter: 57 out of 200
+epoch 237/1000, validation rmse 0.9501, best validation rmse 0.8466
+epoch 238/1000, batch 1/4, loss 0.0903
+epoch 238/1000, training rmse 0.4373
+EarlyStopping counter: 58 out of 200
+epoch 238/1000, validation rmse 1.0829, best validation rmse 0.8466
+epoch 239/1000, batch 1/4, loss 0.1012
+epoch 239/1000, training rmse 0.4635
+EarlyStopping counter: 59 out of 200
+epoch 239/1000, validation rmse 0.8801, best validation rmse 0.8466
+epoch 240/1000, batch 1/4, loss 0.0844
+epoch 240/1000, training rmse 0.4577
+EarlyStopping counter: 60 out of 200
+epoch 240/1000, validation rmse 1.1243, best validation rmse 0.8466
+epoch 241/1000, batch 1/4, loss 0.1137
+epoch 241/1000, training rmse 0.4588
+EarlyStopping counter: 61 out of 200
+epoch 241/1000, validation rmse 1.0943, best validation rmse 0.8466
+epoch 242/1000, batch 1/4, loss 0.1057
+epoch 242/1000, training rmse 0.4214
+EarlyStopping counter: 62 out of 200
+epoch 242/1000, validation rmse 1.2335, best validation rmse 0.8466
+epoch 243/1000, batch 1/4, loss 0.0803
+epoch 243/1000, training rmse 0.4230
+EarlyStopping counter: 63 out of 200
+epoch 243/1000, validation rmse 0.8788, best validation rmse 0.8466
+epoch 244/1000, batch 1/4, loss 0.0751
+epoch 244/1000, training rmse 0.4488
+EarlyStopping counter: 64 out of 200
+epoch 244/1000, validation rmse 0.9342, best validation rmse 0.8466
+epoch 245/1000, batch 1/4, loss 0.0864
+epoch 245/1000, training rmse 0.4522
+EarlyStopping counter: 65 out of 200
+epoch 245/1000, validation rmse 0.9923, best validation rmse 0.8466
+epoch 246/1000, batch 1/4, loss 0.0728
+epoch 246/1000, training rmse 0.4273
+EarlyStopping counter: 66 out of 200
+epoch 246/1000, validation rmse 0.9925, best validation rmse 0.8466
+epoch 247/1000, batch 1/4, loss 0.0864
+epoch 247/1000, training rmse 0.4097
+epoch 247/1000, validation rmse 0.8325, best validation rmse 0.8325
+epoch 248/1000, batch 1/4, loss 0.0782
+epoch 248/1000, training rmse 0.4032
+EarlyStopping counter: 1 out of 200
+epoch 248/1000, validation rmse 1.1255, best validation rmse 0.8325
+epoch 249/1000, batch 1/4, loss 0.0768
+epoch 249/1000, training rmse 0.3867
+epoch 249/1000, validation rmse 0.8314, best validation rmse 0.8314
+epoch 250/1000, batch 1/4, loss 0.0714
+epoch 250/1000, training rmse 0.4038
+EarlyStopping counter: 1 out of 200
+epoch 250/1000, validation rmse 0.8948, best validation rmse 0.8314
+epoch 251/1000, batch 1/4, loss 0.0652
+epoch 251/1000, training rmse 0.3669
+EarlyStopping counter: 2 out of 200
+epoch 251/1000, validation rmse 0.9749, best validation rmse 0.8314
+epoch 252/1000, batch 1/4, loss 0.0718
+epoch 252/1000, training rmse 0.4000
+EarlyStopping counter: 3 out of 200
+epoch 252/1000, validation rmse 0.9266, best validation rmse 0.8314
+epoch 253/1000, batch 1/4, loss 0.0519
+epoch 253/1000, training rmse 0.4128
+EarlyStopping counter: 4 out of 200
+epoch 253/1000, validation rmse 0.9427, best validation rmse 0.8314
+epoch 254/1000, batch 1/4, loss 0.1065
+epoch 254/1000, training rmse 0.4847
+EarlyStopping counter: 5 out of 200
+epoch 254/1000, validation rmse 1.6646, best validation rmse 0.8314
+epoch 255/1000, batch 1/4, loss 0.0885
+epoch 255/1000, training rmse 0.4371
+EarlyStopping counter: 6 out of 200
+epoch 255/1000, validation rmse 1.0266, best validation rmse 0.8314
+epoch 256/1000, batch 1/4, loss 0.1353
+epoch 256/1000, training rmse 0.4858
+EarlyStopping counter: 7 out of 200
+epoch 256/1000, validation rmse 1.0216, best validation rmse 0.8314
+epoch 257/1000, batch 1/4, loss 0.0817
+epoch 257/1000, training rmse 0.4114
+EarlyStopping counter: 8 out of 200
+epoch 257/1000, validation rmse 1.0581, best validation rmse 0.8314
+epoch 258/1000, batch 1/4, loss 0.0741
+epoch 258/1000, training rmse 0.4155
+EarlyStopping counter: 9 out of 200
+epoch 258/1000, validation rmse 0.8859, best validation rmse 0.8314
+epoch 259/1000, batch 1/4, loss 0.0675
+epoch 259/1000, training rmse 0.3704
+EarlyStopping counter: 10 out of 200
+epoch 259/1000, validation rmse 0.9207, best validation rmse 0.8314
+epoch 260/1000, batch 1/4, loss 0.0489
+epoch 260/1000, training rmse 0.3448
+EarlyStopping counter: 11 out of 200
+epoch 260/1000, validation rmse 0.8473, best validation rmse 0.8314
+epoch 261/1000, batch 1/4, loss 0.0561
+epoch 261/1000, training rmse 0.3507
+EarlyStopping counter: 12 out of 200
+epoch 261/1000, validation rmse 0.9295, best validation rmse 0.8314
+epoch 262/1000, batch 1/4, loss 0.0483
+epoch 262/1000, training rmse 0.3395
+EarlyStopping counter: 13 out of 200
+epoch 262/1000, validation rmse 0.8710, best validation rmse 0.8314
+epoch 263/1000, batch 1/4, loss 0.0436
+epoch 263/1000, training rmse 0.3282
+EarlyStopping counter: 14 out of 200
+epoch 263/1000, validation rmse 0.9688, best validation rmse 0.8314
+epoch 264/1000, batch 1/4, loss 0.0469
+epoch 264/1000, training rmse 0.3636
+EarlyStopping counter: 15 out of 200
+epoch 264/1000, validation rmse 0.9395, best validation rmse 0.8314
+epoch 265/1000, batch 1/4, loss 0.0680
+epoch 265/1000, training rmse 0.3544
+EarlyStopping counter: 16 out of 200
+epoch 265/1000, validation rmse 0.9556, best validation rmse 0.8314
+epoch 266/1000, batch 1/4, loss 0.0747
+epoch 266/1000, training rmse 0.3580
+EarlyStopping counter: 17 out of 200
+epoch 266/1000, validation rmse 0.8704, best validation rmse 0.8314
+epoch 267/1000, batch 1/4, loss 0.0554
+epoch 267/1000, training rmse 0.3860
+EarlyStopping counter: 18 out of 200
+epoch 267/1000, validation rmse 1.0294, best validation rmse 0.8314
+epoch 268/1000, batch 1/4, loss 0.0700
+epoch 268/1000, training rmse 0.3738
+EarlyStopping counter: 19 out of 200
+epoch 268/1000, validation rmse 0.8789, best validation rmse 0.8314
+epoch 269/1000, batch 1/4, loss 0.0672
+epoch 269/1000, training rmse 0.3907
+EarlyStopping counter: 20 out of 200
+epoch 269/1000, validation rmse 1.0099, best validation rmse 0.8314
+epoch 270/1000, batch 1/4, loss 0.0635
+epoch 270/1000, training rmse 0.3991
+EarlyStopping counter: 21 out of 200
+epoch 270/1000, validation rmse 1.0198, best validation rmse 0.8314
+epoch 271/1000, batch 1/4, loss 0.0773
+epoch 271/1000, training rmse 0.4182
+EarlyStopping counter: 22 out of 200
+epoch 271/1000, validation rmse 0.8836, best validation rmse 0.8314
+epoch 272/1000, batch 1/4, loss 0.0671
+epoch 272/1000, training rmse 0.3911
+EarlyStopping counter: 23 out of 200
+epoch 272/1000, validation rmse 0.9531, best validation rmse 0.8314
+epoch 273/1000, batch 1/4, loss 0.0634
+epoch 273/1000, training rmse 0.3794
+EarlyStopping counter: 24 out of 200
+epoch 273/1000, validation rmse 1.0623, best validation rmse 0.8314
+epoch 274/1000, batch 1/4, loss 0.0907
+epoch 274/1000, training rmse 0.4016
+EarlyStopping counter: 25 out of 200
+epoch 274/1000, validation rmse 1.0023, best validation rmse 0.8314
+epoch 275/1000, batch 1/4, loss 0.0806
+epoch 275/1000, training rmse 0.4116
+EarlyStopping counter: 26 out of 200
+epoch 275/1000, validation rmse 0.9513, best validation rmse 0.8314
+epoch 276/1000, batch 1/4, loss 0.0875
+epoch 276/1000, training rmse 0.4068
+EarlyStopping counter: 27 out of 200
+epoch 276/1000, validation rmse 1.0211, best validation rmse 0.8314
+epoch 277/1000, batch 1/4, loss 0.0822
+epoch 277/1000, training rmse 0.4305
+EarlyStopping counter: 28 out of 200
+epoch 277/1000, validation rmse 0.9458, best validation rmse 0.8314
+epoch 278/1000, batch 1/4, loss 0.0739
+epoch 278/1000, training rmse 0.3867
+EarlyStopping counter: 29 out of 200
+epoch 278/1000, validation rmse 0.8907, best validation rmse 0.8314
+epoch 279/1000, batch 1/4, loss 0.0498
+epoch 279/1000, training rmse 0.3696
+EarlyStopping counter: 30 out of 200
+epoch 279/1000, validation rmse 0.9848, best validation rmse 0.8314
+epoch 280/1000, batch 1/4, loss 0.0742
+epoch 280/1000, training rmse 0.4236
+EarlyStopping counter: 31 out of 200
+epoch 280/1000, validation rmse 1.0261, best validation rmse 0.8314
+epoch 281/1000, batch 1/4, loss 0.0551
+epoch 281/1000, training rmse 0.3884
+EarlyStopping counter: 32 out of 200
+epoch 281/1000, validation rmse 0.8831, best validation rmse 0.8314
+epoch 282/1000, batch 1/4, loss 0.0603
+epoch 282/1000, training rmse 0.3740
+EarlyStopping counter: 33 out of 200
+epoch 282/1000, validation rmse 0.9927, best validation rmse 0.8314
+epoch 283/1000, batch 1/4, loss 0.0620
+epoch 283/1000, training rmse 0.3838
+EarlyStopping counter: 34 out of 200
+epoch 283/1000, validation rmse 0.9736, best validation rmse 0.8314
+epoch 284/1000, batch 1/4, loss 0.0459
+epoch 284/1000, training rmse 0.3853
+EarlyStopping counter: 35 out of 200
+epoch 284/1000, validation rmse 1.0768, best validation rmse 0.8314
+epoch 285/1000, batch 1/4, loss 0.0994
+epoch 285/1000, training rmse 0.3989
+EarlyStopping counter: 36 out of 200
+epoch 285/1000, validation rmse 0.9125, best validation rmse 0.8314
+epoch 286/1000, batch 1/4, loss 0.0533
+epoch 286/1000, training rmse 0.3921
+EarlyStopping counter: 37 out of 200
+epoch 286/1000, validation rmse 0.8894, best validation rmse 0.8314
+epoch 287/1000, batch 1/4, loss 0.0780
+epoch 287/1000, training rmse 0.3969
+EarlyStopping counter: 38 out of 200
+epoch 287/1000, validation rmse 1.0280, best validation rmse 0.8314
+epoch 288/1000, batch 1/4, loss 0.0570
+epoch 288/1000, training rmse 0.3725
+epoch 288/1000, validation rmse 0.8033, best validation rmse 0.8033
+epoch 289/1000, batch 1/4, loss 0.0681
+epoch 289/1000, training rmse 0.4022
+EarlyStopping counter: 1 out of 200
+epoch 289/1000, validation rmse 0.9962, best validation rmse 0.8033
+epoch 290/1000, batch 1/4, loss 0.0747
+epoch 290/1000, training rmse 0.4189
+EarlyStopping counter: 2 out of 200
+epoch 290/1000, validation rmse 0.9785, best validation rmse 0.8033
+epoch 291/1000, batch 1/4, loss 0.0663
+epoch 291/1000, training rmse 0.4051
+EarlyStopping counter: 3 out of 200
+epoch 291/1000, validation rmse 1.0751, best validation rmse 0.8033
+epoch 292/1000, batch 1/4, loss 0.0969
+epoch 292/1000, training rmse 0.4439
+EarlyStopping counter: 4 out of 200
+epoch 292/1000, validation rmse 1.0025, best validation rmse 0.8033
+epoch 293/1000, batch 1/4, loss 0.0731
+epoch 293/1000, training rmse 0.4572
+EarlyStopping counter: 5 out of 200
+epoch 293/1000, validation rmse 0.8783, best validation rmse 0.8033
+epoch 294/1000, batch 1/4, loss 0.0927
+epoch 294/1000, training rmse 0.4420
+EarlyStopping counter: 6 out of 200
+epoch 294/1000, validation rmse 1.1392, best validation rmse 0.8033
+epoch 295/1000, batch 1/4, loss 0.0643
+epoch 295/1000, training rmse 0.3929
+EarlyStopping counter: 7 out of 200
+epoch 295/1000, validation rmse 0.9279, best validation rmse 0.8033
+epoch 296/1000, batch 1/4, loss 0.0748
+epoch 296/1000, training rmse 0.3891
+EarlyStopping counter: 8 out of 200
+epoch 296/1000, validation rmse 0.9027, best validation rmse 0.8033
+epoch 297/1000, batch 1/4, loss 0.0967
+epoch 297/1000, training rmse 0.4213
+EarlyStopping counter: 9 out of 200
+epoch 297/1000, validation rmse 0.8935, best validation rmse 0.8033
+epoch 298/1000, batch 1/4, loss 0.0690
+epoch 298/1000, training rmse 0.3974
+EarlyStopping counter: 10 out of 200
+epoch 298/1000, validation rmse 0.9330, best validation rmse 0.8033
+epoch 299/1000, batch 1/4, loss 0.0753
+epoch 299/1000, training rmse 0.4039
+EarlyStopping counter: 11 out of 200
+epoch 299/1000, validation rmse 0.9125, best validation rmse 0.8033
+epoch 300/1000, batch 1/4, loss 0.0784
+epoch 300/1000, training rmse 0.3885
+EarlyStopping counter: 12 out of 200
+epoch 300/1000, validation rmse 0.8720, best validation rmse 0.8033
+epoch 301/1000, batch 1/4, loss 0.0553
+epoch 301/1000, training rmse 0.3744
+EarlyStopping counter: 13 out of 200
+epoch 301/1000, validation rmse 0.8704, best validation rmse 0.8033
+epoch 302/1000, batch 1/4, loss 0.0768
+epoch 302/1000, training rmse 0.4039
+EarlyStopping counter: 14 out of 200
+epoch 302/1000, validation rmse 0.9209, best validation rmse 0.8033
+epoch 303/1000, batch 1/4, loss 0.0576
+epoch 303/1000, training rmse 0.3911
+EarlyStopping counter: 15 out of 200
+epoch 303/1000, validation rmse 0.9626, best validation rmse 0.8033
+epoch 304/1000, batch 1/4, loss 0.0530
+epoch 304/1000, training rmse 0.3910
+EarlyStopping counter: 16 out of 200
+epoch 304/1000, validation rmse 0.8855, best validation rmse 0.8033
+epoch 305/1000, batch 1/4, loss 0.0506
+epoch 305/1000, training rmse 0.3698
+EarlyStopping counter: 17 out of 200
+epoch 305/1000, validation rmse 0.9183, best validation rmse 0.8033
+epoch 306/1000, batch 1/4, loss 0.0664
+epoch 306/1000, training rmse 0.3781
+EarlyStopping counter: 18 out of 200
+epoch 306/1000, validation rmse 0.8551, best validation rmse 0.8033
+epoch 307/1000, batch 1/4, loss 0.0702
+epoch 307/1000, training rmse 0.3591
+EarlyStopping counter: 19 out of 200
+epoch 307/1000, validation rmse 0.8580, best validation rmse 0.8033
+epoch 308/1000, batch 1/4, loss 0.0465
+epoch 308/1000, training rmse 0.3159
+EarlyStopping counter: 20 out of 200
+epoch 308/1000, validation rmse 0.9082, best validation rmse 0.8033
+epoch 309/1000, batch 1/4, loss 0.0710
+epoch 309/1000, training rmse 0.3865
+EarlyStopping counter: 21 out of 200
+epoch 309/1000, validation rmse 0.8814, best validation rmse 0.8033
+epoch 310/1000, batch 1/4, loss 0.0569
+epoch 310/1000, training rmse 0.3403
+EarlyStopping counter: 22 out of 200
+epoch 310/1000, validation rmse 1.0593, best validation rmse 0.8033
+epoch 311/1000, batch 1/4, loss 0.0618
+epoch 311/1000, training rmse 0.3860
+EarlyStopping counter: 23 out of 200
+epoch 311/1000, validation rmse 1.0442, best validation rmse 0.8033
+epoch 312/1000, batch 1/4, loss 0.0644
+epoch 312/1000, training rmse 0.3669
+EarlyStopping counter: 24 out of 200
+epoch 312/1000, validation rmse 1.1118, best validation rmse 0.8033
+epoch 313/1000, batch 1/4, loss 0.0892
+epoch 313/1000, training rmse 0.4436
+EarlyStopping counter: 25 out of 200
+epoch 313/1000, validation rmse 1.0526, best validation rmse 0.8033
+epoch 314/1000, batch 1/4, loss 0.0683
+epoch 314/1000, training rmse 0.4041
+EarlyStopping counter: 26 out of 200
+epoch 314/1000, validation rmse 1.0118, best validation rmse 0.8033
+epoch 315/1000, batch 1/4, loss 0.0961
+epoch 315/1000, training rmse 0.4340
+EarlyStopping counter: 27 out of 200
+epoch 315/1000, validation rmse 0.9470, best validation rmse 0.8033
+epoch 316/1000, batch 1/4, loss 0.1004
+epoch 316/1000, training rmse 0.4063
+EarlyStopping counter: 28 out of 200
+epoch 316/1000, validation rmse 0.9460, best validation rmse 0.8033
+epoch 317/1000, batch 1/4, loss 0.0652
+epoch 317/1000, training rmse 0.3809
+EarlyStopping counter: 29 out of 200
+epoch 317/1000, validation rmse 0.8765, best validation rmse 0.8033
+epoch 318/1000, batch 1/4, loss 0.0571
+epoch 318/1000, training rmse 0.3840
+EarlyStopping counter: 30 out of 200
+epoch 318/1000, validation rmse 0.9456, best validation rmse 0.8033
+epoch 319/1000, batch 1/4, loss 0.0758
+epoch 319/1000, training rmse 0.3910
+EarlyStopping counter: 31 out of 200
+epoch 319/1000, validation rmse 1.1062, best validation rmse 0.8033
+epoch 320/1000, batch 1/4, loss 0.0685
+epoch 320/1000, training rmse 0.4176
+EarlyStopping counter: 32 out of 200
+epoch 320/1000, validation rmse 0.9789, best validation rmse 0.8033
+epoch 321/1000, batch 1/4, loss 0.0525
+epoch 321/1000, training rmse 0.3972
+EarlyStopping counter: 33 out of 200
+epoch 321/1000, validation rmse 0.9673, best validation rmse 0.8033
+epoch 322/1000, batch 1/4, loss 0.0738
+epoch 322/1000, training rmse 0.3976
+EarlyStopping counter: 34 out of 200
+epoch 322/1000, validation rmse 0.8869, best validation rmse 0.8033
+epoch 323/1000, batch 1/4, loss 0.0625
+epoch 323/1000, training rmse 0.3840
+EarlyStopping counter: 35 out of 200
+epoch 323/1000, validation rmse 0.9023, best validation rmse 0.8033
+epoch 324/1000, batch 1/4, loss 0.1015
+epoch 324/1000, training rmse 0.3869
+EarlyStopping counter: 36 out of 200
+epoch 324/1000, validation rmse 1.0393, best validation rmse 0.8033
+epoch 325/1000, batch 1/4, loss 0.0750
+epoch 325/1000, training rmse 0.3935
+EarlyStopping counter: 37 out of 200
+epoch 325/1000, validation rmse 0.9570, best validation rmse 0.8033
+epoch 326/1000, batch 1/4, loss 0.0767
+epoch 326/1000, training rmse 0.4191
+EarlyStopping counter: 38 out of 200
+epoch 326/1000, validation rmse 0.9343, best validation rmse 0.8033
+epoch 327/1000, batch 1/4, loss 0.0597
+epoch 327/1000, training rmse 0.4106
+EarlyStopping counter: 39 out of 200
+epoch 327/1000, validation rmse 0.9907, best validation rmse 0.8033
+epoch 328/1000, batch 1/4, loss 0.0630
+epoch 328/1000, training rmse 0.4048
+EarlyStopping counter: 40 out of 200
+epoch 328/1000, validation rmse 0.8916, best validation rmse 0.8033
+epoch 329/1000, batch 1/4, loss 0.1023
+epoch 329/1000, training rmse 0.4084
+EarlyStopping counter: 41 out of 200
+epoch 329/1000, validation rmse 0.8788, best validation rmse 0.8033
+epoch 330/1000, batch 1/4, loss 0.0735
+epoch 330/1000, training rmse 0.4080
+EarlyStopping counter: 42 out of 200
+epoch 330/1000, validation rmse 0.9150, best validation rmse 0.8033
+epoch 331/1000, batch 1/4, loss 0.0841
+epoch 331/1000, training rmse 0.3925
+EarlyStopping counter: 43 out of 200
+epoch 331/1000, validation rmse 0.8917, best validation rmse 0.8033
+epoch 332/1000, batch 1/4, loss 0.0604
+epoch 332/1000, training rmse 0.3614
+EarlyStopping counter: 44 out of 200
+epoch 332/1000, validation rmse 0.9416, best validation rmse 0.8033
+epoch 333/1000, batch 1/4, loss 0.0635
+epoch 333/1000, training rmse 0.3747
+EarlyStopping counter: 45 out of 200
+epoch 333/1000, validation rmse 0.9749, best validation rmse 0.8033
+epoch 334/1000, batch 1/4, loss 0.0699
+epoch 334/1000, training rmse 0.3321
+EarlyStopping counter: 46 out of 200
+epoch 334/1000, validation rmse 0.8563, best validation rmse 0.8033
+epoch 335/1000, batch 1/4, loss 0.0539
+epoch 335/1000, training rmse 0.3459
+EarlyStopping counter: 47 out of 200
+epoch 335/1000, validation rmse 0.8740, best validation rmse 0.8033
+epoch 336/1000, batch 1/4, loss 0.0601
+epoch 336/1000, training rmse 0.3721
+EarlyStopping counter: 48 out of 200
+epoch 336/1000, validation rmse 0.9607, best validation rmse 0.8033
+epoch 337/1000, batch 1/4, loss 0.0669
+epoch 337/1000, training rmse 0.3839
+EarlyStopping counter: 49 out of 200
+epoch 337/1000, validation rmse 0.8569, best validation rmse 0.8033
+epoch 338/1000, batch 1/4, loss 0.0505
+epoch 338/1000, training rmse 0.3633
+EarlyStopping counter: 50 out of 200
+epoch 338/1000, validation rmse 0.9876, best validation rmse 0.8033
+epoch 339/1000, batch 1/4, loss 0.0535
+epoch 339/1000, training rmse 0.3747
+EarlyStopping counter: 51 out of 200
+epoch 339/1000, validation rmse 0.9226, best validation rmse 0.8033
+epoch 340/1000, batch 1/4, loss 0.0566
+epoch 340/1000, training rmse 0.3818
+EarlyStopping counter: 52 out of 200
+epoch 340/1000, validation rmse 0.8404, best validation rmse 0.8033
+epoch 341/1000, batch 1/4, loss 0.0436
+epoch 341/1000, training rmse 0.3600
+EarlyStopping counter: 53 out of 200
+epoch 341/1000, validation rmse 0.9343, best validation rmse 0.8033
+epoch 342/1000, batch 1/4, loss 0.0584
+epoch 342/1000, training rmse 0.4070
+EarlyStopping counter: 54 out of 200
+epoch 342/1000, validation rmse 1.0518, best validation rmse 0.8033
+epoch 343/1000, batch 1/4, loss 0.0728
+epoch 343/1000, training rmse 0.3784
+EarlyStopping counter: 55 out of 200
+epoch 343/1000, validation rmse 0.9572, best validation rmse 0.8033
+epoch 344/1000, batch 1/4, loss 0.0541
+epoch 344/1000, training rmse 0.4160
+EarlyStopping counter: 56 out of 200
+epoch 344/1000, validation rmse 0.9043, best validation rmse 0.8033
+epoch 345/1000, batch 1/4, loss 0.0667
+epoch 345/1000, training rmse 0.4098
+EarlyStopping counter: 57 out of 200
+epoch 345/1000, validation rmse 0.8697, best validation rmse 0.8033
+epoch 346/1000, batch 1/4, loss 0.0943
+epoch 346/1000, training rmse 0.4048
+EarlyStopping counter: 58 out of 200
+epoch 346/1000, validation rmse 0.9736, best validation rmse 0.8033
+epoch 347/1000, batch 1/4, loss 0.0634
+epoch 347/1000, training rmse 0.4280
+EarlyStopping counter: 59 out of 200
+epoch 347/1000, validation rmse 0.8982, best validation rmse 0.8033
+epoch 348/1000, batch 1/4, loss 0.0804
+epoch 348/1000, training rmse 0.3913
+EarlyStopping counter: 60 out of 200
+epoch 348/1000, validation rmse 0.9859, best validation rmse 0.8033
+epoch 349/1000, batch 1/4, loss 0.0647
+epoch 349/1000, training rmse 0.3796
+EarlyStopping counter: 61 out of 200
+epoch 349/1000, validation rmse 0.9358, best validation rmse 0.8033
+epoch 350/1000, batch 1/4, loss 0.0468
+epoch 350/1000, training rmse 0.3310
+EarlyStopping counter: 62 out of 200
+epoch 350/1000, validation rmse 0.9300, best validation rmse 0.8033
+epoch 351/1000, batch 1/4, loss 0.0492
+epoch 351/1000, training rmse 0.3684
+EarlyStopping counter: 63 out of 200
+epoch 351/1000, validation rmse 0.9359, best validation rmse 0.8033
+epoch 352/1000, batch 1/4, loss 0.0699
+epoch 352/1000, training rmse 0.3910
+EarlyStopping counter: 64 out of 200
+epoch 352/1000, validation rmse 0.9012, best validation rmse 0.8033
+epoch 353/1000, batch 1/4, loss 0.0535
+epoch 353/1000, training rmse 0.3916
+EarlyStopping counter: 65 out of 200
+epoch 353/1000, validation rmse 0.8534, best validation rmse 0.8033
+epoch 354/1000, batch 1/4, loss 0.0714
+epoch 354/1000, training rmse 0.3597
+EarlyStopping counter: 66 out of 200
+epoch 354/1000, validation rmse 0.9409, best validation rmse 0.8033
+epoch 355/1000, batch 1/4, loss 0.0618
+epoch 355/1000, training rmse 0.3685
+EarlyStopping counter: 67 out of 200
+epoch 355/1000, validation rmse 0.9147, best validation rmse 0.8033
+epoch 356/1000, batch 1/4, loss 0.0768
+epoch 356/1000, training rmse 0.4019
+EarlyStopping counter: 68 out of 200
+epoch 356/1000, validation rmse 0.9504, best validation rmse 0.8033
+epoch 357/1000, batch 1/4, loss 0.1250
+epoch 357/1000, training rmse 0.4401
+EarlyStopping counter: 69 out of 200
+epoch 357/1000, validation rmse 0.8891, best validation rmse 0.8033
+epoch 358/1000, batch 1/4, loss 0.0684
+epoch 358/1000, training rmse 0.3880
+EarlyStopping counter: 70 out of 200
+epoch 358/1000, validation rmse 0.8770, best validation rmse 0.8033
+epoch 359/1000, batch 1/4, loss 0.1049
+epoch 359/1000, training rmse 0.3955
+EarlyStopping counter: 71 out of 200
+epoch 359/1000, validation rmse 0.9131, best validation rmse 0.8033
+epoch 360/1000, batch 1/4, loss 0.0491
+epoch 360/1000, training rmse 0.3534
+EarlyStopping counter: 72 out of 200
+epoch 360/1000, validation rmse 0.9057, best validation rmse 0.8033
+epoch 361/1000, batch 1/4, loss 0.0621
+epoch 361/1000, training rmse 0.3841
+EarlyStopping counter: 73 out of 200
+epoch 361/1000, validation rmse 1.0378, best validation rmse 0.8033
+epoch 362/1000, batch 1/4, loss 0.0541
+epoch 362/1000, training rmse 0.3717
+EarlyStopping counter: 74 out of 200
+epoch 362/1000, validation rmse 0.8719, best validation rmse 0.8033
+epoch 363/1000, batch 1/4, loss 0.0476
+epoch 363/1000, training rmse 0.3635
+EarlyStopping counter: 75 out of 200
+epoch 363/1000, validation rmse 0.9132, best validation rmse 0.8033
+epoch 364/1000, batch 1/4, loss 0.0858
+epoch 364/1000, training rmse 0.3873
+EarlyStopping counter: 76 out of 200
+epoch 364/1000, validation rmse 0.8786, best validation rmse 0.8033
+epoch 365/1000, batch 1/4, loss 0.0604
+epoch 365/1000, training rmse 0.3815
+EarlyStopping counter: 77 out of 200
+epoch 365/1000, validation rmse 0.8756, best validation rmse 0.8033
+epoch 366/1000, batch 1/4, loss 0.0577
+epoch 366/1000, training rmse 0.3881
+EarlyStopping counter: 78 out of 200
+epoch 366/1000, validation rmse 0.9372, best validation rmse 0.8033
+epoch 367/1000, batch 1/4, loss 0.0745
+epoch 367/1000, training rmse 0.4010
+EarlyStopping counter: 79 out of 200
+epoch 367/1000, validation rmse 0.9981, best validation rmse 0.8033
+epoch 368/1000, batch 1/4, loss 0.0940
+epoch 368/1000, training rmse 0.4305
+EarlyStopping counter: 80 out of 200
+epoch 368/1000, validation rmse 0.9646, best validation rmse 0.8033
+epoch 369/1000, batch 1/4, loss 0.0796
+epoch 369/1000, training rmse 0.4256
+EarlyStopping counter: 81 out of 200
+epoch 369/1000, validation rmse 0.9392, best validation rmse 0.8033
+epoch 370/1000, batch 1/4, loss 0.0765
+epoch 370/1000, training rmse 0.4092
+EarlyStopping counter: 82 out of 200
+epoch 370/1000, validation rmse 0.8837, best validation rmse 0.8033
+epoch 371/1000, batch 1/4, loss 0.0967
+epoch 371/1000, training rmse 0.3840
+EarlyStopping counter: 83 out of 200
+epoch 371/1000, validation rmse 0.8637, best validation rmse 0.8033
+epoch 372/1000, batch 1/4, loss 0.0509
+epoch 372/1000, training rmse 0.3870
+EarlyStopping counter: 84 out of 200
+epoch 372/1000, validation rmse 0.8790, best validation rmse 0.8033
+epoch 373/1000, batch 1/4, loss 0.0818
+epoch 373/1000, training rmse 0.3666
+EarlyStopping counter: 85 out of 200
+epoch 373/1000, validation rmse 0.8469, best validation rmse 0.8033
+epoch 374/1000, batch 1/4, loss 0.0524
+epoch 374/1000, training rmse 0.3698
+EarlyStopping counter: 86 out of 200
+epoch 374/1000, validation rmse 0.8251, best validation rmse 0.8033
+epoch 375/1000, batch 1/4, loss 0.0587
+epoch 375/1000, training rmse 0.3636
+EarlyStopping counter: 87 out of 200
+epoch 375/1000, validation rmse 0.9578, best validation rmse 0.8033
+epoch 376/1000, batch 1/4, loss 0.0555
+epoch 376/1000, training rmse 0.3466
+EarlyStopping counter: 88 out of 200
+epoch 376/1000, validation rmse 0.8838, best validation rmse 0.8033
+epoch 377/1000, batch 1/4, loss 0.0592
+epoch 377/1000, training rmse 0.3801
+EarlyStopping counter: 89 out of 200
+epoch 377/1000, validation rmse 0.8882, best validation rmse 0.8033
+epoch 378/1000, batch 1/4, loss 0.0540
+epoch 378/1000, training rmse 0.3506
+EarlyStopping counter: 90 out of 200
+epoch 378/1000, validation rmse 0.9001, best validation rmse 0.8033
+epoch 379/1000, batch 1/4, loss 0.0620
+epoch 379/1000, training rmse 0.3737
+EarlyStopping counter: 91 out of 200
+epoch 379/1000, validation rmse 0.8673, best validation rmse 0.8033
+epoch 380/1000, batch 1/4, loss 0.0460
+epoch 380/1000, training rmse 0.3106
+EarlyStopping counter: 92 out of 200
+epoch 380/1000, validation rmse 0.9791, best validation rmse 0.8033
+epoch 381/1000, batch 1/4, loss 0.0534
+epoch 381/1000, training rmse 0.3452
+EarlyStopping counter: 93 out of 200
+epoch 381/1000, validation rmse 0.8770, best validation rmse 0.8033
+epoch 382/1000, batch 1/4, loss 0.0651
+epoch 382/1000, training rmse 0.4112
+EarlyStopping counter: 94 out of 200
+epoch 382/1000, validation rmse 0.9801, best validation rmse 0.8033
+epoch 383/1000, batch 1/4, loss 0.0750
+epoch 383/1000, training rmse 0.4255
+EarlyStopping counter: 95 out of 200
+epoch 383/1000, validation rmse 0.8418, best validation rmse 0.8033
+epoch 384/1000, batch 1/4, loss 0.0714
+epoch 384/1000, training rmse 0.4291
+EarlyStopping counter: 96 out of 200
+epoch 384/1000, validation rmse 1.0914, best validation rmse 0.8033
+epoch 385/1000, batch 1/4, loss 0.1037
+epoch 385/1000, training rmse 0.4832
+EarlyStopping counter: 97 out of 200
+epoch 385/1000, validation rmse 1.0463, best validation rmse 0.8033
+epoch 386/1000, batch 1/4, loss 0.0797
+epoch 386/1000, training rmse 0.3893
+EarlyStopping counter: 98 out of 200
+epoch 386/1000, validation rmse 1.3741, best validation rmse 0.8033
+epoch 387/1000, batch 1/4, loss 0.0840
+epoch 387/1000, training rmse 0.4143
+EarlyStopping counter: 99 out of 200
+epoch 387/1000, validation rmse 1.5407, best validation rmse 0.8033
+epoch 388/1000, batch 1/4, loss 0.1102
+epoch 388/1000, training rmse 0.4393
+EarlyStopping counter: 100 out of 200
+epoch 388/1000, validation rmse 0.9854, best validation rmse 0.8033
+epoch 389/1000, batch 1/4, loss 0.0759
+epoch 389/1000, training rmse 0.3983
+EarlyStopping counter: 101 out of 200
+epoch 389/1000, validation rmse 1.0203, best validation rmse 0.8033
+epoch 390/1000, batch 1/4, loss 0.0452
+epoch 390/1000, training rmse 0.3794
+EarlyStopping counter: 102 out of 200
+epoch 390/1000, validation rmse 0.9705, best validation rmse 0.8033
+epoch 391/1000, batch 1/4, loss 0.0556
+epoch 391/1000, training rmse 0.3688
+EarlyStopping counter: 103 out of 200
+epoch 391/1000, validation rmse 0.9775, best validation rmse 0.8033
+epoch 392/1000, batch 1/4, loss 0.0943
+epoch 392/1000, training rmse 0.3851
+EarlyStopping counter: 104 out of 200
+epoch 392/1000, validation rmse 0.8783, best validation rmse 0.8033
+epoch 393/1000, batch 1/4, loss 0.0571
+epoch 393/1000, training rmse 0.3803
+EarlyStopping counter: 105 out of 200
+epoch 393/1000, validation rmse 0.8688, best validation rmse 0.8033
+epoch 394/1000, batch 1/4, loss 0.0559
+epoch 394/1000, training rmse 0.3525
+EarlyStopping counter: 106 out of 200
+epoch 394/1000, validation rmse 0.8647, best validation rmse 0.8033
+epoch 395/1000, batch 1/4, loss 0.0598
+epoch 395/1000, training rmse 0.3469
+EarlyStopping counter: 107 out of 200
+epoch 395/1000, validation rmse 0.9051, best validation rmse 0.8033
+epoch 396/1000, batch 1/4, loss 0.0665
+epoch 396/1000, training rmse 0.4135
+EarlyStopping counter: 108 out of 200
+epoch 396/1000, validation rmse 1.0814, best validation rmse 0.8033
+epoch 397/1000, batch 1/4, loss 0.0566
+epoch 397/1000, training rmse 0.4186
+EarlyStopping counter: 109 out of 200
+epoch 397/1000, validation rmse 0.8999, best validation rmse 0.8033
+epoch 398/1000, batch 1/4, loss 0.0598
+epoch 398/1000, training rmse 0.3779
+EarlyStopping counter: 110 out of 200
+epoch 398/1000, validation rmse 0.8863, best validation rmse 0.8033
+epoch 399/1000, batch 1/4, loss 0.0628
+epoch 399/1000, training rmse 0.3650
+EarlyStopping counter: 111 out of 200
+epoch 399/1000, validation rmse 0.8209, best validation rmse 0.8033
+epoch 400/1000, batch 1/4, loss 0.0430
+epoch 400/1000, training rmse 0.3645
+EarlyStopping counter: 112 out of 200
+epoch 400/1000, validation rmse 0.9032, best validation rmse 0.8033
+epoch 401/1000, batch 1/4, loss 0.0622
+epoch 401/1000, training rmse 0.3716
+EarlyStopping counter: 113 out of 200
+epoch 401/1000, validation rmse 0.9380, best validation rmse 0.8033
+epoch 402/1000, batch 1/4, loss 0.0680
+epoch 402/1000, training rmse 0.3538
+EarlyStopping counter: 114 out of 200
+epoch 402/1000, validation rmse 0.8920, best validation rmse 0.8033
+epoch 403/1000, batch 1/4, loss 0.0807
+epoch 403/1000, training rmse 0.3701
+EarlyStopping counter: 115 out of 200
+epoch 403/1000, validation rmse 0.9860, best validation rmse 0.8033
+epoch 404/1000, batch 1/4, loss 0.0637
+epoch 404/1000, training rmse 0.3968
+EarlyStopping counter: 116 out of 200
+epoch 404/1000, validation rmse 0.8856, best validation rmse 0.8033
+epoch 405/1000, batch 1/4, loss 0.0576
+epoch 405/1000, training rmse 0.3569
+EarlyStopping counter: 117 out of 200
+epoch 405/1000, validation rmse 0.8391, best validation rmse 0.8033
+epoch 406/1000, batch 1/4, loss 0.0511
+epoch 406/1000, training rmse 0.3772
+EarlyStopping counter: 118 out of 200
+epoch 406/1000, validation rmse 0.8874, best validation rmse 0.8033
+epoch 407/1000, batch 1/4, loss 0.0605
+epoch 407/1000, training rmse 0.3537
+EarlyStopping counter: 119 out of 200
+epoch 407/1000, validation rmse 0.8936, best validation rmse 0.8033
+epoch 408/1000, batch 1/4, loss 0.0592
+epoch 408/1000, training rmse 0.3556
+EarlyStopping counter: 120 out of 200
+epoch 408/1000, validation rmse 0.9766, best validation rmse 0.8033
+epoch 409/1000, batch 1/4, loss 0.0750
+epoch 409/1000, training rmse 0.3835
+EarlyStopping counter: 121 out of 200
+epoch 409/1000, validation rmse 0.9716, best validation rmse 0.8033
+epoch 410/1000, batch 1/4, loss 0.0689
+epoch 410/1000, training rmse 0.3643
+EarlyStopping counter: 122 out of 200
+epoch 410/1000, validation rmse 0.8551, best validation rmse 0.8033
+epoch 411/1000, batch 1/4, loss 0.0557
+epoch 411/1000, training rmse 0.3617
+EarlyStopping counter: 123 out of 200
+epoch 411/1000, validation rmse 0.8915, best validation rmse 0.8033
+epoch 412/1000, batch 1/4, loss 0.0789
+epoch 412/1000, training rmse 0.3634
+EarlyStopping counter: 124 out of 200
+epoch 412/1000, validation rmse 0.9037, best validation rmse 0.8033
+epoch 413/1000, batch 1/4, loss 0.0626
+epoch 413/1000, training rmse 0.4163
+EarlyStopping counter: 125 out of 200
+epoch 413/1000, validation rmse 1.0011, best validation rmse 0.8033
+epoch 414/1000, batch 1/4, loss 0.0941
+epoch 414/1000, training rmse 0.4208
+EarlyStopping counter: 126 out of 200
+epoch 414/1000, validation rmse 0.9872, best validation rmse 0.8033
+epoch 415/1000, batch 1/4, loss 0.1271
+epoch 415/1000, training rmse 0.4093
+EarlyStopping counter: 127 out of 200
+epoch 415/1000, validation rmse 0.9175, best validation rmse 0.8033
+epoch 416/1000, batch 1/4, loss 0.0602
+epoch 416/1000, training rmse 0.4076
+EarlyStopping counter: 128 out of 200
+epoch 416/1000, validation rmse 1.0734, best validation rmse 0.8033
+epoch 417/1000, batch 1/4, loss 0.0710
+epoch 417/1000, training rmse 0.3790
+EarlyStopping counter: 129 out of 200
+epoch 417/1000, validation rmse 0.9865, best validation rmse 0.8033
+epoch 418/1000, batch 1/4, loss 0.0921
+epoch 418/1000, training rmse 0.4126
+EarlyStopping counter: 130 out of 200
+epoch 418/1000, validation rmse 0.9320, best validation rmse 0.8033
+epoch 419/1000, batch 1/4, loss 0.0575
+epoch 419/1000, training rmse 0.3752
+EarlyStopping counter: 131 out of 200
+epoch 419/1000, validation rmse 0.9814, best validation rmse 0.8033
+epoch 420/1000, batch 1/4, loss 0.0531
+epoch 420/1000, training rmse 0.3425
+EarlyStopping counter: 132 out of 200
+epoch 420/1000, validation rmse 0.9395, best validation rmse 0.8033
+epoch 421/1000, batch 1/4, loss 0.0849
+epoch 421/1000, training rmse 0.3629
+EarlyStopping counter: 133 out of 200
+epoch 421/1000, validation rmse 0.8675, best validation rmse 0.8033
+epoch 422/1000, batch 1/4, loss 0.0573
+epoch 422/1000, training rmse 0.3554
+EarlyStopping counter: 134 out of 200
+epoch 422/1000, validation rmse 0.8551, best validation rmse 0.8033
+epoch 423/1000, batch 1/4, loss 0.0623
+epoch 423/1000, training rmse 0.3419
+EarlyStopping counter: 135 out of 200
+epoch 423/1000, validation rmse 0.9212, best validation rmse 0.8033
+epoch 424/1000, batch 1/4, loss 0.0384
+epoch 424/1000, training rmse 0.3293
+EarlyStopping counter: 136 out of 200
+epoch 424/1000, validation rmse 0.9806, best validation rmse 0.8033
+epoch 425/1000, batch 1/4, loss 0.0620
+epoch 425/1000, training rmse 0.4147
+EarlyStopping counter: 137 out of 200
+epoch 425/1000, validation rmse 0.8856, best validation rmse 0.8033
+epoch 426/1000, batch 1/4, loss 0.0469
+epoch 426/1000, training rmse 0.3655
+EarlyStopping counter: 138 out of 200
+epoch 426/1000, validation rmse 0.9154, best validation rmse 0.8033
+epoch 427/1000, batch 1/4, loss 0.0394
+epoch 427/1000, training rmse 0.3769
+EarlyStopping counter: 139 out of 200
+epoch 427/1000, validation rmse 0.9683, best validation rmse 0.8033
+epoch 428/1000, batch 1/4, loss 0.0615
+epoch 428/1000, training rmse 0.3624
+EarlyStopping counter: 140 out of 200
+epoch 428/1000, validation rmse 0.8998, best validation rmse 0.8033
+epoch 429/1000, batch 1/4, loss 0.0799
+epoch 429/1000, training rmse 0.3547
+EarlyStopping counter: 141 out of 200
+epoch 429/1000, validation rmse 0.9112, best validation rmse 0.8033
+epoch 430/1000, batch 1/4, loss 0.0568
+epoch 430/1000, training rmse 0.3606
+EarlyStopping counter: 142 out of 200
+epoch 430/1000, validation rmse 0.9823, best validation rmse 0.8033
+epoch 431/1000, batch 1/4, loss 0.0698
+epoch 431/1000, training rmse 0.3878
+EarlyStopping counter: 143 out of 200
+epoch 431/1000, validation rmse 0.9084, best validation rmse 0.8033
+epoch 432/1000, batch 1/4, loss 0.0469
+epoch 432/1000, training rmse 0.3517
+EarlyStopping counter: 144 out of 200
+epoch 432/1000, validation rmse 1.1409, best validation rmse 0.8033
+epoch 433/1000, batch 1/4, loss 0.0686
+epoch 433/1000, training rmse 0.3859
+EarlyStopping counter: 145 out of 200
+epoch 433/1000, validation rmse 0.9821, best validation rmse 0.8033
+epoch 434/1000, batch 1/4, loss 0.0671
+epoch 434/1000, training rmse 0.3586
+EarlyStopping counter: 146 out of 200
+epoch 434/1000, validation rmse 1.1408, best validation rmse 0.8033
+epoch 435/1000, batch 1/4, loss 0.0629
+epoch 435/1000, training rmse 0.3594
+EarlyStopping counter: 147 out of 200
+epoch 435/1000, validation rmse 0.8742, best validation rmse 0.8033
+epoch 436/1000, batch 1/4, loss 0.0625
+epoch 436/1000, training rmse 0.4154
+EarlyStopping counter: 148 out of 200
+epoch 436/1000, validation rmse 1.2639, best validation rmse 0.8033
+epoch 437/1000, batch 1/4, loss 0.0574
+epoch 437/1000, training rmse 0.3740
+EarlyStopping counter: 149 out of 200
+epoch 437/1000, validation rmse 0.9683, best validation rmse 0.8033
+epoch 438/1000, batch 1/4, loss 0.0508
+epoch 438/1000, training rmse 0.3324
+EarlyStopping counter: 150 out of 200
+epoch 438/1000, validation rmse 0.9141, best validation rmse 0.8033
+epoch 439/1000, batch 1/4, loss 0.0631
+epoch 439/1000, training rmse 0.3495
+EarlyStopping counter: 151 out of 200
+epoch 439/1000, validation rmse 0.8597, best validation rmse 0.8033
+epoch 440/1000, batch 1/4, loss 0.0571
+epoch 440/1000, training rmse 0.3714
+EarlyStopping counter: 152 out of 200
+epoch 440/1000, validation rmse 0.8900, best validation rmse 0.8033
+epoch 441/1000, batch 1/4, loss 0.0566
+epoch 441/1000, training rmse 0.3583
+EarlyStopping counter: 153 out of 200
+epoch 441/1000, validation rmse 1.3752, best validation rmse 0.8033
+epoch 442/1000, batch 1/4, loss 0.0696
+epoch 442/1000, training rmse 0.3943
+EarlyStopping counter: 154 out of 200
+epoch 442/1000, validation rmse 1.1051, best validation rmse 0.8033
+epoch 443/1000, batch 1/4, loss 0.0559
+epoch 443/1000, training rmse 0.3847
+EarlyStopping counter: 155 out of 200
+epoch 443/1000, validation rmse 0.9968, best validation rmse 0.8033
+epoch 444/1000, batch 1/4, loss 0.0720
+epoch 444/1000, training rmse 0.3560
+EarlyStopping counter: 156 out of 200
+epoch 444/1000, validation rmse 0.9872, best validation rmse 0.8033
+epoch 445/1000, batch 1/4, loss 0.0805
+epoch 445/1000, training rmse 0.3676
+EarlyStopping counter: 157 out of 200
+epoch 445/1000, validation rmse 1.1008, best validation rmse 0.8033
+epoch 446/1000, batch 1/4, loss 0.0768
+epoch 446/1000, training rmse 0.3812
+EarlyStopping counter: 158 out of 200
+epoch 446/1000, validation rmse 0.8778, best validation rmse 0.8033
+epoch 447/1000, batch 1/4, loss 0.0483
+epoch 447/1000, training rmse 0.3824
+EarlyStopping counter: 159 out of 200
+epoch 447/1000, validation rmse 1.0612, best validation rmse 0.8033
+epoch 448/1000, batch 1/4, loss 0.0437
+epoch 448/1000, training rmse 0.3477
+EarlyStopping counter: 160 out of 200
+epoch 448/1000, validation rmse 0.9166, best validation rmse 0.8033
+epoch 449/1000, batch 1/4, loss 0.0613
+epoch 449/1000, training rmse 0.3935
+EarlyStopping counter: 161 out of 200
+epoch 449/1000, validation rmse 0.9710, best validation rmse 0.8033
+epoch 450/1000, batch 1/4, loss 0.0598
+epoch 450/1000, training rmse 0.3770
+EarlyStopping counter: 162 out of 200
+epoch 450/1000, validation rmse 0.9723, best validation rmse 0.8033
+epoch 451/1000, batch 1/4, loss 0.0785
+epoch 451/1000, training rmse 0.3905
+EarlyStopping counter: 163 out of 200
+epoch 451/1000, validation rmse 0.9262, best validation rmse 0.8033
+epoch 452/1000, batch 1/4, loss 0.0538
+epoch 452/1000, training rmse 0.4277
+EarlyStopping counter: 164 out of 200
+epoch 452/1000, validation rmse 0.9041, best validation rmse 0.8033
+epoch 453/1000, batch 1/4, loss 0.0646
+epoch 453/1000, training rmse 0.3537
+EarlyStopping counter: 165 out of 200
+epoch 453/1000, validation rmse 0.9292, best validation rmse 0.8033
+epoch 454/1000, batch 1/4, loss 0.0670
+epoch 454/1000, training rmse 0.3445
+EarlyStopping counter: 166 out of 200
+epoch 454/1000, validation rmse 1.0258, best validation rmse 0.8033
+epoch 455/1000, batch 1/4, loss 0.0608
+epoch 455/1000, training rmse 0.3963
+EarlyStopping counter: 167 out of 200
+epoch 455/1000, validation rmse 0.9455, best validation rmse 0.8033
+epoch 456/1000, batch 1/4, loss 0.0448
+epoch 456/1000, training rmse 0.3671
+EarlyStopping counter: 168 out of 200
+epoch 456/1000, validation rmse 0.9646, best validation rmse 0.8033
+epoch 457/1000, batch 1/4, loss 0.0549
+epoch 457/1000, training rmse 0.3348
+EarlyStopping counter: 169 out of 200
+epoch 457/1000, validation rmse 0.8655, best validation rmse 0.8033
+epoch 458/1000, batch 1/4, loss 0.0485
+epoch 458/1000, training rmse 0.3313
+EarlyStopping counter: 170 out of 200
+epoch 458/1000, validation rmse 0.8779, best validation rmse 0.8033
+epoch 459/1000, batch 1/4, loss 0.0617
+epoch 459/1000, training rmse 0.3655
+EarlyStopping counter: 171 out of 200
+epoch 459/1000, validation rmse 0.9657, best validation rmse 0.8033
+epoch 460/1000, batch 1/4, loss 0.0610
+epoch 460/1000, training rmse 0.3544
+EarlyStopping counter: 172 out of 200
+epoch 460/1000, validation rmse 0.8901, best validation rmse 0.8033
+epoch 461/1000, batch 1/4, loss 0.0622
+epoch 461/1000, training rmse 0.3456
+EarlyStopping counter: 173 out of 200
+epoch 461/1000, validation rmse 0.9526, best validation rmse 0.8033
+epoch 462/1000, batch 1/4, loss 0.0704
+epoch 462/1000, training rmse 0.3768
+EarlyStopping counter: 174 out of 200
+epoch 462/1000, validation rmse 0.9458, best validation rmse 0.8033
+epoch 463/1000, batch 1/4, loss 0.0816
+epoch 463/1000, training rmse 0.3767
+EarlyStopping counter: 175 out of 200
+epoch 463/1000, validation rmse 1.0176, best validation rmse 0.8033
+epoch 464/1000, batch 1/4, loss 0.0796
+epoch 464/1000, training rmse 0.3732
+EarlyStopping counter: 176 out of 200
+epoch 464/1000, validation rmse 0.9644, best validation rmse 0.8033
+epoch 465/1000, batch 1/4, loss 0.0484
+epoch 465/1000, training rmse 0.3560
+EarlyStopping counter: 177 out of 200
+epoch 465/1000, validation rmse 0.9325, best validation rmse 0.8033
+epoch 466/1000, batch 1/4, loss 0.0443
+epoch 466/1000, training rmse 0.3341
+EarlyStopping counter: 178 out of 200
+epoch 466/1000, validation rmse 0.9534, best validation rmse 0.8033
+epoch 467/1000, batch 1/4, loss 0.0801
+epoch 467/1000, training rmse 0.3585
+EarlyStopping counter: 179 out of 200
+epoch 467/1000, validation rmse 0.9175, best validation rmse 0.8033
+epoch 468/1000, batch 1/4, loss 0.0490
+epoch 468/1000, training rmse 0.3422
+EarlyStopping counter: 180 out of 200
+epoch 468/1000, validation rmse 0.8493, best validation rmse 0.8033
+epoch 469/1000, batch 1/4, loss 0.0858
+epoch 469/1000, training rmse 0.3769
+EarlyStopping counter: 181 out of 200
+epoch 469/1000, validation rmse 1.1848, best validation rmse 0.8033
+epoch 470/1000, batch 1/4, loss 0.0816
+epoch 470/1000, training rmse 0.4103
+EarlyStopping counter: 182 out of 200
+epoch 470/1000, validation rmse 0.9118, best validation rmse 0.8033
+epoch 471/1000, batch 1/4, loss 0.0558
+epoch 471/1000, training rmse 0.3586
+EarlyStopping counter: 183 out of 200
+epoch 471/1000, validation rmse 0.9194, best validation rmse 0.8033
+epoch 472/1000, batch 1/4, loss 0.0741
+epoch 472/1000, training rmse 0.3692
+EarlyStopping counter: 184 out of 200
+epoch 472/1000, validation rmse 0.9923, best validation rmse 0.8033
+epoch 473/1000, batch 1/4, loss 0.0648
+epoch 473/1000, training rmse 0.3846
+EarlyStopping counter: 185 out of 200
+epoch 473/1000, validation rmse 0.9020, best validation rmse 0.8033
+epoch 474/1000, batch 1/4, loss 0.0657
+epoch 474/1000, training rmse 0.4055
+EarlyStopping counter: 186 out of 200
+epoch 474/1000, validation rmse 0.9852, best validation rmse 0.8033
+epoch 475/1000, batch 1/4, loss 0.0798
+epoch 475/1000, training rmse 0.4191
+EarlyStopping counter: 187 out of 200
+epoch 475/1000, validation rmse 0.9069, best validation rmse 0.8033
+epoch 476/1000, batch 1/4, loss 0.0561
+epoch 476/1000, training rmse 0.3820
+EarlyStopping counter: 188 out of 200
+epoch 476/1000, validation rmse 0.8779, best validation rmse 0.8033
+epoch 477/1000, batch 1/4, loss 0.0591
+epoch 477/1000, training rmse 0.3758
+EarlyStopping counter: 189 out of 200
+epoch 477/1000, validation rmse 0.9916, best validation rmse 0.8033
+epoch 478/1000, batch 1/4, loss 0.0772
+epoch 478/1000, training rmse 0.3775
+EarlyStopping counter: 190 out of 200
+epoch 478/1000, validation rmse 0.8736, best validation rmse 0.8033
+epoch 479/1000, batch 1/4, loss 0.0829
+epoch 479/1000, training rmse 0.4023
+EarlyStopping counter: 191 out of 200
+epoch 479/1000, validation rmse 0.9876, best validation rmse 0.8033
+epoch 480/1000, batch 1/4, loss 0.0725
+epoch 480/1000, training rmse 0.3750
+EarlyStopping counter: 192 out of 200
+epoch 480/1000, validation rmse 0.8361, best validation rmse 0.8033
+epoch 481/1000, batch 1/4, loss 0.0569
+epoch 481/1000, training rmse 0.3654
+EarlyStopping counter: 193 out of 200
+epoch 481/1000, validation rmse 0.9592, best validation rmse 0.8033
+epoch 482/1000, batch 1/4, loss 0.0708
+epoch 482/1000, training rmse 0.3849
+EarlyStopping counter: 194 out of 200
+epoch 482/1000, validation rmse 0.9827, best validation rmse 0.8033
+epoch 483/1000, batch 1/4, loss 0.0700
+epoch 483/1000, training rmse 0.3535
+EarlyStopping counter: 195 out of 200
+epoch 483/1000, validation rmse 0.9774, best validation rmse 0.8033
+epoch 484/1000, batch 1/4, loss 0.0664
+epoch 484/1000, training rmse 0.3817
+EarlyStopping counter: 196 out of 200
+epoch 484/1000, validation rmse 0.8932, best validation rmse 0.8033
+epoch 485/1000, batch 1/4, loss 0.0599
+epoch 485/1000, training rmse 0.3639
+EarlyStopping counter: 197 out of 200
+epoch 485/1000, validation rmse 1.0072, best validation rmse 0.8033
+epoch 486/1000, batch 1/4, loss 0.1001
+epoch 486/1000, training rmse 0.3931
+EarlyStopping counter: 198 out of 200
+epoch 486/1000, validation rmse 0.8887, best validation rmse 0.8033
+epoch 487/1000, batch 1/4, loss 0.0602
+epoch 487/1000, training rmse 0.3555
+EarlyStopping counter: 199 out of 200
+epoch 487/1000, validation rmse 0.9344, best validation rmse 0.8033
+epoch 488/1000, batch 1/4, loss 0.0557
+epoch 488/1000, training rmse 0.3497
+EarlyStopping counter: 200 out of 200
+epoch 488/1000, validation rmse 0.8843, best validation rmse 0.8033
+val rmse 0.8033
+test rmse 0.8958

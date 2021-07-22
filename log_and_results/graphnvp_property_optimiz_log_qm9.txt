@@ -1,0 +1,286 @@
+(moflow) [qifan@localhost graph-nvp]$ python optimize_property.py -snapshot graph-nvp-final.npz \
+>  --hyperparams_path graphnvp-params.json \
+>  --batch_size 1000 \
+>  --model_dir models/qm9 \
+>  --data_dir data \
+>  --molecule_file qm9_relgcn_kekulized_ggnp.npz \
+>  --temperature 1.0 \
+>  --delta 0.5 \
+>  --img_format png \
+>  --property_name qed \
+>  --property_model qed_model.pkl 
+loading snapshot: models/qm9/graph-nvp-final.npz
+Hyper-parameters:
+------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------
+gnn_channels              {'gcn': [8, 64], 'hidden': [128, 64]}
+mlp_channels              [256, 256]
+num_nodes                 9
+num_relations             4
+num_features              5
+masks                     {'channel': [array([[False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False],
+                                 [ True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True],
+                                 [False, False, False, False, False]])], 'node': [array([[False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True],
+                                 [False,  True,  True,  True,  True,  True,  True,  True,  True]]), array([[ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True],
+                                 [ True, False,  True,  True,  True,  True,  True,  True,  True]]), array([[ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True],
+                                 [ True,  True, False,  True,  True,  True,  True,  True,  True]]), array([[ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True],
+                                 [ True,  True,  True, False,  True,  True,  True,  True,  True]]), array([[ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True],
+                                 [ True,  True,  True,  True, False,  True,  True,  True,  True]]), array([[ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True],
+                                 [ True,  True,  True,  True,  True, False,  True,  True,  True]]), array([[ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True],
+                                 [ True,  True,  True,  True,  True,  True, False,  True,  True]]), array([[ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True],
+                                 [ True,  True,  True,  True,  True,  True,  True, False,  True]]), array([[ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False],
+                                 [ True,  True,  True,  True,  True,  True,  True,  True, False]])]}
+num_masks                 {'channel': 9, 'node': 9}
+mask_size
+num_coupling              {'channel': 27, 'node': 36}
+path                      output/graphnvp-params.json
+apply_batch_norm          True
+additive_transformations  False
+learn_dist                1
+squeeze_adj               False
+prior_adj_var             0.0004
+prior_x_var               0.0004
+seed                      1
+concat_atom_embeddings    0
+------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------
+loading hyperparamaters from models/qm9/graphnvp-params.json
+loading qed regression model from: qed_model.pkl
+/home/qifan/miniconda3/envs/moflow/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.linear_model.base module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.linear_model. Anything that cannot be imported from sklearn.linear_model is now part of the private API.
+  warnings.warn(message, FutureWarning)
+/home/qifan/miniconda3/envs/moflow/lib/python3.8/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator LinearRegression from version 0.19.1 when using version 0.23.2. This might lead to breaking code or invalid results. Use at your own risk.
+  warnings.warn(
+[01:06:26] Explicit valence for atom # 4 F, 4, is greater than permitted
+[01:06:26] Explicit valence for atom # 4 F, 4, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 2 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 2 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 2 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 2 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 N, 8, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 N, 8, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 8, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 8, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 4, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 6, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 4, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 F, 3, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 F, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 1 C, 9, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+[01:06:26] Explicit valence for atom # 0 C, 5, is greater than permitted
+valid molecules: 13/100
+[0] CC1=CC(=O)N(C)C1
+[1] CC1=CC(=O)N(C)C1
+[2] CC1=CC(=O)N(C)C1
+[3] CC1=C2C(=O)N(C)C12
+[4] CC1=C2C(=O)N(C)C12
+[5] CC1=C2C(=O)N(C)C12
+[6] CC1=C2C(=O)N(C)C12
+[7] C=C1C2=C(C)C2N1C
+[8] CNC1C(C)=C1C=O
+[9] CNC1C(C)=C1C=O
+[10] C=CC1=C(C)C1NC
+[11] C=CC1=C(C)C1NC
+[12] C=CC1=C(C)C1NC
+valid: 13.000%, unique: 38.462%
+(moflow) [qifan@localhost graph-nvp]$ 

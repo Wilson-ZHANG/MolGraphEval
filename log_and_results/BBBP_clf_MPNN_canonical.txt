@@ -1,0 +1,185 @@
+Directory classification_results already exists.
+Processing dgl graphs from scratch...
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Invalid mol found
+Processing molecule 1000/2050
+Processing molecule 2000/2050
+Start initializing RDKit molecule instances...
+Creating RDKit molecule instance 1000/2039
+Creating RDKit molecule instance 2000/2039
+Start computing Bemis-Murcko scaffolds.
+Computing Bemis-Murcko for compound 1000/2039
+Computing Bemis-Murcko for compound 2000/2039
+For metric roc_auc_score, the higher the better
+epoch 1/1000, batch 1/7, loss 0.7151
+epoch 1/1000, training roc_auc_score 0.5476
+epoch 1/1000, validation roc_auc_score 0.8562, best validation roc_auc_score 0.8562
+epoch 2/1000, batch 1/7, loss 0.5484
+epoch 2/1000, training roc_auc_score 0.6422
+epoch 2/1000, validation roc_auc_score 0.9062, best validation roc_auc_score 0.9062
+epoch 3/1000, batch 1/7, loss 0.4689
+epoch 3/1000, training roc_auc_score 0.6267
+EarlyStopping counter: 1 out of 30
+epoch 3/1000, validation roc_auc_score 0.8995, best validation roc_auc_score 0.9062
+epoch 4/1000, batch 1/7, loss 0.3671
+epoch 4/1000, training roc_auc_score 0.7728
+EarlyStopping counter: 2 out of 30
+epoch 4/1000, validation roc_auc_score 0.8937, best validation roc_auc_score 0.9062
+epoch 5/1000, batch 1/7, loss 0.3880
+epoch 5/1000, training roc_auc_score 0.8192
+epoch 5/1000, validation roc_auc_score 0.9260, best validation roc_auc_score 0.9260
+epoch 6/1000, batch 1/7, loss 0.3545
+epoch 6/1000, training roc_auc_score 0.8246
+EarlyStopping counter: 1 out of 30
+epoch 6/1000, validation roc_auc_score 0.9109, best validation roc_auc_score 0.9260
+epoch 7/1000, batch 1/7, loss 0.3995
+epoch 7/1000, training roc_auc_score 0.8411
+EarlyStopping counter: 2 out of 30
+epoch 7/1000, validation roc_auc_score 0.9165, best validation roc_auc_score 0.9260
+epoch 8/1000, batch 1/7, loss 0.3433
+epoch 8/1000, training roc_auc_score 0.8443
+epoch 8/1000, validation roc_auc_score 0.9265, best validation roc_auc_score 0.9265
+epoch 9/1000, batch 1/7, loss 0.3856
+epoch 9/1000, training roc_auc_score 0.8239
+EarlyStopping counter: 1 out of 30
+epoch 9/1000, validation roc_auc_score 0.9194, best validation roc_auc_score 0.9265
+epoch 10/1000, batch 1/7, loss 0.2657
+epoch 10/1000, training roc_auc_score 0.8489
+epoch 10/1000, validation roc_auc_score 0.9356, best validation roc_auc_score 0.9356
+epoch 11/1000, batch 1/7, loss 0.3691
+epoch 11/1000, training roc_auc_score 0.8597
+epoch 11/1000, validation roc_auc_score 0.9394, best validation roc_auc_score 0.9394
+epoch 12/1000, batch 1/7, loss 0.3852
+epoch 12/1000, training roc_auc_score 0.8384
+epoch 12/1000, validation roc_auc_score 0.9480, best validation roc_auc_score 0.9480
+epoch 13/1000, batch 1/7, loss 0.3073
+epoch 13/1000, training roc_auc_score 0.8630
+EarlyStopping counter: 1 out of 30
+epoch 13/1000, validation roc_auc_score 0.9429, best validation roc_auc_score 0.9480
+epoch 14/1000, batch 1/7, loss 0.2750
+epoch 14/1000, training roc_auc_score 0.8709
+EarlyStopping counter: 2 out of 30
+epoch 14/1000, validation roc_auc_score 0.9442, best validation roc_auc_score 0.9480
+epoch 15/1000, batch 1/7, loss 0.3691
+epoch 15/1000, training roc_auc_score 0.8487
+EarlyStopping counter: 3 out of 30
+epoch 15/1000, validation roc_auc_score 0.9390, best validation roc_auc_score 0.9480
+epoch 16/1000, batch 1/7, loss 0.2932
+epoch 16/1000, training roc_auc_score 0.8598
+EarlyStopping counter: 4 out of 30
+epoch 16/1000, validation roc_auc_score 0.9340, best validation roc_auc_score 0.9480
+epoch 17/1000, batch 1/7, loss 0.2640
+epoch 17/1000, training roc_auc_score 0.8724
+EarlyStopping counter: 5 out of 30
+epoch 17/1000, validation roc_auc_score 0.9395, best validation roc_auc_score 0.9480
+epoch 18/1000, batch 1/7, loss 0.3195
+epoch 18/1000, training roc_auc_score 0.8818
+EarlyStopping counter: 6 out of 30
+epoch 18/1000, validation roc_auc_score 0.9429, best validation roc_auc_score 0.9480
+epoch 19/1000, batch 1/7, loss 0.2782
+epoch 19/1000, training roc_auc_score 0.8698
+EarlyStopping counter: 7 out of 30
+epoch 19/1000, validation roc_auc_score 0.9405, best validation roc_auc_score 0.9480
+epoch 20/1000, batch 1/7, loss 0.3453
+epoch 20/1000, training roc_auc_score 0.8650
+EarlyStopping counter: 8 out of 30
+epoch 20/1000, validation roc_auc_score 0.9353, best validation roc_auc_score 0.9480
+epoch 21/1000, batch 1/7, loss 0.2215
+epoch 21/1000, training roc_auc_score 0.8681
+EarlyStopping counter: 9 out of 30
+epoch 21/1000, validation roc_auc_score 0.9419, best validation roc_auc_score 0.9480
+epoch 22/1000, batch 1/7, loss 0.3176
+epoch 22/1000, training roc_auc_score 0.8843
+EarlyStopping counter: 10 out of 30
+epoch 22/1000, validation roc_auc_score 0.9402, best validation roc_auc_score 0.9480
+epoch 23/1000, batch 1/7, loss 0.3206
+epoch 23/1000, training roc_auc_score 0.8872
+EarlyStopping counter: 11 out of 30
+epoch 23/1000, validation roc_auc_score 0.9215, best validation roc_auc_score 0.9480
+epoch 24/1000, batch 1/7, loss 0.5221
+epoch 24/1000, training roc_auc_score 0.7910
+EarlyStopping counter: 12 out of 30
+epoch 24/1000, validation roc_auc_score 0.8858, best validation roc_auc_score 0.9480
+epoch 25/1000, batch 1/7, loss 0.3869
+epoch 25/1000, training roc_auc_score 0.8430
+EarlyStopping counter: 13 out of 30
+epoch 25/1000, validation roc_auc_score 0.8976, best validation roc_auc_score 0.9480
+epoch 26/1000, batch 1/7, loss 0.2982
+epoch 26/1000, training roc_auc_score 0.8421
+EarlyStopping counter: 14 out of 30
+epoch 26/1000, validation roc_auc_score 0.9167, best validation roc_auc_score 0.9480
+epoch 27/1000, batch 1/7, loss 0.4203
+epoch 27/1000, training roc_auc_score 0.8362
+EarlyStopping counter: 15 out of 30
+epoch 27/1000, validation roc_auc_score 0.9169, best validation roc_auc_score 0.9480
+epoch 28/1000, batch 1/7, loss 0.3341
+epoch 28/1000, training roc_auc_score 0.8552
+EarlyStopping counter: 16 out of 30
+epoch 28/1000, validation roc_auc_score 0.9172, best validation roc_auc_score 0.9480
+epoch 29/1000, batch 1/7, loss 0.3738
+epoch 29/1000, training roc_auc_score 0.8456
+EarlyStopping counter: 17 out of 30
+epoch 29/1000, validation roc_auc_score 0.9241, best validation roc_auc_score 0.9480
+epoch 30/1000, batch 1/7, loss 0.3684
+epoch 30/1000, training roc_auc_score 0.8502
+EarlyStopping counter: 18 out of 30
+epoch 30/1000, validation roc_auc_score 0.9261, best validation roc_auc_score 0.9480
+epoch 31/1000, batch 1/7, loss 0.3787
+epoch 31/1000, training roc_auc_score 0.8422
+EarlyStopping counter: 19 out of 30
+epoch 31/1000, validation roc_auc_score 0.9274, best validation roc_auc_score 0.9480
+epoch 32/1000, batch 1/7, loss 0.3135
+epoch 32/1000, training roc_auc_score 0.8582
+EarlyStopping counter: 20 out of 30
+epoch 32/1000, validation roc_auc_score 0.9230, best validation roc_auc_score 0.9480
+epoch 33/1000, batch 1/7, loss 0.3090
+epoch 33/1000, training roc_auc_score 0.8617
+EarlyStopping counter: 21 out of 30
+epoch 33/1000, validation roc_auc_score 0.9237, best validation roc_auc_score 0.9480
+epoch 34/1000, batch 1/7, loss 0.2983
+epoch 34/1000, training roc_auc_score 0.8708
+EarlyStopping counter: 22 out of 30
+epoch 34/1000, validation roc_auc_score 0.9288, best validation roc_auc_score 0.9480
+epoch 35/1000, batch 1/7, loss 0.2408
+epoch 35/1000, training roc_auc_score 0.8587
+EarlyStopping counter: 23 out of 30
+epoch 35/1000, validation roc_auc_score 0.9275, best validation roc_auc_score 0.9480
+epoch 36/1000, batch 1/7, loss 0.3118
+epoch 36/1000, training roc_auc_score 0.8736
+EarlyStopping counter: 24 out of 30
+epoch 36/1000, validation roc_auc_score 0.9226, best validation roc_auc_score 0.9480
+epoch 37/1000, batch 1/7, loss 0.2810
+epoch 37/1000, training roc_auc_score 0.8749
+EarlyStopping counter: 25 out of 30
+epoch 37/1000, validation roc_auc_score 0.9218, best validation roc_auc_score 0.9480
+epoch 38/1000, batch 1/7, loss 0.3258
+epoch 38/1000, training roc_auc_score 0.8678
+EarlyStopping counter: 26 out of 30
+epoch 38/1000, validation roc_auc_score 0.9230, best validation roc_auc_score 0.9480
+epoch 39/1000, batch 1/7, loss 0.3215
+epoch 39/1000, training roc_auc_score 0.8712
+EarlyStopping counter: 27 out of 30
+epoch 39/1000, validation roc_auc_score 0.9249, best validation roc_auc_score 0.9480
+epoch 40/1000, batch 1/7, loss 0.3328
+epoch 40/1000, training roc_auc_score 0.8826
+EarlyStopping counter: 28 out of 30
+epoch 40/1000, validation roc_auc_score 0.9347, best validation roc_auc_score 0.9480
+epoch 41/1000, batch 1/7, loss 0.3226
+epoch 41/1000, training roc_auc_score 0.8634
+EarlyStopping counter: 29 out of 30
+epoch 41/1000, validation roc_auc_score 0.9333, best validation roc_auc_score 0.9480
+epoch 42/1000, batch 1/7, loss 0.3270
+epoch 42/1000, training roc_auc_score 0.8724
+EarlyStopping counter: 30 out of 30
+epoch 42/1000, validation roc_auc_score 0.9394, best validation roc_auc_score 0.9480
+val roc_auc_score 0.9480
+test roc_auc_score 0.6364

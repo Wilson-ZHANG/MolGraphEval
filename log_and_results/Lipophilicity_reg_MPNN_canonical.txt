@@ -1,0 +1,110 @@
+Directory regression_results already exists.
+Processing dgl graphs from scratch...
+Processing molecule 1000/4200
+Processing molecule 2000/4200
+Processing molecule 3000/4200
+Processing molecule 4000/4200
+Start initializing RDKit molecule instances...
+Creating RDKit molecule instance 1000/4200
+Creating RDKit molecule instance 2000/4200
+Creating RDKit molecule instance 3000/4200
+Creating RDKit molecule instance 4000/4200
+Start computing Bemis-Murcko scaffolds.
+Computing Bemis-Murcko for compound 1000/4200
+Computing Bemis-Murcko for compound 2000/4200
+Computing Bemis-Murcko for compound 3000/4200
+Computing Bemis-Murcko for compound 4000/4200
+For metric rmse, the lower the better
+epoch 1/1000, batch 1/14, loss 1.6593
+epoch 1/1000, training rmse 1.9363
+epoch 1/1000, validation rmse 1.3582, best validation rmse 1.3582
+epoch 2/1000, batch 1/14, loss 0.6413
+epoch 2/1000, training rmse 1.2845
+epoch 2/1000, validation rmse 1.2268, best validation rmse 1.2268
+epoch 3/1000, batch 1/14, loss 0.5899
+epoch 3/1000, training rmse 1.2268
+epoch 3/1000, validation rmse 1.2219, best validation rmse 1.2219
+epoch 4/1000, batch 1/14, loss 0.5882
+epoch 4/1000, training rmse 1.2138
+epoch 4/1000, validation rmse 1.2196, best validation rmse 1.2196
+epoch 5/1000, batch 1/14, loss 0.5679
+epoch 5/1000, training rmse 1.2134
+epoch 5/1000, validation rmse 1.2115, best validation rmse 1.2115
+epoch 6/1000, batch 1/14, loss 0.5291
+epoch 6/1000, training rmse 1.2069
+epoch 6/1000, validation rmse 1.2057, best validation rmse 1.2057
+epoch 7/1000, batch 1/14, loss 0.5546
+epoch 7/1000, training rmse 1.1952
+EarlyStopping counter: 1 out of 3
+epoch 7/1000, validation rmse 1.2065, best validation rmse 1.2057
+epoch 8/1000, batch 1/14, loss 0.5409
+epoch 8/1000, training rmse 1.1879
+epoch 8/1000, validation rmse 1.1790, best validation rmse 1.1790
+epoch 9/1000, batch 1/14, loss 0.5712
+epoch 9/1000, training rmse 1.1423
+EarlyStopping counter: 1 out of 3
+epoch 9/1000, validation rmse 1.2590, best validation rmse 1.1790
+epoch 10/1000, batch 1/14, loss 0.5943
+epoch 10/1000, training rmse 1.1156
+epoch 10/1000, validation rmse 1.1278, best validation rmse 1.1278
+epoch 11/1000, batch 1/14, loss 0.4737
+epoch 11/1000, training rmse 1.1068
+epoch 11/1000, validation rmse 1.1091, best validation rmse 1.1091
+epoch 12/1000, batch 1/14, loss 0.4884
+epoch 12/1000, training rmse 1.0980
+epoch 12/1000, validation rmse 1.1038, best validation rmse 1.1038
+epoch 13/1000, batch 1/14, loss 0.4956
+epoch 13/1000, training rmse 1.0754
+EarlyStopping counter: 1 out of 3
+epoch 13/1000, validation rmse 1.1439, best validation rmse 1.1038
+epoch 14/1000, batch 1/14, loss 0.4449
+epoch 14/1000, training rmse 1.0669
+epoch 14/1000, validation rmse 1.0947, best validation rmse 1.0947
+epoch 15/1000, batch 1/14, loss 0.5016
+epoch 15/1000, training rmse 1.0498
+EarlyStopping counter: 1 out of 3
+epoch 15/1000, validation rmse 1.1241, best validation rmse 1.0947
+epoch 16/1000, batch 1/14, loss 0.4357
+epoch 16/1000, training rmse 1.0613
+epoch 16/1000, validation rmse 1.0738, best validation rmse 1.0738
+epoch 17/1000, batch 1/14, loss 0.4691
+epoch 17/1000, training rmse 1.0440
+EarlyStopping counter: 1 out of 3
+epoch 17/1000, validation rmse 1.0881, best validation rmse 1.0738
+epoch 18/1000, batch 1/14, loss 0.4414
+epoch 18/1000, training rmse 1.0408
+epoch 18/1000, validation rmse 1.0594, best validation rmse 1.0594
+epoch 19/1000, batch 1/14, loss 0.4531
+epoch 19/1000, training rmse 1.0256
+EarlyStopping counter: 1 out of 3
+epoch 19/1000, validation rmse 1.0774, best validation rmse 1.0594
+epoch 20/1000, batch 1/14, loss 0.4727
+epoch 20/1000, training rmse 1.0511
+EarlyStopping counter: 2 out of 3
+epoch 20/1000, validation rmse 1.1149, best validation rmse 1.0594
+epoch 21/1000, batch 1/14, loss 0.4189
+epoch 21/1000, training rmse 1.0626
+epoch 21/1000, validation rmse 1.0584, best validation rmse 1.0584
+epoch 22/1000, batch 1/14, loss 0.4468
+epoch 22/1000, training rmse 1.0261
+epoch 22/1000, validation rmse 1.0488, best validation rmse 1.0488
+epoch 23/1000, batch 1/14, loss 0.4000
+epoch 23/1000, training rmse 1.0149
+epoch 23/1000, validation rmse 1.0442, best validation rmse 1.0442
+epoch 24/1000, batch 1/14, loss 0.4156
+epoch 24/1000, training rmse 1.0037
+epoch 24/1000, validation rmse 1.0424, best validation rmse 1.0424
+epoch 25/1000, batch 1/14, loss 0.4324
+epoch 25/1000, training rmse 1.0055
+EarlyStopping counter: 1 out of 3
+epoch 25/1000, validation rmse 1.0779, best validation rmse 1.0424
+epoch 26/1000, batch 1/14, loss 0.4435
+epoch 26/1000, training rmse 0.9969
+EarlyStopping counter: 2 out of 3
+epoch 26/1000, validation rmse 1.0621, best validation rmse 1.0424
+epoch 27/1000, batch 1/14, loss 0.3873
+epoch 27/1000, training rmse 0.9961
+EarlyStopping counter: 3 out of 3
+epoch 27/1000, validation rmse 1.1074, best validation rmse 1.0424
+val rmse 1.0424
+test rmse 0.9707

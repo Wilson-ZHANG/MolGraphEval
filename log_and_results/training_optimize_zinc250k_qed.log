@@ -1,0 +1,300 @@
+Start at Time: Thu Apr  8 16:27:51 2021
+loading snapshot: results/zinc250k_512t2cnn_256gnn_512-64lin_10flow_19fold_convlu2_38af-1-1mask/model_snapshot_epoch_200
+Hyper-parameters:
+--------------------  ------------------------------------------------------------------------------------------------
+b_n_type              4
+b_n_flow              10
+b_n_block             1
+b_n_squeeze           19
+b_hidden_ch           [512, 512]
+b_affine              True
+b_conv_lu             2
+a_n_node              38
+a_n_type              10
+a_hidden_gnn          [256]
+a_hidden_lin          [512, 64]
+a_n_flow              38
+a_n_block             1
+mask_row_size_list    [1]
+mask_row_stride_list  [1]
+a_affine              True
+path                  results/zinc250k_512t2cnn_256gnn_512-64lin_10flow_19fold_convlu2_38af-1-1mask/moflow-params.json
+learn_dist            1
+seed                  1
+noise_scale           0.6
+--------------------  ------------------------------------------------------------------------------------------------
+Hidden dim for output regression:  [16]
+loading train/valid split information from: ../data/valid_idx_zinc.json
+Loading file ../data/zinc250k_relgcn_kekulized_ggnp.npz
+Load ../data/zinc250k_relgcn_kekulized_ggnp.npz done, length: 249455
+Training regression model over molecular embedding:
+Load ../data/zinc250k_property.csv done, length: 249455
+Prepare data done! Time 95.28 seconds
+Start at Time: Thu Apr  8 16:29:27 2021
+In epoch 1, Time: Thu Apr  8 16:29:30 2021
+Epoch [1/3], Iter [20/878], loss: 0.89136, 0.20 sec/iter, 5.01 iters/sec: 
+Elapsed time: 00h-00m-03s,	[Estimated] End: 16:38:15-2021/04/08,	Total: 00h-08m-45s,	Remain: 00h-08m-41s
+Epoch [1/3], Iter [40/878], loss: 0.43154, 0.19 sec/iter, 5.23 iters/sec: 
+Elapsed time: 00h-00m-07s,	[Estimated] End: 16:37:54-2021/04/08,	Total: 00h-08m-23s,	Remain: 00h-08m-16s
+Epoch [1/3], Iter [60/878], loss: 0.17814, 0.19 sec/iter, 5.29 iters/sec: 
+Elapsed time: 00h-00m-11s,	[Estimated] End: 16:37:48-2021/04/08,	Total: 00h-08m-17s,	Remain: 00h-08m-06s
+Epoch [1/3], Iter [80/878], loss: 0.06950, 0.19 sec/iter, 5.32 iters/sec: 
+Elapsed time: 00h-00m-15s,	[Estimated] End: 16:37:45-2021/04/08,	Total: 00h-08m-14s,	Remain: 00h-07m-59s
+Epoch [1/3], Iter [100/878], loss: 0.03377, 0.19 sec/iter, 5.34 iters/sec: 
+Elapsed time: 00h-00m-18s,	[Estimated] End: 16:37:43-2021/04/08,	Total: 00h-08m-12s,	Remain: 00h-07m-54s
+Epoch [1/3], Iter [120/878], loss: 0.02055, 0.19 sec/iter, 5.36 iters/sec: 
+Elapsed time: 00h-00m-22s,	[Estimated] End: 16:37:41-2021/04/08,	Total: 00h-08m-11s,	Remain: 00h-07m-49s
+Epoch [1/3], Iter [140/878], loss: 0.01693, 0.19 sec/iter, 5.36 iters/sec: 
+Elapsed time: 00h-00m-26s,	[Estimated] End: 16:37:41-2021/04/08,	Total: 00h-08m-11s,	Remain: 00h-07m-44s
+Epoch [1/3], Iter [160/878], loss: 0.02067, 0.19 sec/iter, 5.37 iters/sec: 
+Elapsed time: 00h-00m-29s,	[Estimated] End: 16:37:40-2021/04/08,	Total: 00h-08m-10s,	Remain: 00h-07m-40s
+Epoch [1/3], Iter [180/878], loss: 0.02216, 0.19 sec/iter, 5.38 iters/sec: 
+Elapsed time: 00h-00m-33s,	[Estimated] End: 16:37:39-2021/04/08,	Total: 00h-08m-09s,	Remain: 00h-07m-35s
+Epoch [1/3], Iter [200/878], loss: 0.01923, 0.19 sec/iter, 5.39 iters/sec: 
+Elapsed time: 00h-00m-37s,	[Estimated] End: 16:37:39-2021/04/08,	Total: 00h-08m-08s,	Remain: 00h-07m-31s
+Epoch [1/3], Iter [220/878], loss: 0.02005, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-00m-40s,	[Estimated] End: 16:37:38-2021/04/08,	Total: 00h-08m-08s,	Remain: 00h-07m-27s
+Epoch [1/3], Iter [240/878], loss: 0.01768, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-00m-44s,	[Estimated] End: 16:37:38-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-23s
+Epoch [1/3], Iter [260/878], loss: 0.02443, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-00m-48s,	[Estimated] End: 16:37:38-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-19s
+Epoch [1/3], Iter [280/878], loss: 0.01876, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-00m-51s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-15s
+Epoch [1/3], Iter [300/878], loss: 0.01931, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-00m-55s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-11s
+Epoch [1/3], Iter [320/878], loss: 0.01905, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-00m-59s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-08s
+Epoch [1/3], Iter [340/878], loss: 0.02408, 0.19 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-02s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-04s
+Epoch [1/3], Iter [360/878], loss: 0.02091, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-06s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-07m-00s
+Epoch [1/3], Iter [380/878], loss: 0.01931, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-10s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-57s
+Epoch [1/3], Iter [400/878], loss: 0.02190, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-13s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-53s
+Epoch [1/3], Iter [420/878], loss: 0.02022, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-17s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-49s
+Epoch [1/3], Iter [440/878], loss: 0.01851, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-21s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-46s
+Epoch [1/3], Iter [460/878], loss: 0.01775, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-25s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-42s
+Epoch [1/3], Iter [480/878], loss: 0.01793, 0.19 sec/iter, 5.40 iters/sec: 
+Elapsed time: 00h-01m-28s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-38s
+Epoch [1/3], Iter [500/878], loss: 0.02295, 0.19 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-32s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-34s
+Epoch [1/3], Iter [520/878], loss: 0.01989, 0.19 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-36s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-31s
+Epoch [1/3], Iter [540/878], loss: 0.02210, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-39s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-27s
+Epoch [1/3], Iter [560/878], loss: 0.01727, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-43s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-23s
+Epoch [1/3], Iter [580/878], loss: 0.01544, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-47s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-19s
+Epoch [1/3], Iter [600/878], loss: 0.01647, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-50s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-16s
+Epoch [1/3], Iter [620/878], loss: 0.02075, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-54s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-12s
+Epoch [1/3], Iter [640/878], loss: 0.02093, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-01m-58s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-08s
+Epoch [1/3], Iter [660/878], loss: 0.02147, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-02s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-05s
+Epoch [1/3], Iter [680/878], loss: 0.01831, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-05s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-06m-01s
+Epoch [1/3], Iter [700/878], loss: 0.01871, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-09s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-57s
+Epoch [1/3], Iter [720/878], loss: 0.01764, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-13s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-54s
+Epoch [1/3], Iter [740/878], loss: 0.01657, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-16s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-50s
+Epoch [1/3], Iter [760/878], loss: 0.02019, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-20s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-46s
+Epoch [1/3], Iter [780/878], loss: 0.01605, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-24s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-42s
+Epoch [1/3], Iter [800/878], loss: 0.01605, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-27s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-39s
+Epoch [1/3], Iter [820/878], loss: 0.02196, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-31s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-35s
+Epoch [1/3], Iter [840/878], loss: 0.01933, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-35s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-31s
+Epoch [1/3], Iter [860/878], loss: 0.02214, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-39s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-07s,	Remain: 00h-05m-28s
+In epoch 2, Time: Thu Apr  8 16:32:12 2021
+Epoch [2/3], Iter [20/878], loss: 0.01703, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-45s,	[Estimated] End: 16:37:37-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-20s
+Epoch [2/3], Iter [40/878], loss: 0.02039, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-49s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-17s
+Epoch [2/3], Iter [60/878], loss: 0.02014, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-53s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-13s
+Epoch [2/3], Iter [80/878], loss: 0.02067, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-02m-56s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-09s
+Epoch [2/3], Iter [100/878], loss: 0.02061, 0.18 sec/iter, 5.41 iters/sec: 
+Elapsed time: 00h-03m-00s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-05s
+Epoch [2/3], Iter [120/878], loss: 0.01861, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-04s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-05m-02s
+Epoch [2/3], Iter [140/878], loss: 0.01675, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-07s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-58s
+Epoch [2/3], Iter [160/878], loss: 0.02063, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-11s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-54s
+Epoch [2/3], Iter [180/878], loss: 0.01883, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-15s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-50s
+Epoch [2/3], Iter [200/878], loss: 0.01930, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-19s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-47s
+Epoch [2/3], Iter [220/878], loss: 0.02007, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-22s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-43s
+Epoch [2/3], Iter [240/878], loss: 0.01810, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-26s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-39s
+Epoch [2/3], Iter [260/878], loss: 0.02439, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-30s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-36s
+Epoch [2/3], Iter [280/878], loss: 0.01873, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-33s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-32s
+Epoch [2/3], Iter [300/878], loss: 0.01920, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-37s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-28s
+Epoch [2/3], Iter [320/878], loss: 0.01909, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-41s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-24s
+Epoch [2/3], Iter [340/878], loss: 0.01860, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-44s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-21s
+Epoch [2/3], Iter [360/878], loss: 0.02087, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-48s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-06s,	Remain: 00h-04m-17s
+Epoch [2/3], Iter [380/878], loss: 0.01927, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-52s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-04m-13s
+Epoch [2/3], Iter [400/878], loss: 0.02399, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-55s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-04m-10s
+Epoch [2/3], Iter [420/878], loss: 0.02036, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-03m-59s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-04m-06s
+Epoch [2/3], Iter [440/878], loss: 0.01851, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-03s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-04m-02s
+Epoch [2/3], Iter [460/878], loss: 0.01777, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-06s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-59s
+Epoch [2/3], Iter [480/878], loss: 0.01791, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-10s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-55s
+Epoch [2/3], Iter [500/878], loss: 0.01891, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-14s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-51s
+Epoch [2/3], Iter [520/878], loss: 0.01986, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-17s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-47s
+Epoch [2/3], Iter [540/878], loss: 0.02201, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-21s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-44s
+Epoch [2/3], Iter [560/878], loss: 0.01726, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-25s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-40s
+Epoch [2/3], Iter [580/878], loss: 0.01898, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-28s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-36s
+Epoch [2/3], Iter [600/878], loss: 0.01611, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-32s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-33s
+Epoch [2/3], Iter [620/878], loss: 0.02076, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-36s,	[Estimated] End: 16:37:36-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-29s
+Epoch [2/3], Iter [640/878], loss: 0.02080, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-39s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-25s
+Epoch [2/3], Iter [660/878], loss: 0.02150, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-43s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-22s
+Epoch [2/3], Iter [680/878], loss: 0.01831, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-47s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-18s
+Epoch [2/3], Iter [700/878], loss: 0.01871, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-50s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-14s
+Epoch [2/3], Iter [720/878], loss: 0.01773, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-54s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-10s
+Epoch [2/3], Iter [740/878], loss: 0.01655, 0.18 sec/iter, 5.42 iters/sec: 
+Elapsed time: 00h-04m-58s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-07s
+Epoch [2/3], Iter [760/878], loss: 0.02019, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-01s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-03m-03s
+Epoch [2/3], Iter [780/878], loss: 0.01607, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-05s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-59s
+Epoch [2/3], Iter [800/878], loss: 0.01605, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-09s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-56s
+Epoch [2/3], Iter [820/878], loss: 0.02193, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-12s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-52s
+Epoch [2/3], Iter [840/878], loss: 0.01934, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-16s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-48s
+Epoch [2/3], Iter [860/878], loss: 0.01957, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-20s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-45s
+In epoch 3, Time: Thu Apr  8 16:34:53 2021
+Epoch [3/3], Iter [20/878], loss: 0.01714, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-27s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-38s
+Epoch [3/3], Iter [40/878], loss: 0.02080, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-30s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-34s
+Epoch [3/3], Iter [60/878], loss: 0.02003, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-34s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-30s
+Epoch [3/3], Iter [80/878], loss: 0.02072, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-38s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-27s
+Epoch [3/3], Iter [100/878], loss: 0.02060, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-41s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-23s
+Epoch [3/3], Iter [120/878], loss: 0.01862, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-45s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-19s
+Epoch [3/3], Iter [140/878], loss: 0.01676, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-49s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-15s
+Epoch [3/3], Iter [160/878], loss: 0.02062, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-52s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-12s
+Epoch [3/3], Iter [180/878], loss: 0.02054, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-05m-56s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-08s
+Epoch [3/3], Iter [200/878], loss: 0.01946, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-00s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-04s
+Epoch [3/3], Iter [220/878], loss: 0.02012, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-03s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-02m-01s
+Epoch [3/3], Iter [240/878], loss: 0.01767, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-07s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-57s
+Epoch [3/3], Iter [260/878], loss: 0.02441, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-11s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-53s
+Epoch [3/3], Iter [280/878], loss: 0.01873, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-15s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-50s
+Epoch [3/3], Iter [300/878], loss: 0.01923, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-18s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-46s
+Epoch [3/3], Iter [320/878], loss: 0.01910, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-22s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-42s
+Epoch [3/3], Iter [340/878], loss: 0.01858, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-26s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-39s
+Epoch [3/3], Iter [360/878], loss: 0.02087, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-29s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-35s
+Epoch [3/3], Iter [380/878], loss: 0.01927, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-33s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-31s
+Epoch [3/3], Iter [400/878], loss: 0.02204, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-37s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-28s
+Epoch [3/3], Iter [420/878], loss: 0.02022, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-40s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-24s
+Epoch [3/3], Iter [440/878], loss: 0.01850, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-44s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-20s
+Epoch [3/3], Iter [460/878], loss: 0.01780, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-48s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-16s
+Epoch [3/3], Iter [480/878], loss: 0.01792, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-51s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-13s
+Epoch [3/3], Iter [500/878], loss: 0.01892, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-55s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-09s
+Epoch [3/3], Iter [520/878], loss: 0.01987, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-06m-59s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-05s
+Epoch [3/3], Iter [540/878], loss: 0.02202, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-02s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-01m-02s
+Epoch [3/3], Iter [560/878], loss: 0.01730, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-06s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-58s
+Epoch [3/3], Iter [580/878], loss: 0.01544, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-10s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-54s
+Epoch [3/3], Iter [600/878], loss: 0.01627, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-13s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-51s
+Epoch [3/3], Iter [620/878], loss: 0.02076, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-17s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-47s
+Epoch [3/3], Iter [640/878], loss: 0.02099, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-21s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-43s
+Epoch [3/3], Iter [660/878], loss: 0.02145, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-24s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-40s
+Epoch [3/3], Iter [680/878], loss: 0.01831, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-28s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-36s
+Epoch [3/3], Iter [700/878], loss: 0.01871, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-32s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-32s
+Epoch [3/3], Iter [720/878], loss: 0.01777, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-35s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-29s
+Epoch [3/3], Iter [740/878], loss: 0.01655, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-39s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-25s
+Epoch [3/3], Iter [760/878], loss: 0.02019, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-43s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-21s
+Epoch [3/3], Iter [780/878], loss: 0.01603, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-46s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-18s
+Epoch [3/3], Iter [800/878], loss: 0.01607, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-50s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-14s
+Epoch [3/3], Iter [820/878], loss: 0.02201, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-54s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-10s
+Epoch [3/3], Iter [840/878], loss: 0.01934, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-07m-58s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-06s
+Epoch [3/3], Iter [860/878], loss: 0.01956, 0.18 sec/iter, 5.43 iters/sec: 
+Elapsed time: 00h-08m-01s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-05s,	Remain: 00h-00m-03s
+Elapsed time: 00h-08m-04s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-04s,	Remain: 00h-00m-00s
+Elapsed time: 00h-08m-04s,	[Estimated] End: 16:37:35-2021/04/08,	Total: 00h-08m-04s,	Remain: 00h-00m-00s
+[fit_model Ends], Start at Thu Apr  8 16:29:27 2021, End at Thu Apr  8 16:37:35 2021, Total 488.1434864997864
+saving qed regression model to: results/zinc250k_512t2cnn_256gnn_512-64lin_10flow_19fold_convlu2_38af-1-1mask/qed_model.pt
+Train and save model done! Time 584.72 seconds
+<frozen importlib._bootstrap>:219: RuntimeWarning: to-Python converter for boost::shared_ptr<RDKit::FilterCatalogEntry const> already registered; second conversion method ignored.
